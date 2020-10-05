@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Distortion-rescue)(type Legacy)(uri ${KIPRJMOD}/Distortion-rescue.lib)(options "")(descr ""))
+)

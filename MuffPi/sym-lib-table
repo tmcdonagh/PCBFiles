@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MuffPi-rescue)(type Legacy)(uri ${KIPRJMOD}/MuffPi-rescue.lib)(options "")(descr ""))
+)

@@ -167,7 +167,7 @@
   )
 
   (module Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical (layer F.Cu) (tedit 59FED667) (tstamp 5F977F84)
-    (at 106.68 81.915)
+    (at 71.755 92.075)
     (descr "Through hole straight pin header, 1x02, 2.00mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.00mm single row")
     (path /5F96D4A6)
@@ -961,7 +961,7 @@
   )
 
   (module Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical (layer F.Cu) (tedit 59FED667) (tstamp 5F97813B)
-    (at 106.68 88.265)
+    (at 71.755 98.425)
     (descr "Through hole straight pin header, 1x03, 2.00mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.00mm single row")
     (path /5F95E152)
@@ -1354,8 +1354,8 @@
     )
   )
 
-  (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5F97B186)
-    (at 121.92 66.675 180)
+  (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5F97820C)
+    (at 120.015 85.725 180)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5F97043C)
@@ -1396,7 +1396,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5F978223)
-    (at 111.76 69.85)
+    (at 111.76 68.58)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5F9746E7)
@@ -1969,8 +1969,8 @@
     )
   )
 
-  (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5F97B091)
-    (at 120.015 92.075 180)
+  (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5F978365)
+    (at 110.49 99.695)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5F9E54B9)
@@ -1999,9 +1999,9 @@
     (fp_text user %R (at 5.08 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (pad 1 thru_hole circle (at 0 0 180) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 19 "Net-(C12-Pad2)"))
-    (pad 2 thru_hole oval (at 10.16 0 180) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 2 thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 17 GND))
     (model ${KISYS3DMOD}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl
       (at (xyz 0 0 0))
@@ -2093,7 +2093,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5F9783AA)
-    (at 128.27 96.52)
+    (at 110.49 93.345)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5F98A811)
@@ -2134,7 +2134,7 @@
   )
 
   (module Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical (layer F.Cu) (tedit 59FED667) (tstamp 5F9783C1)
-    (at 128.905 66.675 270)
+    (at 128.905 68.58 270)
     (descr "Through hole straight pin header, 1x03, 2.00mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.00mm single row")
     (path /5F973285)
@@ -2296,7 +2296,7 @@
   )
 
   (module Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical (layer F.Cu) (tedit 59FED667) (tstamp 5F97841A)
-    (at 132.08 66.675 90)
+    (at 134.62 68.58 90)
     (descr "Through hole straight pin header, 1x03, 2.00mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.00mm single row")
     (path /5F9BF9C4)
@@ -2338,7 +2338,7 @@
   )
 
   (module Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical (layer F.Cu) (tedit 59FED667) (tstamp 5F978431)
-    (at 143.51 66.675 270)
+    (at 147.32 68.58 270)
     (descr "Through hole straight pin header, 1x03, 2.00mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.00mm single row")
     (path /5F9DAE5D)

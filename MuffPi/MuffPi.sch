@@ -16,23 +16,23 @@ $EndDescr
 $Comp
 L MuffPi-rescue:AudioJack2-Connector J2
 U 1 1 5F95CCEC
-P 9650 4100
-F 0 "J2" H 9470 4083 50  0000 R CNN
-F 1 "AudioJack2" H 9470 4174 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 9650 4100 50  0001 C CNN
-F 3 "~" H 9650 4100 50  0001 C CNN
-	1    9650 4100
+P 10100 4100
+F 0 "J2" H 9920 4083 50  0000 R CNN
+F 1 "AudioJack2" H 9920 4174 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 10100 4100 50  0001 C CNN
+F 3 "~" H 10100 4100 50  0001 C CNN
+	1    10100 4100
 	-1   0    0    1   
 $EndComp
 $Comp
 L MuffPi-rescue:AudioJack3-Connector J1
 U 1 1 5F95E152
-P 1950 4100
-F 0 "J1" H 1932 4425 50  0000 C CNN
-F 1 "AudioJack3" H 1932 4334 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 1950 4100 50  0001 C CNN
-F 3 "~" H 1950 4100 50  0001 C CNN
-	1    1950 4100
+P 1500 4000
+F 0 "J1" H 1482 4325 50  0000 C CNN
+F 1 "AudioJack3" H 1482 4234 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 1500 4000 50  0001 C CNN
+F 3 "~" H 1500 4000 50  0001 C CNN
+	1    1500 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -113,21 +113,6 @@ $EndComp
 Wire Wire Line
 	3450 3400 3450 3550
 Connection ~ 3450 3550
-Wire Wire Line
-	2150 4100 2550 4100
-$Comp
-L Device:Battery BT1
-U 1 1 5F96D4A6
-P 2300 3800
-F 0 "BT1" H 2408 3846 50  0000 L CNN
-F 1 "Battery" H 2408 3755 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" V 2300 3860 50  0001 C CNN
-F 3 "~" V 2300 3860 50  0001 C CNN
-	1    2300 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 4000 2300 4000
 $Comp
 L Device:R R5
 U 1 1 5F97043C
@@ -367,7 +352,7 @@ Wire Wire Line
 	5750 2650 5750 2850
 Connection ~ 5750 2850
 Wire Wire Line
-	2300 3600 2300 2350
+	2300 3600 2300 3050
 Wire Wire Line
 	2300 2350 3450 2350
 Wire Wire Line
@@ -790,8 +775,6 @@ Wire Wire Line
 	8250 3750 8500 3750
 Wire Wire Line
 	8800 3750 9050 3750
-Wire Wire Line
-	9450 4100 9200 4100
 $Comp
 L power:GND #PWR012
 U 1 1 5F9E1A35
@@ -851,10 +834,122 @@ F 3 "" H 7950 4700 50  0001 C CNN
 	1    7950 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5F96D4A6
+P 2300 3800
+F 0 "BT1" H 2408 3846 50  0000 L CNN
+F 1 "Battery" H 2408 3755 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" V 2300 3860 50  0001 C CNN
+F 3 "~" V 2300 3860 50  0001 C CNN
+	1    2300 3800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2150 4200 2150 5150
+	2300 4000 1700 4000
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5F97EA05
+P 2100 4100
+F 0 "SW2" H 2100 4000 50  0000 C CNN
+F 1 "SW_SPST" H 2100 3900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2100 4100 50  0001 C CNN
+F 3 "~" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2150 5150 9450 5150
+	1700 4100 1900 4100
 Wire Wire Line
-	9450 5150 9450 4200
+	2300 4100 2550 4100
+$Comp
+L power:GND #PWR014
+U 1 1 5F9827F5
+P 1950 3750
+F 0 "#PWR014" H 1950 3500 50  0001 C CNN
+F 1 "GND" H 1955 3577 50  0000 C CNN
+F 2 "" H 1950 3750 50  0001 C CNN
+F 3 "" H 1950 3750 50  0001 C CNN
+	1    1950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3900 1700 3750
+Wire Wire Line
+	1700 3750 1950 3750
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5F984E3F
+P 9550 4100
+F 0 "SW3" H 9550 4000 50  0000 C CNN
+F 1 "SW_SPST" H 9550 3900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 9550 4100 50  0001 C CNN
+F 3 "~" H 9550 4100 50  0001 C CNN
+	1    9550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4100 9350 4100
+Wire Wire Line
+	9750 4100 9900 4100
+$Comp
+L power:GND #PWR015
+U 1 1 5F989141
+P 9900 4200
+F 0 "#PWR015" H 9900 3950 50  0001 C CNN
+F 1 "GND" H 9905 4027 50  0000 C CNN
+F 2 "" H 9900 4200 50  0001 C CNN
+F 3 "" H 9900 4200 50  0001 C CNN
+	1    9900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5F989800
+P 2100 3050
+F 0 "SW1" H 2100 2950 50  0000 C CNN
+F 1 "SW_SPST" H 2100 2850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 2100 3050 50  0001 C CNN
+F 3 "~" H 2100 3050 50  0001 C CNN
+	1    2100 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 3050
+Wire Wire Line
+	2300 3050 2300 2350
+$Comp
+L Device:R R23
+U 1 1 5F98A811
+P 1900 2900
+F 0 "R23" V 2107 2900 50  0000 C CNN
+F 1 "100K" V 2016 2900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1830 2900 50  0001 C CNN
+F 3 "~" H 1900 2900 50  0001 C CNN
+	1    1900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5F98B388
+P 1900 2600
+F 0 "D5" V 1847 2680 50  0000 L CNN
+F 1 "LED" V 1938 2680 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 1900 2600 50  0001 C CNN
+F 3 "~" H 1900 2600 50  0001 C CNN
+	1    1900 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5F98BED7
+P 1600 2450
+F 0 "#PWR013" H 1600 2200 50  0001 C CNN
+F 1 "GND" H 1605 2277 50  0000 C CNN
+F 2 "" H 1600 2450 50  0001 C CNN
+F 3 "" H 1600 2450 50  0001 C CNN
+	1    1600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2450 1600 2450
 $EndSCHEMATC

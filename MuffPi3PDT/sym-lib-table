@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MuffPi)(type Legacy)(uri C:/Users/coe_tjmcdo2/Documents/GitHub/PCBFiles/MuffPi3PDT/MuffPi.pretty/SparkFun-Switches.lib)(options "")(descr ""))
+  (lib (name MuffPi3PDT-rescue)(type Legacy)(uri ${KIPRJMOD}/MuffPi3PDT-rescue.lib)(options "")(descr ""))
+)

@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MuffPi3PDT-rescue:AudioJack2-Connector-MuffPi-rescue J2
+L Connector:AudioJack2 J2
 U 1 1 5F95CCEC
 P 10100 4100
 F 0 "J2" H 9920 4083 50  0000 R CNN
@@ -25,7 +25,7 @@ F 3 "~" H 10100 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MuffPi3PDT-rescue:AudioJack3-Connector-MuffPi-rescue J1
+L Connector:AudioJack3 J1
 U 1 1 5F95E152
 P 1500 4000
 F 0 "J1" H 1482 4325 50  0000 C CNN

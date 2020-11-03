@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name audioJacks)(type Legacy)(uri C:/Users/tmcdo/Documents/GitHub/PCBFiles/libraries/audioJacks.lib)(options "")(descr ""))
+  (lib (name SparkFun-Switches)(type Legacy)(uri C:/Users/tmcdo/Documents/GitHub/PCBFiles/libraries/SparkFun-Switches.lib)(options "")(descr ""))
 )

@@ -155,7 +155,7 @@ U 1 1 5FA8DB9B
 P 5350 1650
 F 0 "BT1" H 5458 1696 50  0000 L CNN
 F 1 "Battery" H 5458 1605 50  0000 L CNN
-F 2 "" V 5350 1710 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 5350 1710 50  0001 C CNN
 F 3 "~" V 5350 1710 50  0001 C CNN
 	1    5350 1650
 	1    0    0    -1  
@@ -187,21 +187,6 @@ $EndComp
 Wire Wire Line
 	8250 1550 8250 1650
 $Comp
-L power:GND #PWR09
-U 1 1 5FA91B35
-P 10450 3950
-F 0 "#PWR09" H 10450 3700 50  0001 C CNN
-F 1 "GND" H 10455 3777 50  0000 C CNN
-F 2 "" H 10450 3950 50  0001 C CNN
-F 3 "" H 10450 3950 50  0001 C CNN
-	1    10450 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 3950 10450 3950
-Wire Wire Line
-	10300 3850 10300 3950
-$Comp
 L power:GND #PWR06
 U 1 1 5FA92668
 P 7650 1550
@@ -214,10 +199,6 @@ F 3 "" H 7650 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7650 1550 8250 1550
-Text Label 10300 3750 0    50   ~ 0
-Input
-Text Label 10300 3650 0    50   ~ 0
-Output
 Text Label 8250 1750 2    50   ~ 0
 Input
 Text Label 8250 1850 2    50   ~ 0
@@ -233,17 +214,6 @@ F 3 "" H 8250 1950 50  0001 C CNN
 	1    8250 1950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:+9V #PWR08
-U 1 1 5FA963AA
-P 10300 3550
-F 0 "#PWR08" H 10300 3400 50  0001 C CNN
-F 1 "+9V" V 10315 3678 50  0000 L CNN
-F 2 "" H 10300 3550 50  0001 C CNN
-F 3 "" H 10300 3550 50  0001 C CNN
-	1    10300 3550
-	0    1    1    0   
-$EndComp
 Text Label 6800 3150 0    50   ~ 0
 LEDPower
 Wire Wire Line
@@ -251,19 +221,115 @@ Wire Wire Line
 Connection ~ 6550 3150
 Text Label 8250 2050 2    50   ~ 0
 LEDPower
-Text Label 10300 3450 0    50   ~ 0
+Text Label 8750 3450 0    50   ~ 0
 LEDPower
-Connection ~ 10300 3950
-Connection ~ 8250 1550
 $Comp
-L n64-cartridge:N64-Cartridge U1
-U 1 1 5FA742E9
-P 9300 3850
-F 0 "U1" H 9300 6350 60  0000 C CNN
-F 1 "N64-Cartridge" H 9300 6450 60  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x25_P2.54mm_Vertical" H 9250 3900 60  0001 C CNN
-F 3 "" H 9250 3900 60  0000 C CNN
-	1    9300 3850
+L power:+9V #PWR08
+U 1 1 5FA963AA
+P 8750 3550
+F 0 "#PWR08" H 8750 3400 50  0001 C CNN
+F 1 "+9V" V 8765 3678 50  0000 L CNN
+F 2 "" H 8750 3550 50  0001 C CNN
+F 3 "" H 8750 3550 50  0001 C CNN
+	1    8750 3550
+	0    1    1    0   
+$EndComp
+Text Label 8750 3650 0    50   ~ 0
+Output
+Text Label 8750 3750 0    50   ~ 0
+Input
+Wire Wire Line
+	8750 3850 8750 3950
+Wire Wire Line
+	8750 3950 8900 3950
+$Comp
+L power:GND #PWR09
+U 1 1 5FA91B35
+P 8900 3950
+F 0 "#PWR09" H 8900 3700 50  0001 C CNN
+F 1 "GND" H 8905 3777 50  0000 C CNN
+F 2 "" H 8900 3950 50  0001 C CNN
+F 3 "" H 8900 3950 50  0001 C CNN
+	1    8900 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x25_Odd_Even J3
+U 1 1 5FABBF0E
+P 8450 2750
+F 0 "J3" H 8500 4167 50  0000 C CNN
+F 1 "Conn_02x25_Odd_Even" H 8500 4076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x25_P2.54mm_Vertical" H 8450 2750 50  0001 C CNN
+F 3 "~" H 8450 2750 50  0001 C CNN
+	1    8450 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 8250 1550
+Connection ~ 8750 3950
+Wire Wire Line
+	8750 1650 8750 1550
+$Comp
+L power:GND #PWR0101
+U 1 1 5FACAD9C
+P 9200 1550
+F 0 "#PWR0101" H 9200 1300 50  0001 C CNN
+F 1 "GND" H 9205 1377 50  0000 C CNN
+F 2 "" H 9200 1550 50  0001 C CNN
+F 3 "" H 9200 1550 50  0001 C CNN
+	1    9200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1550 9200 1550
+Connection ~ 8750 1550
+Text Label 8750 1750 0    50   ~ 0
+Input
+Text Label 8750 1850 0    50   ~ 0
+Output
+$Comp
+L power:+9V #PWR0102
+U 1 1 5FACB96C
+P 8750 1950
+F 0 "#PWR0102" H 8750 1800 50  0001 C CNN
+F 1 "+9V" V 8765 2078 50  0000 L CNN
+F 2 "" H 8750 1950 50  0001 C CNN
+F 3 "" H 8750 1950 50  0001 C CNN
+	1    8750 1950
+	0    1    1    0   
+$EndComp
+Text Label 8750 2050 0    50   ~ 0
+LEDPower
+Text Label 8250 3450 2    50   ~ 0
+LEDPower
+$Comp
+L power:+9V #PWR0103
+U 1 1 5FACC0AD
+P 8250 3550
+F 0 "#PWR0103" H 8250 3400 50  0001 C CNN
+F 1 "+9V" V 8265 3678 50  0000 L CNN
+F 2 "" H 8250 3550 50  0001 C CNN
+F 3 "" H 8250 3550 50  0001 C CNN
+	1    8250 3550
+	0    -1   -1   0   
+$EndComp
+Text Label 8250 3650 2    50   ~ 0
+Output
+Text Label 8250 3750 2    50   ~ 0
+Input
+Wire Wire Line
+	8250 3850 8250 3950
+$Comp
+L power:GND #PWR0104
+U 1 1 5FACD3A0
+P 8100 3950
+F 0 "#PWR0104" H 8100 3700 50  0001 C CNN
+F 1 "GND" H 8105 3777 50  0000 C CNN
+F 2 "" H 8100 3950 50  0001 C CNN
+F 3 "" H 8100 3950 50  0001 C CNN
+	1    8100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3950 8250 3950
+Connection ~ 8250 3950
 $EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name n64-cartridge)(type Legacy)(uri ${KIPRJMOD}/libraries/n64-cartridge.lib)(options "")(descr ""))
+)

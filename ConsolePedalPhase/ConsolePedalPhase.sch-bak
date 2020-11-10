@@ -673,7 +673,7 @@ U 1 1 5FB99F22
 P 9200 2950
 F 0 "U3" H 9200 4020 50  0000 C CNN
 F 1 "CD4046BE" H 9200 3929 50  0000 C CNN
-F 2 "CD4046BE:DIP794W45P254L1969H508Q16" H 9200 2950 50  0001 L BNN
+F 2 "Package_SO:SOP-16_3.9x9.9mm_P1.27mm" H 9200 2950 50  0001 L BNN
 F 3 "" H 9200 2950 50  0001 L BNN
 	1    9200 2950
 	1    0    0    -1  
@@ -846,7 +846,7 @@ U 1 1 5FB8B62F
 P 6650 1800
 F 0 "RV3" H 6580 1754 50  0000 R CNN
 F 1 "1M" H 6580 1845 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6650 1800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 6650 1800 50  0001 C CNN
 F 3 "~" H 6650 1800 50  0001 C CNN
 	1    6650 1800
 	-1   0    0    1   
@@ -857,7 +857,7 @@ U 1 1 5FC0DCA9
 P 2000 3050
 F 0 "RV1" H 1931 3096 50  0000 R CNN
 F 1 "20K" H 1931 3005 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2000 3050 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 2000 3050 50  0001 C CNN
 F 3 "~" H 2000 3050 50  0001 C CNN
 	1    2000 3050
 	1    0    0    -1  
@@ -1053,7 +1053,7 @@ U 1 1 5FC8A9E5
 P 4850 3600
 F 0 "RV2" V 4735 3600 50  0000 C CNN
 F 1 "C100K" V 4644 3600 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4850 3600 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4850 3600 50  0001 C CNN
 F 3 "~" H 4850 3600 50  0001 C CNN
 	1    4850 3600
 	0    -1   -1   0   
@@ -1486,15 +1486,22 @@ Wire Wire Line
 Connection ~ 8700 4550
 Wire Wire Line
 	8700 4550 8600 4550
+Wire Wire Line
+	9350 4550 9650 4550
+Wire Wire Line
+	9650 4550 9650 4800
+Connection ~ 9350 4550
+Wire Wire Line
+	9650 4900 8700 4900
 $Comp
-L Connector:TestPoint TP1
-U 1 1 5FAE1440
-P 8700 4900
-F 0 "TP1" H 8642 4926 50  0000 R CNN
-F 1 "CV_IN" H 8650 5000 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8900 4900 50  0001 C CNN
-F 3 "~" H 8900 4900 50  0001 C CNN
-	1    8700 4900
-	-1   0    0    1   
+L Connector:AudioJack2 J?
+U 1 1 5FB8FB4E
+P 9850 4900
+F 0 "J?" H 9670 4975 50  0000 R CNN
+F 1 "AudioJack2" H 9670 4884 50  0000 R CNN
+F 2 "" H 9850 4900 50  0001 C CNN
+F 3 "~" H 9850 4900 50  0001 C CNN
+	1    9850 4900
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name CD4046BE)(type KiCad)(uri C:/Users/tmcdo/Documents/GitHub/PCBFiles/libraries/CD4046BE)(options "")(descr ""))
+  (lib (name libraries)(type KiCad)(uri C:/Users/tmcdo/Documents/GitHub/PCBFiles/libraries)(options "")(descr ""))
+)

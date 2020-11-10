@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\coe_tjmcdo2\Documents\GitHub\PCBFiles\ConsolePedalPhase\ConsolePedalPhase.sch)
-    (date "11/10/2020 2:59:44 PM")
+    (date "11/10/2020 4:02:54 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

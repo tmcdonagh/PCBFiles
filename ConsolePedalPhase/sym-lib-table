@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name CD4046BE)(type Legacy)(uri C:/Users/tmcdo/Documents/GitHub/PCBFiles/libraries/CD4046BE/CD4046BE.lib)(options "")(descr ""))
+  (lib (name CD4046BE)(type Legacy)(uri ${KIPRJMOD}/libraries/CD4046BE/CD4046BE.lib)(options "")(descr ""))
+  (lib (name ConsolePedalPhase-rescue)(type Legacy)(uri ${KIPRJMOD}/ConsolePedalPhase-rescue.lib)(options "")(descr ""))
 )

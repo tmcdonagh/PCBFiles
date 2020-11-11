@@ -11,7 +11,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -2114,7 +2114,7 @@
   (module libraries:DPDTSwitch (layer F.Cu) (tedit 5FAACF1A) (tstamp 5FAB2806)
     (at 132.75 94.742 180)
     (path /5FBEB741)
-    (fp_text reference SW1 (at -0.092 -2.286) (layer F.SilkS)
+    (fp_text reference SW1 (at -0.092 -2.286) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.015)))
     )
     (fp_text value SW_DPDT_x2 (at 6.35 7.62) (layer F.Fab)

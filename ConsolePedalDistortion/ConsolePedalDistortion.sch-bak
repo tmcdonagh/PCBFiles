@@ -282,7 +282,7 @@ U 1 1 5FA8CF3E
 P 7450 3000
 F 0 "RV2" H 7381 3046 50  0000 R CNN
 F 1 "250K Volume" H 8000 2800 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7450 3000 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 7450 3000 50  0001 C CNN
 F 3 "~" H 7450 3000 50  0001 C CNN
 	1    7450 3000
 	1    0    0    -1  
@@ -382,7 +382,7 @@ U 1 1 5FA79A47
 P 4450 2850
 F 0 "RV1" H 4381 2896 50  0000 R CNN
 F 1 "250K Distortion" H 4381 2805 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4450 2850 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 4450 2850 50  0001 C CNN
 F 3 "~" H 4450 2850 50  0001 C CNN
 	1    4450 2850
 	-1   0    0    1   

@@ -354,43 +354,16 @@ F 3 "~" H 5700 2400 50  0001 C CNN
 	1    5700 2400
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Battery BT1
-U 1 1 5FDBE31B
-P 4300 2150
-F 0 "BT1" V 4055 2150 50  0000 C CNN
-F 1 "9V" V 4146 2150 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 4300 2210 50  0001 C CNN
-F 3 "~" V 4300 2210 50  0001 C CNN
-	1    4300 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5FDC04E1
-P 3900 2150
-F 0 "#PWR01" H 3900 1900 50  0001 C CNN
-F 1 "GND" H 3905 1977 50  0000 C CNN
-F 2 "" H 3900 2150 50  0001 C CNN
-F 3 "" H 3900 2150 50  0001 C CNN
-	1    3900 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 2150 4100 2150
 Wire Wire Line
 	3900 2850 4150 2850
 Wire Wire Line
 	4450 2850 4600 2850
-Wire Wire Line
-	4500 2150 5000 2150
 Wire Wire Line
 	5000 2150 5000 2250
 Wire Wire Line
 	5000 2650 5000 2600
 Wire Wire Line
 	5200 2150 5000 2150
-Connection ~ 5000 2150
 Wire Wire Line
 	5500 2150 5700 2150
 Wire Wire Line
@@ -446,7 +419,7 @@ U 1 1 5FDC898F
 P 5700 3650
 F 0 "RV1" H 5630 3696 50  0000 R CNN
 F 1 "1K" H 5630 3605 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5700 3650 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5700 3650 50  0001 C CNN
 F 3 "~" H 5700 3650 50  0001 C CNN
 	1    5700 3650
 	1    0    0    -1  
@@ -457,7 +430,7 @@ U 1 1 5FDCA70F
 P 6500 2900
 F 0 "RV2" H 6431 2946 50  0000 R CNN
 F 1 "500K" H 6431 2855 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6500 2900 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 6500 2900 50  0001 C CNN
 F 3 "~" H 6500 2900 50  0001 C CNN
 	1    6500 2900
 	1    0    0    -1  
@@ -522,4 +495,18 @@ F 3 "" H 6150 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6150 3950
+$Comp
+L power:+9V #PWR0103
+U 1 1 5FDDD21F
+P 4750 2150
+F 0 "#PWR0103" H 4750 2000 50  0001 C CNN
+F 1 "+9V" V 4765 2278 50  0000 L CNN
+F 2 "" H 4750 2150 50  0001 C CNN
+F 3 "" H 4750 2150 50  0001 C CNN
+	1    4750 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 2150 5000 2150
+Connection ~ 5000 2150
 $EndSCHEMATC

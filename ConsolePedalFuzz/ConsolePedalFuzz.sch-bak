@@ -343,17 +343,6 @@ F 3 "~" H 5350 2150 50  0001 C CNN
 	1    5350 2150
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R5
-U 1 1 5FDBD4C3
-P 5700 2400
-F 0 "R5" H 5630 2354 50  0000 R CNN
-F 1 "8.2K" H 5630 2445 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 2400 50  0001 C CNN
-F 3 "~" H 5700 2400 50  0001 C CNN
-	1    5700 2400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3900 2850 4150 2850
 Wire Wire Line
@@ -364,10 +353,6 @@ Wire Wire Line
 	5000 2650 5000 2600
 Wire Wire Line
 	5200 2150 5000 2150
-Wire Wire Line
-	5500 2150 5700 2150
-Wire Wire Line
-	5700 2150 5700 2250
 $Comp
 L Device:C C2
 U 1 1 5FDC4FFF
@@ -379,11 +364,6 @@ F 3 "~" H 6100 2150 50  0001 C CNN
 	1    6100 2150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5950 2150 5700 2150
-Connection ~ 5700 2150
-Wire Wire Line
-	5700 2650 5700 2550
 Wire Wire Line
 	5400 2850 5400 2600
 Wire Wire Line
@@ -522,4 +502,27 @@ F 3 "~" H 4600 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 2150 4450 2150
+$Comp
+L Device:R_POT RV?
+U 1 1 5FF15350
+P 5600 2400
+F 0 "RV?" H 5531 2446 50  0000 R CNN
+F 1 "10K" H 5531 2355 50  0000 R CNN
+F 2 "" H 5600 2400 50  0001 C CNN
+F 3 "~" H 5600 2400 50  0001 C CNN
+	1    5600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2150 5600 2150
+Wire Wire Line
+	5600 2250 5600 2150
+Connection ~ 5600 2150
+Wire Wire Line
+	5600 2150 5950 2150
+Wire Wire Line
+	5750 2400 5750 2650
+Wire Wire Line
+	5750 2650 5700 2650
+NoConn ~ 5600 2550
 $EndSCHEMATC

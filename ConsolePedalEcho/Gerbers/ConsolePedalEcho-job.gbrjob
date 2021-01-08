@@ -7,14 +7,14 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.7)-1"
     },
-    "CreationDate":  "2021-01-07T21:29:17-06:00"
+    "CreationDate":  "2021-01-07T21:29:57-06:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "ConsolePedalFuzz",
-      "GUID": "436f6e73-6f6c-4655-9065-64616c46757a",
+      "Name": "ConsolePedalEcho",
+      "GUID": "436f6e73-6f6c-4655-9065-64616c456368",
       "Revision": "rev?"
     },
     "Size":
@@ -40,47 +40,47 @@
   "FilesAttributes":
   [
     {
-      "Path":  "ConsolePedalFuzz-F_Cu.gbr",
+      "Path":  "ConsolePedalEcho-F_Cu.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzz-B_Cu.gbr",
+      "Path":  "ConsolePedalEcho-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzz-F_Paste.gbr",
+      "Path":  "ConsolePedalEcho-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzz-B_Paste.gbr",
+      "Path":  "ConsolePedalEcho-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzz-F_SilkS.gbr",
+      "Path":  "ConsolePedalEcho-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzz-B_SilkS.gbr",
+      "Path":  "ConsolePedalEcho-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzz-F_Mask.gbr",
+      "Path":  "ConsolePedalEcho-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "ConsolePedalFuzz-B_Mask.gbr",
+      "Path":  "ConsolePedalEcho-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "ConsolePedalFuzz-Edge_Cuts.gbr",
+      "Path":  "ConsolePedalEcho-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }

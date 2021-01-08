@@ -788,7 +788,7 @@ F 1 "TIME" V 2294 4700 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 2500 4700 50  0001 C CNN
 F 3 "~" H 2500 4700 50  0001 C CNN
 	1    2500 4700
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	2650 4700 2750 4700
@@ -1079,7 +1079,7 @@ F 1 "LEVEL" H 4230 2345 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 4300 2300 50  0001 C CNN
 F 3 "~" H 4300 2300 50  0001 C CNN
 	1    4300 2300
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 2150 3500 2300
@@ -1142,7 +1142,7 @@ F 1 "REPEATS" V 5844 2350 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 6050 2350 50  0001 C CNN
 F 3 "~" H 6050 2350 50  0001 C CNN
 	1    6050 2350
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR024

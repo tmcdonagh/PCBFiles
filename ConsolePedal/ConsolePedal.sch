@@ -259,7 +259,7 @@ U 1 1 5FABBF0E
 P 8450 2750
 F 0 "J3" H 8500 4167 50  0000 C CNN
 F 1 "Conn_02x25_Odd_Even" H 8500 4076 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x25_P2.54mm_Vertical" H 8450 2750 50  0001 C CNN
+F 2 "libraries:n64Socket" H 8450 2750 50  0001 C CNN
 F 3 "~" H 8450 2750 50  0001 C CNN
 	1    8450 2750
 	1    0    0    -1  
@@ -332,4 +332,30 @@ $EndComp
 Wire Wire Line
 	8100 3950 8250 3950
 Connection ~ 8250 3950
+NoConn ~ 8750 2150
+NoConn ~ 8750 2250
+NoConn ~ 8750 2350
+NoConn ~ 8750 2450
+NoConn ~ 8750 2550
+NoConn ~ 8750 2650
+NoConn ~ 8750 2750
+NoConn ~ 8750 2850
+NoConn ~ 8750 2950
+NoConn ~ 8750 3050
+NoConn ~ 8750 3150
+NoConn ~ 8750 3250
+NoConn ~ 8750 3350
+NoConn ~ 8250 3350
+NoConn ~ 8250 3250
+NoConn ~ 8250 3150
+NoConn ~ 8250 3050
+NoConn ~ 8250 2950
+NoConn ~ 8250 2850
+NoConn ~ 8250 2750
+NoConn ~ 8250 2650
+NoConn ~ 8250 2550
+NoConn ~ 8250 2450
+NoConn ~ 8250 2350
+NoConn ~ 8250 2250
+NoConn ~ 8250 2150
 $EndSCHEMATC

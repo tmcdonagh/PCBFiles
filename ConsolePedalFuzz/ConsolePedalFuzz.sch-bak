@@ -503,12 +503,12 @@ $EndComp
 Wire Wire Line
 	4300 2150 4450 2150
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV3
 U 1 1 5FF15350
 P 5600 2400
-F 0 "RV?" H 5531 2446 50  0000 R CNN
+F 0 "RV3" H 5531 2446 50  0000 R CNN
 F 1 "10K" H 5531 2355 50  0000 R CNN
-F 2 "" H 5600 2400 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 5600 2400 50  0001 C CNN
 F 3 "~" H 5600 2400 50  0001 C CNN
 	1    5600 2400
 	1    0    0    -1  

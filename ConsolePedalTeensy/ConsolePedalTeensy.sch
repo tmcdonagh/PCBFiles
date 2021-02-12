@@ -228,7 +228,7 @@ U 1 1 6025C790
 P 5200 2600
 F 0 "U1" H 5200 4237 60  0000 C CNN
 F 1 "Teensy3.2" H 5200 4131 60  0000 C CNN
-F 2 "teensy:Teensy30_31_32_All_Pins" H 5200 1850 60  0001 C CNN
+F 2 "libraries:Teensy3.2" H 5200 1850 60  0001 C CNN
 F 3 "" H 5200 1850 60  0000 C CNN
 	1    5200 2600
 	1    0    0    -1  
@@ -361,7 +361,7 @@ U 1 1 602A120A
 P 7300 1900
 F 0 "U2" H 7300 2142 50  0000 C CNN
 F 1 "LM7805_TO220" H 7300 2051 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7300 2125 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 7300 2125 50  0001 C CIN
 F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 7300 1850 50  0001 C CNN
 	1    7300 1900
 	1    0    0    -1  
@@ -463,17 +463,6 @@ F 3 "~" H 5250 4400 50  0001 C CNN
 	1    5250 4400
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_POT RV3
-U 1 1 602F1C1B
-P 5750 4400
-F 0 "RV3" V 5543 4400 50  0000 C CNN
-F 1 "R_POT" V 5634 4400 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5750 4400 50  0001 C CNN
-F 3 "~" H 5750 4400 50  0001 C CNN
-	1    5750 4400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4600 4400 4600 4700
 Wire Wire Line
@@ -482,12 +471,6 @@ Wire Wire Line
 	5000 4700 5000 4400
 Wire Wire Line
 	5000 4400 5100 4400
-Wire Wire Line
-	5600 4400 5500 4400
-Wire Wire Line
-	5500 4400 5500 4700
-Wire Wire Line
-	5500 4700 5000 4700
 Connection ~ 5000 4700
 Wire Wire Line
 	4900 4400 4900 4800
@@ -497,8 +480,6 @@ Wire Wire Line
 	5400 4800 5400 4400
 Wire Wire Line
 	5400 4800 5900 4800
-Wire Wire Line
-	5900 4800 5900 4400
 Connection ~ 5400 4800
 $Comp
 L power:GND #PWR03
@@ -511,12 +492,8 @@ F 3 "" H 5900 4800 50  0001 C CNN
 	1    5900 4800
 	1    0    0    -1  
 $EndComp
-Connection ~ 5900 4800
-Wire Wire Line
-	5500 4700 6400 4700
 Wire Wire Line
 	6400 4700 6400 3550
-Connection ~ 5500 4700
 Connection ~ 6400 3550
 Wire Wire Line
 	4750 4550 4150 4550
@@ -525,10 +502,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 4600 4100 4600
 Wire Wire Line
-	5750 4550 5750 4650
-Wire Wire Line
-	5750 4650 4050 4650
-Wire Wire Line
 	4150 3750 4200 3750
 Wire Wire Line
 	4150 3750 4150 4550
@@ -536,10 +509,6 @@ Wire Wire Line
 	4100 3550 4200 3550
 Wire Wire Line
 	4100 3550 4100 4600
-Wire Wire Line
-	4050 3350 4200 3350
-Wire Wire Line
-	4050 3350 4050 4650
 $Comp
 L Device:LED_RGBC D3
 U 1 1 6031C5B3
@@ -795,4 +764,7 @@ NoConn ~ 6200 1550
 NoConn ~ 6200 1450
 NoConn ~ 6200 1350
 NoConn ~ 6200 1250
+Wire Wire Line
+	5000 4700 6400 4700
+NoConn ~ 4200 3350
 $EndSCHEMATC

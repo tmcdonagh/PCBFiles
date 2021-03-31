@@ -153,23 +153,23 @@ $EndComp
 $Comp
 L Device:Battery BT1
 U 1 1 60619513
-P 4300 4900
-F 0 "BT1" H 4408 4946 50  0000 L CNN
-F 1 "Battery" H 4408 4855 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 4300 4960 50  0001 C CNN
-F 3 "~" V 4300 4960 50  0001 C CNN
-	1    4300 4900
+P 4350 5250
+F 0 "BT1" H 4458 5296 50  0000 L CNN
+F 1 "Battery" H 4458 5205 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 4350 5310 50  0001 C CNN
+F 3 "~" V 4350 5310 50  0001 C CNN
+	1    4350 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 6061A385
-P 4300 5100
-F 0 "#PWR04" H 4300 4850 50  0001 C CNN
-F 1 "GND" H 4305 4927 50  0000 C CNN
-F 2 "" H 4300 5100 50  0001 C CNN
-F 3 "" H 4300 5100 50  0001 C CNN
-	1    4300 5100
+P 4350 5450
+F 0 "#PWR04" H 4350 5200 50  0001 C CNN
+F 1 "GND" H 4355 5277 50  0000 C CNN
+F 2 "" H 4350 5450 50  0001 C CNN
+F 3 "" H 4350 5450 50  0001 C CNN
+	1    4350 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -267,7 +267,7 @@ Wire Wire Line
 Connection ~ 3900 3500
 Wire Wire Line
 	3900 3500 4000 3500
-Text GLabel 4300 4700 1    50   Input ~ 0
+Text GLabel 4350 4750 1    50   Input ~ 0
 9V
 Text GLabel 3400 4050 0    50   Input ~ 0
 FXGND
@@ -472,4 +472,15 @@ Wire Wire Line
 	8100 4700 8100 4950
 Wire Wire Line
 	8000 4700 8000 4950
+$Comp
+L Device:D D1
+U 1 1 6063E1F4
+P 4350 4900
+F 0 "D1" V 4304 4980 50  0000 L CNN
+F 1 "D" V 4395 4980 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 4900 50  0001 C CNN
+F 3 "~" H 4350 4900 50  0001 C CNN
+	1    4350 4900
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

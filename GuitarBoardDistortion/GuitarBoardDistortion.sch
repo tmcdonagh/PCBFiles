@@ -136,7 +136,7 @@ U 1 1 5FA8CF3E
 P 7450 3000
 F 0 "RV2" H 7381 3046 50  0000 R CNN
 F 1 "250K Volume" H 8000 2800 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 7450 3000 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 7450 3000 50  0001 C CNN
 F 3 "~" H 7450 3000 50  0001 C CNN
 	1    7450 3000
 	1    0    0    -1  
@@ -174,7 +174,7 @@ U 1 1 5FA79A47
 P 4450 2850
 F 0 "RV1" H 4381 2896 50  0000 R CNN
 F 1 "250K Distortion" H 4381 2805 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 4450 2850 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 4450 2850 50  0001 C CNN
 F 3 "~" H 4450 2850 50  0001 C CNN
 	1    4450 2850
 	-1   0    0    1   
@@ -212,7 +212,7 @@ U 1 1 6069BF1A
 P 5850 4150
 F 0 "J2" V 6000 4400 50  0000 R CNN
 F 1 "ConnRight" V 5900 4650 50  0000 R CNN
-F 2 "" H 5850 4150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5850 4150 50  0001 C CNN
 F 3 "~" H 5850 4150 50  0001 C CNN
 	1    5850 4150
 	0    1    -1   0   
@@ -223,7 +223,7 @@ U 1 1 6069B234
 P 5150 4150
 F 0 "J1" V 5300 4350 50  0000 C CNN
 F 1 "ConnLeft" V 5200 4450 50  0000 C CNN
-F 2 "" H 5150 4150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5150 4150 50  0001 C CNN
 F 3 "~" H 5150 4150 50  0001 C CNN
 	1    5150 4150
 	0    1    -1   0   
@@ -257,7 +257,7 @@ L power:+9V #PWR04
 U 1 1 606A43EE
 P 4950 3700
 F 0 "#PWR04" H 4950 3550 50  0001 C CNN
-F 1 "+9V" V 4965 3828 50  0000 L CNN
+F 1 "+9V" V 4950 3800 50  0000 L CNN
 F 2 "" H 4950 3700 50  0001 C CNN
 F 3 "" H 4950 3700 50  0001 C CNN
 	1    4950 3700

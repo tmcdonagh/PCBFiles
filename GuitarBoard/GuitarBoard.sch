@@ -990,4 +990,92 @@ Wire Wire Line
 Wire Wire Line
 	6800 1250 6800 1500
 Connection ~ 6800 1500
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 608F0DC6
+P 8700 5050
+F 0 "H1" H 8800 5099 50  0000 L CNN
+F 1 "Mount" H 8800 5008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 8700 5050 50  0001 C CNN
+F 3 "~" H 8700 5050 50  0001 C CNN
+	1    8700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 608F1447
+P 8700 5150
+F 0 "#PWR07" H 8700 4900 50  0001 C CNN
+F 1 "GND" H 8705 4977 50  0000 C CNN
+F 2 "" H 8700 5150 50  0001 C CNN
+F 3 "" H 8700 5150 50  0001 C CNN
+	1    8700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 608F7664
+P 9100 5050
+F 0 "H2" H 9200 5099 50  0000 L CNN
+F 1 "Mount" H 9200 5008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9100 5050 50  0001 C CNN
+F 3 "~" H 9100 5050 50  0001 C CNN
+	1    9100 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 608F7A0A
+P 9500 5050
+F 0 "H3" H 9600 5099 50  0000 L CNN
+F 1 "Mount" H 9600 5008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9500 5050 50  0001 C CNN
+F 3 "~" H 9500 5050 50  0001 C CNN
+	1    9500 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 608F7DC8
+P 9900 5050
+F 0 "H4" H 10000 5099 50  0000 L CNN
+F 1 "Mount" H 10000 5008 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9900 5050 50  0001 C CNN
+F 3 "~" H 9900 5050 50  0001 C CNN
+	1    9900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 608F8CBA
+P 9100 5150
+F 0 "#PWR08" H 9100 4900 50  0001 C CNN
+F 1 "GND" H 9105 4977 50  0000 C CNN
+F 2 "" H 9100 5150 50  0001 C CNN
+F 3 "" H 9100 5150 50  0001 C CNN
+	1    9100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 608F9058
+P 9500 5150
+F 0 "#PWR09" H 9500 4900 50  0001 C CNN
+F 1 "GND" H 9505 4977 50  0000 C CNN
+F 2 "" H 9500 5150 50  0001 C CNN
+F 3 "" H 9500 5150 50  0001 C CNN
+	1    9500 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 608F9366
+P 9900 5150
+F 0 "#PWR010" H 9900 4900 50  0001 C CNN
+F 1 "GND" H 9905 4977 50  0000 C CNN
+F 2 "" H 9900 5150 50  0001 C CNN
+F 3 "" H 9900 5150 50  0001 C CNN
+	1    9900 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -346,7 +346,7 @@ F 3 "~" H 1300 1200 50  0001 C CNN
 	1    1300 1200
 	-1   0    0    1   
 $EndComp
-Text GLabel 800  1200 0    50   Input ~ 0
+Text GLabel 1050 3300 0    50   Input ~ 0
 FXInA
 $Comp
 L Device:C C3
@@ -493,7 +493,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 1000 3550 1000
 Connection ~ 3550 1000
-Text GLabel 4400 1400 2    50   Input ~ 0
+Text GLabel 8800 3450 2    50   Input ~ 0
 FXOutA
 Wire Wire Line
 	4400 1400 4300 1400
@@ -501,7 +501,7 @@ Text GLabel 4150 1600 3    50   Input ~ 0
 FXGND
 Wire Wire Line
 	4150 1600 4150 1550
-Text GLabel 1050 3300 0    50   Input ~ 0
+Text GLabel 800  1200 0    50   Input ~ 0
 FXInB
 $Comp
 L Device:R R1
@@ -912,7 +912,7 @@ Wire Wire Line
 	8300 3250 8300 3350
 Wire Wire Line
 	8300 3350 8200 3350
-Text GLabel 8800 3450 2    50   Input ~ 0
+Text GLabel 4400 1400 2    50   Input ~ 0
 FXOutB
 Wire Wire Line
 	8800 3450 8700 3450

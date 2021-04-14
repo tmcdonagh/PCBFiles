@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 7)
+    (drawings 3)
     (tracks 0)
     (zones 0)
     (modules 19)
@@ -977,18 +977,6 @@
       (net 2 GND))
   )
 
-  (gr_text GND (at 155.194 93.98) (layer F.SilkS) (tstamp 6077D1EE)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (gr_text GND (at 155.194 96.52) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (gr_text In (at 155.194 99.06) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (gr_text 9V (at 155.194 101.6) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
   (gr_arc (start 152 115) (end 152 120) (angle -90) (layer Edge.Cuts) (width 0.3) (tstamp 6077CF61))
   (gr_line (start 157 80) (end 157 115) (layer Edge.Cuts) (width 0.3))
   (gr_arc (start 152 80) (end 157 80) (angle -90) (layer Edge.Cuts) (width 0.3))

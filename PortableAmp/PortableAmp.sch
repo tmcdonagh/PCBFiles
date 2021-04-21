@@ -160,7 +160,7 @@ F 1 "10K-B" H 4181 2955 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 4250 3000 50  0001 C CNN
 F 3 "~" H 4250 3000 50  0001 C CNN
 	1    4250 3000
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR05

@@ -37,7 +37,7 @@ F 3 "~" H 3300 2500 50  0001 C CNN
 $EndComp
 Text GLabel 2700 2500 0    50   Input ~ 0
 Input
-Text GLabel 2600 1600 0    50   Input ~ 0
+Text GLabel 2200 1600 0    50   Input ~ 0
 9V
 $Comp
 L power:GND #PWR02
@@ -467,6 +467,17 @@ F 1 "GND" H 8105 1727 50  0000 C CNN
 F 2 "" H 8100 1900 50  0001 C CNN
 F 3 "" H 8100 1900 50  0001 C CNN
 	1    8100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 60803C00
+P 2400 1600
+F 0 "SW1" H 2400 1835 50  0000 C CNN
+F 1 "Power" H 2400 1744 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2400 1600 50  0001 C CNN
+F 3 "~" H 2400 1600 50  0001 C CNN
+	1    2400 1600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

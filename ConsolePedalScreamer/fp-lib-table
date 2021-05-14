@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name CD4049UBE)(type KiCad)(uri ${KIPRJMOD}/libraries/CD4049UBE)(options "")(descr ""))
+  (lib (name libraries)(type KiCad)(uri ${KIPRJMOD}/libraries)(options "")(descr ""))
 )

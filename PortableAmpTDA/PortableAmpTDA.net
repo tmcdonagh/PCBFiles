@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\tmcdo\Documents\GitHub\PCBFiles\PortableAmpTDA\PortableAmpTDA.sch)
-    (date "5/15/2021 4:25:41 PM")
+    (date "5/15/2021 4:37:51 PM")
     (tool "Eeschema (5.1.7)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -272,7 +272,7 @@
       (node (ref R3) (pin 2))
       (node (ref J2) (pin 1))
       (node (ref J2) (pin 2))
-      (node (ref RV1) (pin 3))
+      (node (ref RV1) (pin 1))
       (node (ref C3) (pin 2))
       (node (ref U1) (pin 8))
       (node (ref U1) (pin 9)))
@@ -298,7 +298,7 @@
       (node (ref J1) (pin 1))
       (node (ref U1) (pin 1)))
     (net (code 7) (name /Input)
-      (node (ref RV1) (pin 1))
+      (node (ref RV1) (pin 3))
       (node (ref J2) (pin 3)))
     (net (code 8) (name /9V_In)
       (node (ref SW1) (pin 1))

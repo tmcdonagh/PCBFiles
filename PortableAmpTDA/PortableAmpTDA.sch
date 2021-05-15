@@ -158,12 +158,12 @@ $Comp
 L Device:R_POT RV1
 U 1 1 60A0F976
 P 5100 1600
-F 0 "RV1" H 5031 1646 50  0000 R CNN
-F 1 "R_POT" H 5031 1555 50  0000 R CNN
+F 0 "RV1" H 5031 1554 50  0000 R CNN
+F 1 "R_POT" H 5031 1645 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5100 1600 50  0001 C CNN
 F 3 "~" H 5100 1600 50  0001 C CNN
 	1    5100 1600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR07

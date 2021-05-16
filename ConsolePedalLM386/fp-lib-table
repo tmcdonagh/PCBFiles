@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name libraries)(type KiCad)(uri ${KIPRJMOD}/libraries)(options "")(descr ""))
+  (lib (name CVS-1508)(type KiCad)(uri ${KIPRJMOD}/libraries/CVS-1508)(options "")(descr ""))
+)

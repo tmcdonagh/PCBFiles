@@ -290,7 +290,7 @@ U 1 1 60A21796
 P 2250 2300
 F 0 "C1" H 2000 2350 50  0000 L CNN
 F 1 "100uF" H 1900 2250 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 2288 2150 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 2288 2150 50  0001 C CNN
 F 3 "~" H 2250 2300 50  0001 C CNN
 	1    2250 2300
 	1    0    0    -1  
@@ -559,7 +559,7 @@ U 1 1 60A48FDF
 P 5350 3200
 F 0 "C5" V 5605 3200 50  0000 C CNN
 F 1 "220uF" V 5514 3200 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5388 3050 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 5388 3050 50  0001 C CNN
 F 3 "~" H 5350 3200 50  0001 C CNN
 	1    5350 3200
 	0    -1   -1   0   
@@ -625,4 +625,9 @@ LEDPower
 Wire Wire Line
 	1700 2050 2250 2050
 Connection ~ 2250 2050
+Text Label 5650 3900 2    50   ~ 0
+Output
+Wire Wire Line
+	5650 3900 5800 3900
+Connection ~ 5800 3900
 $EndSCHEMATC

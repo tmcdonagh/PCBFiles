@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP CD4069UBE
+D IC,Logic,CMOS,4000series
+K
+F http://www.ti.com/lit/ds/symlink/cd4069ub.pdf
+$ENDCMP
+#
+$CMP CVS-1508
+D Speakers & Transducers Speakers
+K
+F https://www.arrow.com/en/products/cvs-1508/cui-inc
+$ENDCMP
+#
+$CMP MSS-102559-14A-D
+D MSS-102559-14A-D
+K
+F 
+$ENDCMP
+#
+#End Doc Library

@@ -1,4 +1,4 @@
-18995805247516417
+19002292174759253
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -2271,13 +2271,6 @@ Buzzer_Beeper
 Speaker_CUI_CMR-1206S-67
 Speaker, 30mW, 300-7000Hz, IP67 face, 12x6x2,25mm, https://www.cuidevices.com/product/resource/cmr-12062s-67.pdf
 speaker CUI
-0
-2
-2
-CVS-1508
-CVS-1508
-CVS-1508
-Loudspeaker or Buzzer
 0
 2
 2
@@ -83034,6 +83027,20 @@ varistor SIOV
 2
 2
 libraries
+CP_Radial_D5.0mm_P2.00mm
+CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
+0
+2
+2
+libraries
+CP_Radial_D6.3mm_P2.00mm
+CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
+0
+2
+2
+libraries
 CP_Radial_D6.3mm_P2.50mm
 CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
 CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
@@ -83047,3 +83054,24 @@ C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
 0
 2
 2
+libraries
+DPDTSwitch
+
+
+0
+6
+6
+libraries
+MSS10255914AD
+MSS-102559-14A-D-2
+Switch
+0
+3
+3
+libraries
+N64-Connector
+
+
+0
+50
+50

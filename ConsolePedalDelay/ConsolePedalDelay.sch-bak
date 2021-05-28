@@ -729,7 +729,7 @@ U 1 1 60BB3ED6
 P 5200 2200
 F 0 "RV2" H 5130 2154 50  0000 R CNN
 F 1 "Level 50KB" H 5130 2245 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5200 2200 50  0001 C CNN
+F 2 "" H 5200 2200 50  0001 C CNN
 F 3 "~" H 5200 2200 50  0001 C CNN
 	1    5200 2200
 	-1   0    0    1   
@@ -898,7 +898,7 @@ U 1 1 60BE579B
 P 5750 4100
 F 0 "RV3" H 5680 4146 50  0000 R CNN
 F 1 "Repeat 50KB" H 5680 4055 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5750 4100 50  0001 C CNN
+F 2 "" H 5750 4100 50  0001 C CNN
 F 3 "~" H 5750 4100 50  0001 C CNN
 	1    5750 4100
 	-1   0    0    -1  
@@ -1092,7 +1092,7 @@ U 1 1 60C445FD
 P 1100 4750
 F 0 "RV1" H 1030 4796 50  0000 R CNN
 F 1 "Delay 50KB" H 1030 4705 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 1100 4750 50  0001 C CNN
+F 2 "" H 1100 4750 50  0001 C CNN
 F 3 "~" H 1100 4750 50  0001 C CNN
 	1    1100 4750
 	-1   0    0    -1  

@@ -332,7 +332,7 @@ U 1 1 60B50F5A
 P 3000 1100
 F 0 "U1" H 3000 1467 50  0000 C CNN
 F 1 "TL072" H 3000 1376 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3000 1100 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3000 1100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3000 1100 50  0001 C CNN
 	1    3000 1100
 	1    0    0    -1  
@@ -343,7 +343,7 @@ U 2 1 60B5234C
 P 4350 1000
 F 0 "U1" H 4350 1367 50  0000 C CNN
 F 1 "TL072" H 4350 1276 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4350 1000 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4350 1000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4350 1000 50  0001 C CNN
 	2    4350 1000
 	1    0    0    -1  
@@ -354,7 +354,7 @@ U 3 1 60B52F10
 P 2750 6050
 F 0 "U1" H 2708 6096 50  0000 L CNN
 F 1 "TL072" H 2708 6005 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 2750 6050 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2750 6050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2750 6050 50  0001 C CNN
 	3    2750 6050
 	1    0    0    -1  
@@ -427,7 +427,7 @@ U 1 1 60B63807
 P 3600 1500
 F 0 "C5" H 3718 1546 50  0000 L CNN
 F 1 "1uF" H 3718 1455 50  0000 L CNN
-F 2 "libraries:CP_Radial_D5.0mm_P2.00mm" H 3638 1350 50  0001 C CNN
+F 2 "libraries:CP_Radial_D5.0mm_P2.00mm_L11.0mm" H 3638 1350 50  0001 C CNN
 F 3 "~" H 3600 1500 50  0001 C CNN
 	1    3600 1500
 	1    0    0    -1  
@@ -498,7 +498,7 @@ U 1 1 60B7C4D0
 P 4850 1000
 F 0 "C4" V 5105 1000 50  0000 C CNN
 F 1 "1uF" V 5014 1000 50  0000 C CNN
-F 2 "libraries:CP_Radial_D5.0mm_P2.00mm" H 4888 850 50  0001 C CNN
+F 2 "libraries:CP_Radial_D5.0mm_P2.00mm_L11.0mm" H 4888 850 50  0001 C CNN
 F 3 "~" H 4850 1000 50  0001 C CNN
 	1    4850 1000
 	0    -1   -1   0   
@@ -571,7 +571,7 @@ U 1 1 60B8DE87
 P 9300 1350
 F 0 "U2" H 9300 2117 50  0000 C CNN
 F 1 "PT2399" H 9300 2026 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 9300 950 50  0001 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 9300 950 50  0001 C CNN
 F 3 "http://sound.westhost.com/pt2399.pdf" H 9300 950 50  0001 C CNN
 	1    9300 1350
 	1    0    0    -1  
@@ -714,7 +714,7 @@ U 1 1 60BAF984
 P 4250 2200
 F 0 "C14" V 4505 2200 50  0000 C CNN
 F 1 "1uF" V 4414 2200 50  0000 C CNN
-F 2 "libraries:CP_Radial_D5.0mm_P2.00mm" H 4288 2050 50  0001 C CNN
+F 2 "libraries:CP_Radial_D5.0mm_P2.00mm_L11.0mm" H 4288 2050 50  0001 C CNN
 F 3 "~" H 4250 2200 50  0001 C CNN
 	1    4250 2200
 	0    -1   -1   0   
@@ -837,7 +837,7 @@ U 1 1 60BCAC32
 P 5050 3650
 F 0 "C13" V 5305 3650 50  0000 C CNN
 F 1 "1uF" V 5214 3650 50  0000 C CNN
-F 2 "libraries:CP_Radial_D5.0mm_P2.00mm" H 5088 3500 50  0001 C CNN
+F 2 "libraries:CP_Radial_D5.0mm_P2.00mm_L11.0mm" H 5088 3500 50  0001 C CNN
 F 3 "~" H 5050 3650 50  0001 C CNN
 	1    5050 3650
 	0    -1   -1   0   
@@ -1047,7 +1047,7 @@ U 1 1 60C33F26
 P 1950 3950
 F 0 "C17" V 1695 3950 50  0000 C CNN
 F 1 "47uF" V 1786 3950 50  0000 C CNN
-F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 1988 3800 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm_L7.0mm" H 1988 3800 50  0001 C CNN
 F 3 "~" H 1950 3950 50  0001 C CNN
 	1    1950 3950
 	0    1    1    0   
@@ -1168,7 +1168,7 @@ U 1 1 60C8933F
 P 2150 6050
 F 0 "C20" H 2268 6096 50  0000 L CNN
 F 1 "100uF" H 2268 6005 50  0000 L CNN
-F 2 "libraries:CP_Radial_D6.3mm_P2.00mm" H 2188 5900 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.00mm_L11.0mm" H 2188 5900 50  0001 C CNN
 F 3 "~" H 2150 6050 50  0001 C CNN
 	1    2150 6050
 	1    0    0    -1  
@@ -1224,7 +1224,7 @@ U 1 1 60CA063A
 P 3600 6200
 F 0 "C21" H 3718 6246 50  0000 L CNN
 F 1 "47uF" H 3718 6155 50  0000 L CNN
-F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 3638 6050 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm_L7.0mm" H 3638 6050 50  0001 C CNN
 F 3 "~" H 3600 6200 50  0001 C CNN
 	1    3600 6200
 	1    0    0    -1  
@@ -1277,7 +1277,7 @@ U 1 1 60CD2901
 P 4650 6100
 F 0 "C22" H 4768 6146 50  0000 L CNN
 F 1 "47uF" H 4768 6055 50  0000 L CNN
-F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 4688 5950 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm_L7.0mm" H 4688 5950 50  0001 C CNN
 F 3 "~" H 4650 6100 50  0001 C CNN
 	1    4650 6100
 	1    0    0    -1  

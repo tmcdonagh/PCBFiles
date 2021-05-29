@@ -332,7 +332,7 @@ U 1 1 60B50F5A
 P 3000 1100
 F 0 "U1" H 3000 1467 50  0000 C CNN
 F 1 "TL072" H 3000 1376 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 3000 1100 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3000 1100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3000 1100 50  0001 C CNN
 	1    3000 1100
 	1    0    0    -1  
@@ -343,7 +343,7 @@ U 2 1 60B5234C
 P 4350 1000
 F 0 "U1" H 4350 1367 50  0000 C CNN
 F 1 "TL072" H 4350 1276 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 4350 1000 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4350 1000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4350 1000 50  0001 C CNN
 	2    4350 1000
 	1    0    0    -1  
@@ -354,7 +354,7 @@ U 3 1 60B52F10
 P 2750 6050
 F 0 "U1" H 2708 6096 50  0000 L CNN
 F 1 "TL072" H 2708 6005 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket_LongPads" H 2750 6050 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2750 6050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2750 6050 50  0001 C CNN
 	3    2750 6050
 	1    0    0    -1  
@@ -571,7 +571,7 @@ U 1 1 60B8DE87
 P 9300 1350
 F 0 "U2" H 9300 2117 50  0000 C CNN
 F 1 "PT2399" H 9300 2026 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 9300 950 50  0001 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 9300 950 50  0001 C CNN
 F 3 "http://sound.westhost.com/pt2399.pdf" H 9300 950 50  0001 C CNN
 	1    9300 1350
 	1    0    0    -1  

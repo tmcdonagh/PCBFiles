@@ -1,4 +1,4 @@
-19002292174759253
+19003914863566188
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83027,21 +83027,28 @@ varistor SIOV
 2
 2
 libraries
-CP_Radial_D5.0mm_P2.00mm
+CP_Radial_D5.0mm_P2.00mm_L11.0mm
 CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
 CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
 0
 2
 2
 libraries
-CP_Radial_D6.3mm_P2.00mm
+CP_Radial_D6.3mm_P2.00mm_L11.0mm
 CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
 CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
 0
 2
 2
 libraries
-CP_Radial_D6.3mm_P2.50mm
+CP_Radial_D6.3mm_P2.50mm_L7.0mm
+CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
+0
+2
+2
+libraries
+CP_Radial_D6.3mm_P2.50mm_L11.0mm
 CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
 CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
 0

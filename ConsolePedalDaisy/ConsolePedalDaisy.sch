@@ -462,24 +462,24 @@ Connection ~ 3550 1900
 $Comp
 L Diode:1N5817 D?
 U 1 1 60CB6DE7
-P 2950 2850
-F 0 "D?" H 2950 2633 50  0000 C CNN
-F 1 "1N5817" H 2950 2724 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2950 2675 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 2950 2850 50  0001 C CNN
-	1    2950 2850
-	-1   0    0    1   
+P 4600 4800
+F 0 "D?" V 4600 4550 50  0000 C CNN
+F 1 "1N5817" V 4500 4550 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4600 4625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 4600 4800 50  0001 C CNN
+	1    4600 4800
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+9V #PWR?
 U 1 1 60CB85A5
-P 2800 2850
-F 0 "#PWR?" H 2800 2700 50  0001 C CNN
-F 1 "+9V" V 2815 2978 50  0000 L CNN
-F 2 "" H 2800 2850 50  0001 C CNN
-F 3 "" H 2800 2850 50  0001 C CNN
-	1    2800 2850
-	0    -1   -1   0   
+P 4600 4650
+F 0 "#PWR?" H 4600 4500 50  0001 C CNN
+F 1 "+9V" H 4500 4800 50  0000 L CNN
+F 2 "" H 4600 4650 50  0001 C CNN
+F 3 "" H 4600 4650 50  0001 C CNN
+	1    4600 4650
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
@@ -627,4 +627,161 @@ $EndComp
 Wire Wire Line
 	7100 3200 7000 3200
 Connection ~ 7000 3200
+$Comp
+L Regulator_Linear:L78L05_TO92 U?
+U 1 1 60C96D72
+P 6100 5150
+F 0 "U?" H 6100 5392 50  0000 C CNN
+F 1 "L78L05_TO92" H 6100 5301 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6100 5375 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 6100 5100 50  0001 C CNN
+	1    6100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C99B08
+P 6100 5600
+F 0 "#PWR?" H 6100 5350 50  0001 C CNN
+F 1 "GND" H 6105 5427 50  0000 C CNN
+F 2 "" H 6100 5600 50  0001 C CNN
+F 3 "" H 6100 5600 50  0001 C CNN
+	1    6100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60C9A925
+P 5650 5350
+F 0 "C?" H 5400 5450 50  0000 C CNN
+F 1 "100nF" H 5400 5350 50  0000 C CNN
+F 2 "" H 5688 5200 50  0001 C CNN
+F 3 "~" H 5650 5350 50  0001 C CNN
+	1    5650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60C9AD70
+P 6550 5350
+F 0 "C?" H 6300 5250 50  0000 C CNN
+F 1 "100nF" H 6300 5350 50  0000 C CNN
+F 2 "" H 6588 5200 50  0001 C CNN
+F 3 "~" H 6550 5350 50  0001 C CNN
+	1    6550 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 5150 6400 5150
+Wire Wire Line
+	6100 5600 6100 5550
+Wire Wire Line
+	6550 5550 6100 5550
+Connection ~ 6100 5550
+Wire Wire Line
+	6100 5550 6100 5450
+Wire Wire Line
+	5650 5550 6100 5550
+Wire Wire Line
+	5800 5150 5650 5150
+Wire Wire Line
+	6550 5200 6550 5150
+Wire Wire Line
+	6550 5500 6550 5550
+Wire Wire Line
+	5650 5500 5650 5550
+Wire Wire Line
+	5650 5200 5650 5150
+$Comp
+L Device:CP C?
+U 1 1 60CAE755
+P 4600 5350
+F 0 "C?" H 4300 5400 50  0000 L CNN
+F 1 "100uF" H 4250 5300 50  0000 L CNN
+F 2 "" H 4638 5200 50  0001 C CNN
+F 3 "~" H 4600 5350 50  0001 C CNN
+	1    4600 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5550 5100 5550
+Wire Wire Line
+	5100 5550 5100 5500
+Connection ~ 5650 5550
+Wire Wire Line
+	5650 5150 5100 5150
+Wire Wire Line
+	5100 5150 5100 5200
+Connection ~ 5650 5150
+$Comp
+L Device:C C?
+U 1 1 60CB969F
+P 5100 5350
+F 0 "C?" H 4850 5450 50  0000 C CNN
+F 1 "100nF" H 4850 5350 50  0000 C CNN
+F 2 "" H 5138 5200 50  0001 C CNN
+F 3 "~" H 5100 5350 50  0001 C CNN
+	1    5100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5200 4600 5150
+Wire Wire Line
+	4600 5150 5100 5150
+Connection ~ 5100 5150
+Wire Wire Line
+	4600 5500 4600 5550
+Wire Wire Line
+	4600 5550 5100 5550
+Connection ~ 5100 5550
+Text Label 4200 5150 2    50   ~ 0
+VIN
+Wire Wire Line
+	4200 5150 4600 5150
+Connection ~ 4600 5150
+Wire Wire Line
+	4600 4950 4600 5150
+Wire Wire Line
+	6550 5150 6550 4850
+Wire Wire Line
+	6550 4200 4400 4200
+Wire Wire Line
+	4400 4200 4400 3100
+Wire Wire Line
+	4400 3100 5050 3100
+Connection ~ 6550 5150
+$Comp
+L Device:C C?
+U 1 1 60CC9ED0
+P 7050 5350
+F 0 "C?" H 6800 5250 50  0000 C CNN
+F 1 "100nF" H 6800 5350 50  0000 C CNN
+F 2 "" H 7088 5200 50  0001 C CNN
+F 3 "~" H 7050 5350 50  0001 C CNN
+	1    7050 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 5150 7050 5150
+Wire Wire Line
+	7050 5150 7050 5200
+Wire Wire Line
+	7050 5500 7050 5550
+Wire Wire Line
+	7050 5550 6550 5550
+Connection ~ 6550 5550
+Wire Wire Line
+	8000 4850 6550 4850
+Connection ~ 6550 4850
+Wire Wire Line
+	6550 4850 6550 4200
+Wire Wire Line
+	4400 3100 4400 900 
+Wire Wire Line
+	4400 900  1700 900 
+Wire Wire Line
+	1700 900  1700 1450
+Wire Wire Line
+	1700 1450 2050 1450
+Connection ~ 4400 3100
 $EndSCHEMATC

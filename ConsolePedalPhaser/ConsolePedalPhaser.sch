@@ -1,0 +1,287 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	9250 900  9250 1000
+Wire Wire Line
+	9750 900  9750 1000
+Wire Wire Line
+	9250 3300 9250 3200
+Wire Wire Line
+	9750 3300 9750 3200
+$Comp
+L power:GND #PWR09
+U 1 1 5FA7AA42
+P 9250 3300
+F 0 "#PWR09" H 9250 3050 50  0001 C CNN
+F 1 "GND" H 9255 3127 50  0000 C CNN
+F 2 "" H 9250 3300 50  0001 C CNN
+F 3 "" H 9250 3300 50  0001 C CNN
+	1    9250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5FA7AF0C
+P 9750 3300
+F 0 "#PWR012" H 9750 3050 50  0001 C CNN
+F 1 "GND" H 9755 3127 50  0000 C CNN
+F 2 "" H 9750 3300 50  0001 C CNN
+F 3 "" H 9750 3300 50  0001 C CNN
+	1    9750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FA7B264
+P 8900 900
+F 0 "#PWR06" H 8900 650 50  0001 C CNN
+F 1 "GND" H 8905 727 50  0000 C CNN
+F 2 "" H 8900 900 50  0001 C CNN
+F 3 "" H 8900 900 50  0001 C CNN
+	1    8900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5FA7B7C0
+P 10150 900
+F 0 "#PWR013" H 10150 650 50  0001 C CNN
+F 1 "GND" H 10155 727 50  0000 C CNN
+F 2 "" H 10150 900 50  0001 C CNN
+F 3 "" H 10150 900 50  0001 C CNN
+	1    10150 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 900  8900 900 
+Wire Wire Line
+	9750 900  10150 900 
+Text Label 9250 1100 2    50   ~ 0
+Input
+Text Label 9250 1200 2    50   ~ 0
+Output
+Text Label 9250 1400 2    50   ~ 0
+LEDPower
+$Comp
+L power:+9V #PWR07
+U 1 1 5FA7CF30
+P 9250 1300
+F 0 "#PWR07" H 9250 1150 50  0001 C CNN
+F 1 "+9V" V 9265 1428 50  0000 L CNN
+F 2 "" H 9250 1300 50  0001 C CNN
+F 3 "" H 9250 1300 50  0001 C CNN
+	1    9250 1300
+	0    -1   -1   0   
+$EndComp
+Text Label 9750 1100 0    50   ~ 0
+Input
+Text Label 9750 1200 0    50   ~ 0
+Output
+$Comp
+L power:+9V #PWR010
+U 1 1 5FA7DC70
+P 9750 1300
+F 0 "#PWR010" H 9750 1150 50  0001 C CNN
+F 1 "+9V" V 9765 1428 50  0000 L CNN
+F 2 "" H 9750 1300 50  0001 C CNN
+F 3 "" H 9750 1300 50  0001 C CNN
+	1    9750 1300
+	0    1    1    0   
+$EndComp
+Text Label 9750 1400 0    50   ~ 0
+LEDPower
+Text Label 9250 3100 2    50   ~ 0
+Input
+Text Label 9750 3100 0    50   ~ 0
+Input
+Text Label 9250 3000 2    50   ~ 0
+Output
+Text Label 9750 3000 0    50   ~ 0
+Output
+$Comp
+L power:+9V #PWR08
+U 1 1 5FA7E829
+P 9250 2900
+F 0 "#PWR08" H 9250 2750 50  0001 C CNN
+F 1 "+9V" V 9265 3028 50  0000 L CNN
+F 2 "" H 9250 2900 50  0001 C CNN
+F 3 "" H 9250 2900 50  0001 C CNN
+	1    9250 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+9V #PWR011
+U 1 1 5FA7EECF
+P 9750 2900
+F 0 "#PWR011" H 9750 2750 50  0001 C CNN
+F 1 "+9V" V 9765 3028 50  0000 L CNN
+F 2 "" H 9750 2900 50  0001 C CNN
+F 3 "" H 9750 2900 50  0001 C CNN
+	1    9750 2900
+	0    1    1    0   
+$EndComp
+Text Label 9250 2800 2    50   ~ 0
+LEDPower
+Text Label 9750 2800 0    50   ~ 0
+LEDPower
+$Comp
+L Device:LED D1
+U 1 1 5FA93C7E
+P 9250 5100
+F 0 "D1" H 9243 4845 50  0000 C CNN
+F 1 "LED" H 9243 4936 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 9250 5100 50  0001 C CNN
+F 3 "~" H 9250 5100 50  0001 C CNN
+	1    9250 5100
+	-1   0    0    1   
+$EndComp
+Text Label 8950 5200 2    50   ~ 0
+LEDPower
+$Comp
+L Device:LED D2
+U 1 1 5FA94A27
+P 9250 5300
+F 0 "D2" H 9250 5400 50  0000 C CNN
+F 1 "LED" H 9250 5500 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 9250 5300 50  0001 C CNN
+F 3 "~" H 9250 5300 50  0001 C CNN
+	1    9250 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 5100 9100 5200
+$Comp
+L Device:R R3
+U 1 1 5FA964BB
+P 9700 5200
+F 0 "R3" H 9770 5246 50  0000 L CNN
+F 1 "100K" H 9770 5155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9630 5200 50  0001 C CNN
+F 3 "~" H 9700 5200 50  0001 C CNN
+	1    9700 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 5100 9400 5200
+Wire Wire Line
+	9550 5200 9400 5200
+Connection ~ 9400 5200
+Wire Wire Line
+	9400 5200 9400 5300
+Wire Wire Line
+	8950 5200 9100 5200
+Connection ~ 9100 5200
+Wire Wire Line
+	9100 5200 9100 5300
+$Comp
+L power:GND #PWR04
+U 1 1 5FA98A37
+P 10050 5200
+F 0 "#PWR04" H 10050 4950 50  0001 C CNN
+F 1 "GND" H 10055 5027 50  0000 C CNN
+F 2 "" H 10050 5200 50  0001 C CNN
+F 3 "" H 10050 5200 50  0001 C CNN
+	1    10050 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5200 9850 5200
+$Comp
+L Connector_Generic:Conn_02x25_Counter_Clockwise J1
+U 1 1 5FAA85D7
+P 9450 2100
+F 0 "J1" H 9500 3517 50  0000 C CNN
+F 1 "Conn_02x25_Counter_Clockwise" H 9500 3426 50  0000 C CNN
+F 2 "libraries:N64-Connector" H 9450 2100 50  0001 C CNN
+F 3 "~" H 9450 2100 50  0001 C CNN
+	1    9450 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9250 900 
+Connection ~ 9250 3300
+Connection ~ 9750 3300
+Connection ~ 9750 900 
+NoConn ~ 9250 1500
+NoConn ~ 9250 1600
+NoConn ~ 9250 1700
+NoConn ~ 9250 1800
+NoConn ~ 9250 1900
+NoConn ~ 9250 2000
+NoConn ~ 9250 2100
+NoConn ~ 9250 2200
+NoConn ~ 9250 2300
+NoConn ~ 9250 2400
+NoConn ~ 9250 2500
+NoConn ~ 9250 2600
+NoConn ~ 9250 2700
+NoConn ~ 9750 2700
+NoConn ~ 9750 2600
+NoConn ~ 9750 2500
+NoConn ~ 9750 2400
+NoConn ~ 9750 2300
+NoConn ~ 9750 2200
+NoConn ~ 9750 2100
+NoConn ~ 9750 2000
+NoConn ~ 9750 1900
+NoConn ~ 9750 1800
+NoConn ~ 9750 1700
+NoConn ~ 9750 1600
+NoConn ~ 9750 1500
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FD7729C
+P 9250 3850
+F 0 "H1" H 9350 3900 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9100 3250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9250 3850 50  0001 C CNN
+F 3 "~" H 9250 3850 50  0001 C CNN
+	1    9250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FD78F6F
+P 9750 3850
+F 0 "H2" H 9850 3899 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9600 3250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9750 3850 50  0001 C CNN
+F 3 "~" H 9750 3850 50  0001 C CNN
+	1    9750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FD7C402
+P 9250 3950
+F 0 "#PWR0101" H 9250 3700 50  0001 C CNN
+F 1 "GND" H 9255 3777 50  0000 C CNN
+F 2 "" H 9250 3950 50  0001 C CNN
+F 3 "" H 9250 3950 50  0001 C CNN
+	1    9250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FD7CA24
+P 9750 3950
+F 0 "#PWR0102" H 9750 3700 50  0001 C CNN
+F 1 "GND" H 9755 3777 50  0000 C CNN
+F 2 "" H 9750 3950 50  0001 C CNN
+F 3 "" H 9750 3950 50  0001 C CNN
+	1    9750 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

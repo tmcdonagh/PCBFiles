@@ -48,7 +48,7 @@ $EndComp
 Wire Wire Line
 	4100 3750 4100 3650
 Text Label 4900 3950 2    50   ~ 0
-OutputJack
+Amp
 Wire Wire Line
 	4900 3950 4900 3500
 Connection ~ 4900 3500

@@ -72,7 +72,7 @@ U 1 1 60E2B06D
 P 2250 3950
 F 0 "RV5" V 2043 3950 50  0000 C CNN
 F 1 "Freq" V 2134 3950 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 2250 3950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2250 3950 50  0001 C CNN
 F 3 "~" H 2250 3950 50  0001 C CNN
 	1    2250 3950
 	0    1    1    0   
@@ -112,40 +112,14 @@ Wire Wire Line
 Wire Wire Line
 	2950 3950 2800 3950
 Connection ~ 2500 2900
-$Comp
-L Device:R R10
-U 1 1 60E2EF4D
-P 3100 3350
-F 0 "R10" H 2950 3300 50  0000 C CNN
-F 1 "LED" H 2950 3400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3030 3350 50  0001 C CNN
-F 3 "~" H 3100 3350 50  0001 C CNN
-	1    3100 3350
-	-1   0    0    1   
-$EndComp
 Connection ~ 2950 2900
-$Comp
-L Device:LED D4
-U 1 1 60E2FC8E
-P 3100 3650
-F 0 "D4" V 3000 3500 50  0000 C CNN
-F 1 "LED" V 3100 3500 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 3100 3650 50  0001 C CNN
-F 3 "~" H 3100 3650 50  0001 C CNN
-	1    3100 3650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3100 2950 3100 2900
-Wire Wire Line
-	2950 2900 3100 2900
 $Comp
 L Device:CP C2
 U 1 1 60E33A20
 P 1900 4500
 F 0 "C2" V 2155 4500 50  0000 C CNN
 F 1 "22uF" V 2064 4500 50  0000 C CNN
-F 2 "" H 1938 4350 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 1938 4350 50  0001 C CNN
 F 3 "~" H 1900 4500 50  0001 C CNN
 	1    1900 4500
 	0    -1   -1   0   
@@ -156,7 +130,7 @@ U 1 1 60E3473C
 P 2300 4500
 F 0 "C4" V 2555 4500 50  0000 C CNN
 F 1 "10uF" V 2464 4500 50  0000 C CNN
-F 2 "" H 2338 4350 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 2338 4350 50  0001 C CNN
 F 3 "~" H 2300 4500 50  0001 C CNN
 	1    2300 4500
 	0    -1   -1   0   
@@ -190,7 +164,7 @@ U 1 1 60E36B7E
 P 2800 4500
 F 0 "C5" V 2545 4500 50  0000 C CNN
 F 1 "22uF" V 2636 4500 50  0000 C CNN
-F 2 "" H 2838 4350 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 2838 4350 50  0001 C CNN
 F 3 "~" H 2800 4500 50  0001 C CNN
 	1    2800 4500
 	0    1    1    0   
@@ -201,7 +175,7 @@ U 1 1 60E376D0
 P 3200 4500
 F 0 "C6" V 2945 4500 50  0000 C CNN
 F 1 "10uF" V 3036 4500 50  0000 C CNN
-F 2 "" H 3238 4350 50  0001 C CNN
+F 2 "libraries:CP_Radial_D6.3mm_P2.50mm" H 3238 4350 50  0001 C CNN
 F 3 "~" H 3200 4500 50  0001 C CNN
 	1    3200 4500
 	0    1    1    0   
@@ -279,19 +253,6 @@ Connection ~ 3000 4800
 Wire Wire Line
 	3000 4800 3000 4500
 Wire Wire Line
-	3100 3200 3100 3150
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 60E45440
-P 3100 3050
-F 0 "JP1" V 3054 3098 50  0000 L CNN
-F 1 "Jump" V 3145 3098 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3100 3050 50  0001 C CNN
-F 3 "~" H 3100 3050 50  0001 C CNN
-	1    3100 3050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
 	2950 3950 2950 4150
 Connection ~ 2950 3950
 $Comp
@@ -345,8 +306,6 @@ Text GLabel 2050 3450 3    50   Input ~ 0
 FXGND
 Text GLabel 2500 3450 3    50   Input ~ 0
 FXGND
-Text GLabel 3100 3800 3    50   Input ~ 0
-FXGND
 Wire Wire Line
 	4000 4500 4150 4500
 Wire Wire Line
@@ -358,7 +317,7 @@ U 1 1 60E5019A
 P 4150 5000
 F 0 "RV6" H 4080 4954 50  0000 R CNN
 F 1 "Amp" H 4080 5045 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 4150 5000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4150 5000 50  0001 C CNN
 F 3 "~" H 4150 5000 50  0001 C CNN
 	1    4150 5000
 	-1   0    0    1   
@@ -460,7 +419,7 @@ U 1 1 60E5CC2C
 P 5100 2750
 F 0 "C9" V 4845 2750 50  0000 C CNN
 F 1 "4.7uF" V 4936 2750 50  0000 C CNN
-F 2 "" H 5138 2600 50  0001 C CNN
+F 2 "libraries:CP_Radial_D5.0mm_P2.00mm" H 5138 2600 50  0001 C CNN
 F 3 "~" H 5100 2750 50  0001 C CNN
 	1    5100 2750
 	0    1    1    0   
@@ -520,7 +479,7 @@ U 1 1 60E63F52
 P 5950 2400
 F 0 "C10" V 6205 2400 50  0000 C CNN
 F 1 "4.7uF" V 6114 2400 50  0000 C CNN
-F 2 "" H 5988 2250 50  0001 C CNN
+F 2 "libraries:CP_Radial_D5.0mm_P2.00mm" H 5988 2250 50  0001 C CNN
 F 3 "~" H 5950 2400 50  0001 C CNN
 	1    5950 2400
 	0    -1   -1   0   
@@ -641,4 +600,8 @@ Text GLabel 4150 4150 1    50   Input ~ 0
 9V
 Text GLabel 6000 4350 1    50   Input ~ 0
 9V
+Text GLabel 2950 2700 1    50   Input ~ 0
+Freq
+Wire Wire Line
+	2950 2700 2950 2900
 $EndSCHEMATC

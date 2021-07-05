@@ -119,18 +119,18 @@ Wire Wire Line
 	9750 6150 9650 6150
 Connection ~ 9500 6300
 Wire Wire Line
-	1300 5150 1600 5150
+	950  5150 1250 5150
 Wire Wire Line
-	1300 5400 1300 5150
+	950  5400 950  5150
 $Comp
 L power:GND #PWR02
 U 1 1 60614C23
-P 1600 5150
-F 0 "#PWR02" H 1600 4900 50  0001 C CNN
-F 1 "GND" H 1605 4977 50  0000 C CNN
-F 2 "" H 1600 5150 50  0001 C CNN
-F 3 "" H 1600 5150 50  0001 C CNN
-	1    1600 5150
+P 1250 5150
+F 0 "#PWR02" H 1250 4900 50  0001 C CNN
+F 1 "GND" H 1255 4977 50  0000 C CNN
+F 2 "" H 1250 5150 50  0001 C CNN
+F 3 "" H 1250 5150 50  0001 C CNN
+	1    1250 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -142,12 +142,12 @@ Wire Wire Line
 $Comp
 L audioJacks:AudioJack3 J2
 U 1 1 605E846F
-P 1100 5500
-F 0 "J2" H 1082 5825 50  0000 C CNN
-F 1 "Input Jack" H 1082 5734 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1100 5500 50  0001 C CNN
-F 3 "~" H 1100 5500 50  0001 C CNN
-	1    1100 5500
+P 750 5500
+F 0 "J2" H 732 5825 50  0000 C CNN
+F 1 "Input Jack" H 732 5734 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 750 5500 50  0001 C CNN
+F 3 "~" H 750 5500 50  0001 C CNN
+	1    750  5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -175,12 +175,12 @@ $EndComp
 $Comp
 L audioJacks:AudioJack2 J8
 U 1 1 6061B817
-P 5500 5600
-F 0 "J8" H 5532 5925 50  0000 C CNN
-F 1 "Output Jack" H 5532 5834 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5500 5600 50  0001 C CNN
-F 3 "~" H 5500 5600 50  0001 C CNN
-	1    5500 5600
+P 5950 5600
+F 0 "J8" H 5982 5925 50  0000 C CNN
+F 1 "Output Jack" H 5982 5834 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5950 5600 50  0001 C CNN
+F 3 "~" H 5950 5600 50  0001 C CNN
+	1    5950 5600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -205,10 +205,8 @@ F 3 "~" H 3000 5700 50  0001 C CNN
 	1    3000 5700
 	1    0    0    1   
 $EndComp
-Text GLabel 1300 5500 2    50   Input ~ 0
+Text GLabel 950  5500 2    50   Input ~ 0
 FXGND
-Wire Wire Line
-	1300 5600 1700 5600
 $Comp
 L Switch:SW_DPDT_x2 SW4
 U 1 1 6068E75D
@@ -244,23 +242,18 @@ FXOutB
 $Comp
 L power:GND #PWR05
 U 1 1 606A8519
-P 5050 5300
-F 0 "#PWR05" H 5050 5050 50  0001 C CNN
-F 1 "GND" H 5055 5127 50  0000 C CNN
-F 2 "" H 5050 5300 50  0001 C CNN
-F 3 "" H 5050 5300 50  0001 C CNN
-	1    5050 5300
+P 5500 5300
+F 0 "#PWR05" H 5500 5050 50  0001 C CNN
+F 1 "GND" H 5505 5127 50  0000 C CNN
+F 2 "" H 5500 5300 50  0001 C CNN
+F 3 "" H 5500 5300 50  0001 C CNN
+	1    5500 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 5500 5300 5500
-Text GLabel 1100 5900 0    50   Input ~ 0
+	5650 5500 5750 5500
+Text GLabel 1250 6000 0    50   Input ~ 0
 Pickups
-Wire Wire Line
-	1700 5900 1700 5600
-Connection ~ 1700 5600
-Wire Wire Line
-	1700 5600 1800 5600
 Text GLabel 8550 1150 1    50   Input ~ 0
 9V
 Text GLabel 9350 5050 0    50   Input ~ 0
@@ -279,9 +272,9 @@ $EndComp
 Wire Wire Line
 	9900 5050 9750 5050
 Wire Wire Line
-	5050 5300 5200 5300
+	5500 5300 5650 5300
 Wire Wire Line
-	5200 5300 5200 5500
+	5650 5300 5650 5500
 $Comp
 L Connector:Conn_01x04_Female J9
 U 1 1 60685D34
@@ -307,9 +300,6 @@ Wire Wire Line
 	5400 5100 4950 5100
 Wire Wire Line
 	4950 5100 4950 5600
-Connection ~ 4950 5600
-Wire Wire Line
-	4950 5600 5300 5600
 Text GLabel 9300 1350 1    50   Input ~ 0
 Amp
 Wire Wire Line
@@ -509,94 +499,6 @@ Wire Wire Line
 Wire Wire Line
 	9400 1300 9400 1550
 Connection ~ 9400 1550
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 608F0DC6
-P 9550 4200
-F 0 "H1" H 9650 4249 50  0000 L CNN
-F 1 "Mount" H 9650 4158 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9550 4200 50  0001 C CNN
-F 3 "~" H 9550 4200 50  0001 C CNN
-	1    9550 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 608F1447
-P 9550 4300
-F 0 "#PWR07" H 9550 4050 50  0001 C CNN
-F 1 "GND" H 9555 4127 50  0000 C CNN
-F 2 "" H 9550 4300 50  0001 C CNN
-F 3 "" H 9550 4300 50  0001 C CNN
-	1    9550 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 608F7664
-P 9950 4200
-F 0 "H2" H 10050 4249 50  0000 L CNN
-F 1 "Mount" H 10050 4158 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_Pad" H 9950 4200 50  0001 C CNN
-F 3 "~" H 9950 4200 50  0001 C CNN
-	1    9950 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 608F7A0A
-P 10350 4200
-F 0 "H3" H 10450 4249 50  0000 L CNN
-F 1 "Mount" H 10450 4158 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_Pad" H 10350 4200 50  0001 C CNN
-F 3 "~" H 10350 4200 50  0001 C CNN
-	1    10350 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 608F7DC8
-P 10750 4200
-F 0 "H4" H 10850 4249 50  0000 L CNN
-F 1 "Mount" H 10850 4158 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_Pad" H 10750 4200 50  0001 C CNN
-F 3 "~" H 10750 4200 50  0001 C CNN
-	1    10750 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 608F8CBA
-P 9950 4300
-F 0 "#PWR08" H 9950 4050 50  0001 C CNN
-F 1 "GND" H 9955 4127 50  0000 C CNN
-F 2 "" H 9950 4300 50  0001 C CNN
-F 3 "" H 9950 4300 50  0001 C CNN
-	1    9950 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 608F9058
-P 10350 4300
-F 0 "#PWR09" H 10350 4050 50  0001 C CNN
-F 1 "GND" H 10355 4127 50  0000 C CNN
-F 2 "" H 10350 4300 50  0001 C CNN
-F 3 "" H 10350 4300 50  0001 C CNN
-	1    10350 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 608F9366
-P 10750 4300
-F 0 "#PWR010" H 10750 4050 50  0001 C CNN
-F 1 "GND" H 10755 4127 50  0000 C CNN
-F 2 "" H 10750 4300 50  0001 C CNN
-F 3 "" H 10750 4300 50  0001 C CNN
-	1    10750 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 5500 3350 5600
 Wire Wire Line
@@ -644,7 +546,7 @@ U 1 1 60DC5384
 P 4350 6500
 F 0 "D6" V 4389 6382 50  0000 R CNN
 F 1 "LED" V 4298 6382 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 4350 6500 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4350 6500 50  0001 C CNN
 F 3 "~" H 4350 6500 50  0001 C CNN
 	1    4350 6500
 	0    -1   -1   0   
@@ -765,7 +667,7 @@ U 1 1 60E38636
 P 6150 6500
 F 0 "D8" V 6189 6382 50  0000 R CNN
 F 1 "LED" V 6098 6382 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 6150 6500 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6150 6500 50  0001 C CNN
 F 3 "~" H 6150 6500 50  0001 C CNN
 	1    6150 6500
 	0    -1   -1   0   
@@ -833,10 +735,6 @@ Wire Wire Line
 	5650 7350 6150 7350
 Wire Wire Line
 	5650 7400 5650 7350
-Text GLabel 5400 6100 1    50   Input ~ 0
-9V
-Wire Wire Line
-	5400 6100 5400 6200
 Connection ~ 5400 6200
 Wire Wire Line
 	5050 6600 5050 6700
@@ -856,22 +754,68 @@ Connection ~ 4850 5600
 $Comp
 L Device:C C12
 U 1 1 60EA9AA5
-P 1350 5900
-F 0 "C12" V 1098 5900 50  0000 C CNN
-F 1 "TEMP" V 1189 5900 50  0000 C CNN
-F 2 "libraries:C_Flat_L7.2_H6.5" H 1388 5750 50  0001 C CNN
-F 3 "~" H 1350 5900 50  0001 C CNN
-	1    1350 5900
+P 1450 5600
+F 0 "C12" V 1198 5600 50  0000 C CNN
+F 1 "TEMP" V 1289 5600 50  0000 C CNN
+F 2 "libraries:C_Flat_L7.2_H10" H 1488 5450 50  0001 C CNN
+F 3 "~" H 1450 5600 50  0001 C CNN
+	1    1450 5600
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1500 5900 1700 5900
-Wire Wire Line
-	1200 5900 1100 5900
 $Sheet
 S 3200 3050 1400 650 
 U 60E22E00
 F0 "Tremolo" 50
 F1 "Tremolo.sch" 50
 $EndSheet
+Wire Wire Line
+	950  5600 1300 5600
+Wire Wire Line
+	1600 5600 1700 5600
+Wire Wire Line
+	1250 6000 1700 6000
+Wire Wire Line
+	1700 6000 1700 5600
+Connection ~ 1700 5600
+Wire Wire Line
+	1700 5600 1800 5600
+$Comp
+L Device:C C14
+U 1 1 60E50324
+P 5300 5600
+F 0 "C14" V 5048 5600 50  0000 C CNN
+F 1 "TEMP" V 5139 5600 50  0000 C CNN
+F 2 "libraries:C_Flat_L7.2_H10" H 5338 5450 50  0001 C CNN
+F 3 "~" H 5300 5600 50  0001 C CNN
+	1    5300 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 5600 4950 5600
+Connection ~ 4950 5600
+Wire Wire Line
+	5450 5600 5750 5600
+Text GLabel 6500 5850 2    50   Input ~ 0
+Freq
+Text GLabel 6500 6050 2    50   Input ~ 0
+9V
+$Comp
+L Switch:SW_SPDT SW6
+U 1 1 60E7229F
+P 6250 5950
+F 0 "SW6" H 6250 6235 50  0000 C CNN
+F 1 "TremLED" H 6250 6144 50  0000 C CNN
+F 2 "libraries:MSS10255914AD" H 6250 5950 50  0001 C CNN
+F 3 "~" H 6250 5950 50  0001 C CNN
+	1    6250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5850 6450 5850
+Wire Wire Line
+	6500 6050 6450 6050
+Wire Wire Line
+	6050 5950 5400 5950
+Wire Wire Line
+	5400 5950 5400 6200
 $EndSCHEMATC

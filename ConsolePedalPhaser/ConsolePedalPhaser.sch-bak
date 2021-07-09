@@ -356,7 +356,7 @@ U 1 1 60E57E9D
 P 2050 3400
 F 0 "U1" H 2050 3767 50  0000 C CNN
 F 1 "TL072" H 2050 3676 50  0000 C CNN
-F 2 "" H 2050 3400 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2050 3400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2050 3400 50  0001 C CNN
 	1    2050 3400
 	1    0    0    -1  
@@ -367,7 +367,7 @@ U 2 1 60E596F5
 P 4500 3500
 F 0 "U2" H 4500 3867 50  0000 C CNN
 F 1 "TL072" H 4500 3776 50  0000 C CNN
-F 2 "" H 4500 3500 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4500 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4500 3500 50  0001 C CNN
 	2    4500 3500
 	1    0    0    -1  
@@ -378,7 +378,7 @@ U 3 1 60E5A3C8
 P 10500 5750
 F 0 "U2" H 10458 5796 50  0000 L CNN
 F 1 "TL072" H 10458 5705 50  0000 L CNN
-F 2 "" H 10500 5750 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 10500 5750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10500 5750 50  0001 C CNN
 	3    10500 5750
 	1    0    0    -1  
@@ -427,7 +427,7 @@ U 1 1 60E77624
 P 3150 3500
 F 0 "U2" H 3150 3867 50  0000 C CNN
 F 1 "TL072" H 3150 3776 50  0000 C CNN
-F 2 "" H 3150 3500 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3150 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3150 3500 50  0001 C CNN
 	1    3150 3500
 	1    0    0    -1  
@@ -438,7 +438,7 @@ U 2 1 60E785E2
 P 5250 5850
 F 0 "U1" H 5250 6217 50  0000 C CNN
 F 1 "TL072" H 5250 6126 50  0000 C CNN
-F 2 "" H 5250 5850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5250 5850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5250 5850 50  0001 C CNN
 	2    5250 5850
 	1    0    0    -1  
@@ -449,7 +449,7 @@ U 3 1 60E797ED
 P 10150 5750
 F 0 "U1" H 10108 5796 50  0000 L CNN
 F 1 "TL072" H 10108 5705 50  0000 L CNN
-F 2 "" H 10150 5750 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 10150 5750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10150 5750 50  0001 C CNN
 	3    10150 5750
 	1    0    0    -1  
@@ -593,7 +593,7 @@ U 1 1 60EA0631
 P 2000 6500
 F 0 "RV2" H 2200 6650 50  0000 R CNN
 F 1 "Trim" V 1900 6600 50  0000 R CNN
-F 2 "" H 2000 6500 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 2000 6500 50  0001 C CNN
 F 3 "~" H 2000 6500 50  0001 C CNN
 	1    2000 6500
 	1    0    0    -1  
@@ -770,7 +770,7 @@ U 1 1 60ED150F
 P 5250 6750
 F 0 "RV1" V 5050 6800 50  0000 R CNN
 F 1 "Speed" V 5150 6850 50  0000 R CNN
-F 2 "" H 5250 6750 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 5250 6750 50  0001 C CNN
 F 3 "~" H 5250 6750 50  0001 C CNN
 	1    5250 6750
 	0    -1   -1   0   
@@ -1065,7 +1065,7 @@ U 1 1 60FC9DC8
 P 5800 3500
 F 0 "U3" H 5800 3867 50  0000 C CNN
 F 1 "TL072" H 5800 3776 50  0000 C CNN
-F 2 "" H 5800 3500 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5800 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5800 3500 50  0001 C CNN
 	1    5800 3500
 	1    0    0    -1  
@@ -1076,7 +1076,7 @@ U 2 1 60FCB920
 P 6950 3500
 F 0 "U3" H 6950 3867 50  0000 C CNN
 F 1 "TL072" H 6950 3776 50  0000 C CNN
-F 2 "" H 6950 3500 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 6950 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6950 3500 50  0001 C CNN
 	2    6950 3500
 	1    0    0    -1  
@@ -1087,7 +1087,7 @@ U 3 1 60FCD094
 P 10850 5750
 F 0 "U3" H 10808 5796 50  0000 L CNN
 F 1 "TL072" H 10808 5705 50  0000 L CNN
-F 2 "" H 10850 5750 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 10850 5750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10850 5750 50  0001 C CNN
 	3    10850 5750
 	1    0    0    -1  

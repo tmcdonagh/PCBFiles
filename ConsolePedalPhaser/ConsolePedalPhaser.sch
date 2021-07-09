@@ -593,7 +593,7 @@ U 1 1 60EA0631
 P 2000 6500
 F 0 "RV2" H 2200 6650 50  0000 R CNN
 F 1 "Trim" V 1900 6600 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 2000 6500 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 2000 6500 50  0001 C CNN
 F 3 "~" H 2000 6500 50  0001 C CNN
 	1    2000 6500
 	1    0    0    -1  

@@ -1,4 +1,4 @@
-update=7/20/2021 6:59:32 PM
+update=7/20/2021 7:42:45 PM
 version=1
 last_client=kicad
 [general]
@@ -25,9 +25,9 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=ConsolePedalPhaser.net
-CopperLayerCount=4
-BoardThickness=1.2
+LastNetListRead=jfetTester.net
+CopperLayerCount=2
+BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
@@ -76,11 +76,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=1
+Enabled=0
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0

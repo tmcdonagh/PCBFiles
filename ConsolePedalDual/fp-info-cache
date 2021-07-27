@@ -1,4 +1,4 @@
-19005537197671644
+19013639330575923
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83089,3 +83089,38 @@ N64-Connector
 0
 50
 50
+libraries
+bat1
+
+
+0
+0
+0
+libraries
+deerImage
+
+
+0
+0
+0
+libraries
+n64Logo
+
+
+0
+0
+0
+libraries
+n64Socket
+Through hole straight socket strip, 2x25, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x25 2.54mm double row
+0
+50
+50
+libraries
+sadDrum
+
+
+0
+0
+0

@@ -645,4 +645,107 @@ F 3 "" H 6650 5200 50  0001 C CNN
 	1    6650 5200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Analog_Switch:CD4053B U?
+U 1 1 60FF6D67
+P 3200 5700
+F 0 "U?" H 3000 6450 50  0000 C CNN
+F 1 "CD4053B" H 3000 6350 50  0000 C CNN
+F 2 "" H 3350 4950 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 3180 5900 50  0001 C CNN
+	1    3200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 60FFC9EC
+P 8250 5650
+F 0 "SW?" H 8250 5935 50  0000 C CNN
+F 1 "SW_SPDT" H 8250 5844 50  0000 C CNN
+F 2 "" H 8250 5650 50  0001 C CNN
+F 3 "~" H 8250 5650 50  0001 C CNN
+	1    8250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 60FFD888
+P 10450 4900
+F 0 "SW?" H 10450 5185 50  0000 C CNN
+F 1 "SW_SPDT" H 10450 5094 50  0000 C CNN
+F 2 "" H 10450 4900 50  0001 C CNN
+F 3 "~" H 10450 4900 50  0001 C CNN
+	1    10450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 60FFDC32
+P 9650 5950
+F 0 "SW?" H 9650 6235 50  0000 C CNN
+F 1 "SW_SPDT" H 9650 6144 50  0000 C CNN
+F 2 "" H 9650 5950 50  0001 C CNN
+F 3 "~" H 9650 5950 50  0001 C CNN
+	1    9650 5950
+	1    0    0    -1  
+$EndComp
+Text Label 7900 5650 2    50   ~ 0
+Input
+Wire Wire Line
+	7900 5650 8050 5650
+Text Label 9950 5850 0    50   ~ 0
+Output
+Wire Wire Line
+	9950 5850 9850 5850
+$Comp
+L Device:R R?
+U 1 1 61005F42
+P 9000 5950
+F 0 "R?" V 8900 5900 50  0000 L CNN
+F 1 "Effect1" V 9100 5850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8930 5950 50  0001 C CNN
+F 3 "~" H 9000 5950 50  0001 C CNN
+	1    9000 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 5750 8450 5950
+Wire Wire Line
+	8450 5950 8850 5950
+Wire Wire Line
+	9150 5950 9450 5950
+$Comp
+L Device:R R?
+U 1 1 6100AEB1
+P 9000 5000
+F 0 "R?" V 8900 4950 50  0000 L CNN
+F 1 "Effect2" V 9100 4900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8930 5000 50  0001 C CNN
+F 3 "~" H 9000 5000 50  0001 C CNN
+	1    9000 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 5550 8550 5550
+Wire Wire Line
+	8550 5550 8550 5000
+Wire Wire Line
+	8550 5000 8700 5000
+Text Label 9300 5000 0    50   ~ 0
+Output
+Wire Wire Line
+	9300 5000 9150 5000
+Wire Wire Line
+	9850 6050 10350 6050
+Wire Wire Line
+	10350 6050 10350 5400
+Wire Wire Line
+	10350 5400 8700 5400
+Wire Wire Line
+	8700 5400 8700 5000
+Connection ~ 8700 5000
+Wire Wire Line
+	8700 5000 8850 5000
+Text Label 2700 5500 2    50   ~ 0
+Input
 $EndSCHEMATC

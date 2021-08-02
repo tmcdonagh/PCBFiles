@@ -1,0 +1,960 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	10100 800  10100 900 
+Wire Wire Line
+	10600 800  10600 900 
+Wire Wire Line
+	10100 3200 10100 3100
+Wire Wire Line
+	10600 3200 10600 3100
+$Comp
+L power:GND #PWR09
+U 1 1 5FA7AA42
+P 10100 3200
+F 0 "#PWR09" H 10100 2950 50  0001 C CNN
+F 1 "GND" H 10105 3027 50  0000 C CNN
+F 2 "" H 10100 3200 50  0001 C CNN
+F 3 "" H 10100 3200 50  0001 C CNN
+	1    10100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5FA7AF0C
+P 10600 3200
+F 0 "#PWR012" H 10600 2950 50  0001 C CNN
+F 1 "GND" H 10605 3027 50  0000 C CNN
+F 2 "" H 10600 3200 50  0001 C CNN
+F 3 "" H 10600 3200 50  0001 C CNN
+	1    10600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5FA7B264
+P 9750 800
+F 0 "#PWR06" H 9750 550 50  0001 C CNN
+F 1 "GND" H 9755 627 50  0000 C CNN
+F 2 "" H 9750 800 50  0001 C CNN
+F 3 "" H 9750 800 50  0001 C CNN
+	1    9750 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5FA7B7C0
+P 11000 800
+F 0 "#PWR013" H 11000 550 50  0001 C CNN
+F 1 "GND" H 11005 627 50  0000 C CNN
+F 2 "" H 11000 800 50  0001 C CNN
+F 3 "" H 11000 800 50  0001 C CNN
+	1    11000 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 800  9750 800 
+Wire Wire Line
+	10600 800  11000 800 
+Text Label 10100 1000 2    50   ~ 0
+Input
+Text Label 10100 1100 2    50   ~ 0
+Output
+Text Label 10100 1300 2    50   ~ 0
+LEDPower
+$Comp
+L power:+9V #PWR07
+U 1 1 5FA7CF30
+P 10100 1200
+F 0 "#PWR07" H 10100 1050 50  0001 C CNN
+F 1 "+9V" V 10115 1328 50  0000 L CNN
+F 2 "" H 10100 1200 50  0001 C CNN
+F 3 "" H 10100 1200 50  0001 C CNN
+	1    10100 1200
+	0    -1   -1   0   
+$EndComp
+Text Label 10600 1000 0    50   ~ 0
+Input
+Text Label 10600 1100 0    50   ~ 0
+Output
+$Comp
+L power:+9V #PWR010
+U 1 1 5FA7DC70
+P 10600 1200
+F 0 "#PWR010" H 10600 1050 50  0001 C CNN
+F 1 "+9V" V 10600 1350 50  0000 L CNN
+F 2 "" H 10600 1200 50  0001 C CNN
+F 3 "" H 10600 1200 50  0001 C CNN
+	1    10600 1200
+	0    1    1    0   
+$EndComp
+Text Label 10600 1300 0    50   ~ 0
+LEDPower
+Text Label 10100 3000 2    50   ~ 0
+Input
+Text Label 10600 3000 0    50   ~ 0
+Input
+Text Label 10100 2900 2    50   ~ 0
+Output
+Text Label 10600 2900 0    50   ~ 0
+Output
+$Comp
+L power:+9V #PWR08
+U 1 1 5FA7E829
+P 10100 2800
+F 0 "#PWR08" H 10100 2650 50  0001 C CNN
+F 1 "+9V" V 10115 2928 50  0000 L CNN
+F 2 "" H 10100 2800 50  0001 C CNN
+F 3 "" H 10100 2800 50  0001 C CNN
+	1    10100 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+9V #PWR011
+U 1 1 5FA7EECF
+P 10600 2800
+F 0 "#PWR011" H 10600 2650 50  0001 C CNN
+F 1 "+9V" V 10600 2900 50  0000 L CNN
+F 2 "" H 10600 2800 50  0001 C CNN
+F 3 "" H 10600 2800 50  0001 C CNN
+	1    10600 2800
+	0    1    1    0   
+$EndComp
+Text Label 10100 2700 2    50   ~ 0
+LEDPower
+Text Label 10600 2700 0    50   ~ 0
+LEDPower
+$Comp
+L Device:LED D3
+U 1 1 5FA93C7E
+P 10100 4750
+F 0 "D3" H 10093 4495 50  0000 C CNN
+F 1 "LED" H 10093 4586 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 10100 4750 50  0001 C CNN
+F 3 "~" H 10100 4750 50  0001 C CNN
+	1    10100 4750
+	-1   0    0    1   
+$EndComp
+Text Label 9800 4850 2    50   ~ 0
+LEDPower
+$Comp
+L Device:LED D4
+U 1 1 5FA94A27
+P 10100 4950
+F 0 "D4" H 10100 5050 50  0000 C CNN
+F 1 "LED" H 10100 5150 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 10100 4950 50  0001 C CNN
+F 3 "~" H 10100 4950 50  0001 C CNN
+	1    10100 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 4750 9950 4850
+$Comp
+L Device:R R29
+U 1 1 5FA964BB
+P 10550 4950
+F 0 "R29" V 10650 4850 50  0000 L CNN
+F 1 "LED" V 10550 4850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10480 4950 50  0001 C CNN
+F 3 "~" H 10550 4950 50  0001 C CNN
+	1    10550 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9800 4850 9950 4850
+Connection ~ 9950 4850
+Wire Wire Line
+	9950 4850 9950 4950
+$Comp
+L power:GND #PWR04
+U 1 1 5FA98A37
+P 10900 4850
+F 0 "#PWR04" H 10900 4600 50  0001 C CNN
+F 1 "GND" H 10905 4677 50  0000 C CNN
+F 2 "" H 10900 4850 50  0001 C CNN
+F 3 "" H 10900 4850 50  0001 C CNN
+	1    10900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 4850 10700 4850
+$Comp
+L Connector_Generic:Conn_02x25_Counter_Clockwise J1
+U 1 1 5FAA85D7
+P 10300 2000
+F 0 "J1" H 10350 3417 50  0000 C CNN
+F 1 "Conn_02x25_Counter_Clockwise" H 10350 3326 50  0000 C CNN
+F 2 "libraries:N64-Connector" H 10300 2000 50  0001 C CNN
+F 3 "~" H 10300 2000 50  0001 C CNN
+	1    10300 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 10100 800 
+Connection ~ 10100 3200
+Connection ~ 10600 3200
+Connection ~ 10600 800 
+NoConn ~ 10100 1400
+NoConn ~ 10100 1500
+NoConn ~ 10100 1600
+NoConn ~ 10100 1700
+NoConn ~ 10100 1800
+NoConn ~ 10100 1900
+NoConn ~ 10100 2000
+NoConn ~ 10100 2100
+NoConn ~ 10100 2200
+NoConn ~ 10100 2300
+NoConn ~ 10100 2400
+NoConn ~ 10100 2500
+NoConn ~ 10100 2600
+NoConn ~ 10600 2600
+NoConn ~ 10600 2500
+NoConn ~ 10600 2400
+NoConn ~ 10600 2300
+NoConn ~ 10600 2200
+NoConn ~ 10600 2100
+NoConn ~ 10600 2000
+NoConn ~ 10600 1900
+NoConn ~ 10600 1800
+NoConn ~ 10600 1700
+NoConn ~ 10600 1600
+NoConn ~ 10600 1500
+NoConn ~ 10600 1400
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FD7729C
+P 10100 3750
+F 0 "H1" H 10200 3800 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9950 3150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10100 3750 50  0001 C CNN
+F 3 "~" H 10100 3750 50  0001 C CNN
+	1    10100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FD78F6F
+P 10600 3750
+F 0 "H2" H 10700 3799 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10450 3150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10600 3750 50  0001 C CNN
+F 3 "~" H 10600 3750 50  0001 C CNN
+	1    10600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FD7C402
+P 10100 3850
+F 0 "#PWR0101" H 10100 3600 50  0001 C CNN
+F 1 "GND" H 10105 3677 50  0000 C CNN
+F 2 "" H 10100 3850 50  0001 C CNN
+F 3 "" H 10100 3850 50  0001 C CNN
+	1    10100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FD7CA24
+P 10600 3850
+F 0 "#PWR0102" H 10600 3600 50  0001 C CNN
+F 1 "GND" H 10605 3677 50  0000 C CNN
+F 2 "" H 10600 3850 50  0001 C CNN
+F 3 "" H 10600 3850 50  0001 C CNN
+	1    10600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 6108189E
+P 8250 3650
+F 0 "RV1" V 8043 3650 50  0000 C CNN
+F 1 "Pot A" V 8134 3650 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 8250 3650 50  0001 C CNN
+F 3 "~" H 8250 3650 50  0001 C CNN
+	1    8250 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x30_Male J6
+U 1 1 6109E61D
+P 5300 3850
+F 0 "J6" H 5408 5431 50  0000 C CNN
+F 1 "Rail A" H 5408 5340 50  0000 C CNN
+F 2 "libraries:Rail" H 5300 3850 50  0001 C CNN
+F 3 "~" H 5300 3850 50  0001 C CNN
+	1    5300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2450 5500 2550
+Wire Wire Line
+	5500 2650 5500 2550
+Connection ~ 5500 2550
+Wire Wire Line
+	5500 2750 5500 2650
+Connection ~ 5500 2650
+Wire Wire Line
+	5500 2750 5500 2850
+Connection ~ 5500 2750
+Wire Wire Line
+	5500 2950 5500 2850
+Connection ~ 5500 2850
+Wire Wire Line
+	5500 3050 5500 2950
+Connection ~ 5500 2950
+Wire Wire Line
+	5500 3150 5500 3050
+Connection ~ 5500 3050
+Wire Wire Line
+	5500 3250 5500 3150
+Connection ~ 5500 3150
+Wire Wire Line
+	5500 3350 5500 3250
+Connection ~ 5500 3250
+Wire Wire Line
+	5500 3450 5500 3350
+Connection ~ 5500 3350
+Wire Wire Line
+	5500 3550 5500 3450
+Connection ~ 5500 3450
+Wire Wire Line
+	5500 3650 5500 3550
+Connection ~ 5500 3550
+Wire Wire Line
+	5500 3750 5500 3650
+Connection ~ 5500 3650
+Wire Wire Line
+	5500 3850 5500 3750
+Connection ~ 5500 3750
+Wire Wire Line
+	5500 3950 5500 3850
+Connection ~ 5500 3850
+Wire Wire Line
+	5500 4050 5500 3950
+Connection ~ 5500 3950
+Wire Wire Line
+	5500 4150 5500 4050
+Connection ~ 5500 4050
+Wire Wire Line
+	5500 4250 5500 4150
+Connection ~ 5500 4150
+Wire Wire Line
+	5500 4350 5500 4250
+Connection ~ 5500 4250
+Wire Wire Line
+	5500 4450 5500 4350
+Connection ~ 5500 4350
+Wire Wire Line
+	5500 4550 5500 4450
+Connection ~ 5500 4450
+Wire Wire Line
+	5500 4650 5500 4550
+Connection ~ 5500 4550
+Wire Wire Line
+	5500 4750 5500 4650
+Connection ~ 5500 4650
+Wire Wire Line
+	5500 4850 5500 4750
+Connection ~ 5500 4750
+Wire Wire Line
+	5500 4950 5500 4850
+Connection ~ 5500 4850
+Wire Wire Line
+	5500 5050 5500 4950
+Connection ~ 5500 4950
+Wire Wire Line
+	5500 5150 5500 5050
+Connection ~ 5500 5050
+Wire Wire Line
+	5500 5150 5500 5250
+Connection ~ 5500 5150
+Wire Wire Line
+	5500 5250 5500 5350
+Connection ~ 5500 5250
+Connection ~ 5850 5250
+Connection ~ 5850 5150
+Wire Wire Line
+	5850 5250 5850 5350
+Wire Wire Line
+	5850 5150 5850 5250
+Connection ~ 5850 5050
+Connection ~ 5850 4950
+Wire Wire Line
+	5850 5150 5850 5050
+Wire Wire Line
+	5850 5050 5850 4950
+Connection ~ 5850 4850
+Connection ~ 5850 4750
+Wire Wire Line
+	5850 4950 5850 4850
+Wire Wire Line
+	5850 4850 5850 4750
+Connection ~ 5850 4650
+Connection ~ 5850 4550
+Wire Wire Line
+	5850 4750 5850 4650
+Wire Wire Line
+	5850 4650 5850 4550
+Connection ~ 5850 4450
+Connection ~ 5850 4350
+Wire Wire Line
+	5850 4550 5850 4450
+Wire Wire Line
+	5850 4450 5850 4350
+Connection ~ 5850 4250
+Wire Wire Line
+	5850 4350 5850 4250
+Connection ~ 5850 4150
+Wire Wire Line
+	5850 4250 5850 4150
+Connection ~ 5850 4050
+Wire Wire Line
+	5850 4150 5850 4050
+Connection ~ 5850 3950
+Wire Wire Line
+	5850 4050 5850 3950
+Connection ~ 5850 3850
+Wire Wire Line
+	5850 3950 5850 3850
+Connection ~ 5850 3750
+Wire Wire Line
+	5850 3850 5850 3750
+Connection ~ 5850 3650
+Wire Wire Line
+	5850 3750 5850 3650
+Connection ~ 5850 3550
+Wire Wire Line
+	5850 3650 5850 3550
+Connection ~ 5850 3450
+Wire Wire Line
+	5850 3550 5850 3450
+Connection ~ 5850 3350
+Wire Wire Line
+	5850 3450 5850 3350
+Connection ~ 5850 3250
+Wire Wire Line
+	5850 3350 5850 3250
+Connection ~ 5850 3150
+Wire Wire Line
+	5850 3250 5850 3150
+Connection ~ 5850 3050
+Wire Wire Line
+	5850 3150 5850 3050
+Connection ~ 5850 2950
+Wire Wire Line
+	5850 3050 5850 2950
+Connection ~ 5850 2850
+Wire Wire Line
+	5850 2950 5850 2850
+Connection ~ 5850 2750
+Wire Wire Line
+	5850 2750 5850 2850
+Connection ~ 5850 2650
+Wire Wire Line
+	5850 2750 5850 2650
+Connection ~ 5850 2550
+Wire Wire Line
+	5850 2650 5850 2550
+Wire Wire Line
+	5850 2450 5850 2550
+$Comp
+L Connector:Conn_01x30_Male J7
+U 1 1 610BD0BA
+P 5650 3850
+F 0 "J7" H 5758 5431 50  0000 C CNN
+F 1 "Rail B" H 5758 5340 50  0000 C CNN
+F 2 "libraries:Rail" H 5650 3850 50  0001 C CNN
+F 3 "~" H 5650 3850 50  0001 C CNN
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x30_Male J8
+U 1 1 610D9B4E
+P 6000 3850
+F 0 "J8" H 6108 5431 50  0000 C CNN
+F 1 "Rail C" H 6108 5340 50  0000 C CNN
+F 2 "libraries:Rail" H 6000 3850 50  0001 C CNN
+F 3 "~" H 6000 3850 50  0001 C CNN
+	1    6000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2450 6200 2550
+Wire Wire Line
+	6200 2650 6200 2550
+Connection ~ 6200 2550
+Wire Wire Line
+	6200 2750 6200 2650
+Connection ~ 6200 2650
+Wire Wire Line
+	6200 2750 6200 2850
+Connection ~ 6200 2750
+Wire Wire Line
+	6200 2950 6200 2850
+Connection ~ 6200 2850
+Wire Wire Line
+	6200 3050 6200 2950
+Connection ~ 6200 2950
+Wire Wire Line
+	6200 3150 6200 3050
+Connection ~ 6200 3050
+Wire Wire Line
+	6200 3250 6200 3150
+Connection ~ 6200 3150
+Wire Wire Line
+	6200 3350 6200 3250
+Connection ~ 6200 3250
+Wire Wire Line
+	6200 3450 6200 3350
+Connection ~ 6200 3350
+Wire Wire Line
+	6200 3550 6200 3450
+Connection ~ 6200 3450
+Wire Wire Line
+	6200 3650 6200 3550
+Connection ~ 6200 3550
+Wire Wire Line
+	6200 3750 6200 3650
+Connection ~ 6200 3650
+Wire Wire Line
+	6200 3850 6200 3750
+Connection ~ 6200 3750
+Wire Wire Line
+	6200 3950 6200 3850
+Connection ~ 6200 3850
+Wire Wire Line
+	6200 4050 6200 3950
+Connection ~ 6200 3950
+Wire Wire Line
+	6200 4150 6200 4050
+Connection ~ 6200 4050
+Wire Wire Line
+	6200 4250 6200 4150
+Connection ~ 6200 4150
+Wire Wire Line
+	6200 4350 6200 4250
+Connection ~ 6200 4250
+Wire Wire Line
+	6200 4450 6200 4350
+Connection ~ 6200 4350
+Wire Wire Line
+	6200 4550 6200 4450
+Connection ~ 6200 4450
+Wire Wire Line
+	6200 4650 6200 4550
+Connection ~ 6200 4550
+Wire Wire Line
+	6200 4750 6200 4650
+Connection ~ 6200 4650
+Wire Wire Line
+	6200 4850 6200 4750
+Connection ~ 6200 4750
+Wire Wire Line
+	6200 4950 6200 4850
+Connection ~ 6200 4850
+Wire Wire Line
+	6200 5050 6200 4950
+Connection ~ 6200 4950
+Wire Wire Line
+	6200 5150 6200 5050
+Connection ~ 6200 5050
+Wire Wire Line
+	6200 5150 6200 5250
+Connection ~ 6200 5150
+Wire Wire Line
+	6200 5250 6200 5350
+Connection ~ 6200 5250
+Connection ~ 6550 5250
+Connection ~ 6550 5150
+Wire Wire Line
+	6550 5250 6550 5350
+Wire Wire Line
+	6550 5150 6550 5250
+Connection ~ 6550 5050
+Connection ~ 6550 4950
+Wire Wire Line
+	6550 5150 6550 5050
+Wire Wire Line
+	6550 5050 6550 4950
+Connection ~ 6550 4850
+Connection ~ 6550 4750
+Wire Wire Line
+	6550 4950 6550 4850
+Wire Wire Line
+	6550 4850 6550 4750
+Connection ~ 6550 4650
+Connection ~ 6550 4550
+Wire Wire Line
+	6550 4750 6550 4650
+Wire Wire Line
+	6550 4650 6550 4550
+Connection ~ 6550 4450
+Connection ~ 6550 4350
+Wire Wire Line
+	6550 4550 6550 4450
+Wire Wire Line
+	6550 4450 6550 4350
+Connection ~ 6550 4250
+Wire Wire Line
+	6550 4350 6550 4250
+Connection ~ 6550 4150
+Wire Wire Line
+	6550 4250 6550 4150
+Connection ~ 6550 4050
+Wire Wire Line
+	6550 4150 6550 4050
+Connection ~ 6550 3950
+Wire Wire Line
+	6550 4050 6550 3950
+Connection ~ 6550 3850
+Wire Wire Line
+	6550 3950 6550 3850
+Connection ~ 6550 3750
+Wire Wire Line
+	6550 3850 6550 3750
+Connection ~ 6550 3650
+Wire Wire Line
+	6550 3750 6550 3650
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 3650 6550 3550
+Connection ~ 6550 3450
+Wire Wire Line
+	6550 3550 6550 3450
+Connection ~ 6550 3350
+Wire Wire Line
+	6550 3450 6550 3350
+Connection ~ 6550 3250
+Wire Wire Line
+	6550 3350 6550 3250
+Connection ~ 6550 3150
+Wire Wire Line
+	6550 3250 6550 3150
+Connection ~ 6550 3050
+Wire Wire Line
+	6550 3150 6550 3050
+Connection ~ 6550 2950
+Wire Wire Line
+	6550 3050 6550 2950
+Connection ~ 6550 2850
+Wire Wire Line
+	6550 2950 6550 2850
+Connection ~ 6550 2750
+Wire Wire Line
+	6550 2750 6550 2850
+Connection ~ 6550 2650
+Wire Wire Line
+	6550 2750 6550 2650
+Connection ~ 6550 2550
+Wire Wire Line
+	6550 2650 6550 2550
+Wire Wire Line
+	6550 2450 6550 2550
+$Comp
+L Connector:Conn_01x30_Male J9
+U 1 1 610D9BC6
+P 6350 3850
+F 0 "J9" H 6458 5431 50  0000 C CNN
+F 1 "Rail D" H 6458 5340 50  0000 C CNN
+F 2 "libraries:Rail" H 6350 3850 50  0001 C CNN
+F 3 "~" H 6350 3850 50  0001 C CNN
+	1    6350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x30_Male J2
+U 1 1 610E11B0
+P 3450 3850
+F 0 "J2" H 3558 5431 50  0000 C CNN
+F 1 "Proto" H 3558 5340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Vertical" H 3450 3850 50  0001 C CNN
+F 3 "~" H 3450 3850 50  0001 C CNN
+	1    3450 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3650 2450
+NoConn ~ 3650 2550
+NoConn ~ 3650 2650
+NoConn ~ 3650 2750
+NoConn ~ 3650 2850
+NoConn ~ 3650 2950
+NoConn ~ 3650 3050
+NoConn ~ 3650 3150
+NoConn ~ 3650 3250
+NoConn ~ 3650 3350
+NoConn ~ 3650 3450
+NoConn ~ 3650 3550
+NoConn ~ 3650 3650
+NoConn ~ 3650 3750
+NoConn ~ 3650 3850
+NoConn ~ 3650 3950
+NoConn ~ 3650 4050
+NoConn ~ 3650 4150
+NoConn ~ 3650 4250
+NoConn ~ 3650 4450
+NoConn ~ 3650 4350
+NoConn ~ 3650 4550
+NoConn ~ 3650 4650
+NoConn ~ 3650 4750
+NoConn ~ 3650 4850
+NoConn ~ 3650 4950
+NoConn ~ 3650 5050
+NoConn ~ 3650 5150
+NoConn ~ 3650 5250
+NoConn ~ 3650 5350
+$Comp
+L Connector:Conn_01x30_Male J3
+U 1 1 611BE77E
+P 3750 3850
+F 0 "J3" H 3858 5431 50  0000 C CNN
+F 1 "Proto" H 3858 5340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Vertical" H 3750 3850 50  0001 C CNN
+F 3 "~" H 3750 3850 50  0001 C CNN
+	1    3750 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3950 2450
+NoConn ~ 3950 2550
+NoConn ~ 3950 2650
+NoConn ~ 3950 2750
+NoConn ~ 3950 2850
+NoConn ~ 3950 2950
+NoConn ~ 3950 3050
+NoConn ~ 3950 3150
+NoConn ~ 3950 3250
+NoConn ~ 3950 3350
+NoConn ~ 3950 3450
+NoConn ~ 3950 3550
+NoConn ~ 3950 3650
+NoConn ~ 3950 3750
+NoConn ~ 3950 3850
+NoConn ~ 3950 3950
+NoConn ~ 3950 4050
+NoConn ~ 3950 4150
+NoConn ~ 3950 4250
+NoConn ~ 3950 4450
+NoConn ~ 3950 4350
+NoConn ~ 3950 4550
+NoConn ~ 3950 4650
+NoConn ~ 3950 4750
+NoConn ~ 3950 4850
+NoConn ~ 3950 4950
+NoConn ~ 3950 5050
+NoConn ~ 3950 5150
+NoConn ~ 3950 5250
+NoConn ~ 3950 5350
+$Comp
+L Connector:Conn_01x30_Male J4
+U 1 1 611D0E8E
+P 4050 3850
+F 0 "J4" H 4158 5431 50  0000 C CNN
+F 1 "Proto" H 4158 5340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Vertical" H 4050 3850 50  0001 C CNN
+F 3 "~" H 4050 3850 50  0001 C CNN
+	1    4050 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4250 2450
+NoConn ~ 4250 2550
+NoConn ~ 4250 2650
+NoConn ~ 4250 2750
+NoConn ~ 4250 2850
+NoConn ~ 4250 2950
+NoConn ~ 4250 3050
+NoConn ~ 4250 3150
+NoConn ~ 4250 3250
+NoConn ~ 4250 3350
+NoConn ~ 4250 3450
+NoConn ~ 4250 3550
+NoConn ~ 4250 3650
+NoConn ~ 4250 3750
+NoConn ~ 4250 3850
+NoConn ~ 4250 3950
+NoConn ~ 4250 4050
+NoConn ~ 4250 4150
+NoConn ~ 4250 4250
+NoConn ~ 4250 4450
+NoConn ~ 4250 4350
+NoConn ~ 4250 4550
+NoConn ~ 4250 4650
+NoConn ~ 4250 4750
+NoConn ~ 4250 4850
+NoConn ~ 4250 4950
+NoConn ~ 4250 5050
+NoConn ~ 4250 5150
+NoConn ~ 4250 5250
+NoConn ~ 4250 5350
+$Comp
+L Connector:Conn_01x30_Male J5
+U 1 1 611D0EB2
+P 4350 3850
+F 0 "J5" H 4458 5431 50  0000 C CNN
+F 1 "Proto" H 4458 5340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x30_P2.54mm_Vertical" H 4350 3850 50  0001 C CNN
+F 3 "~" H 4350 3850 50  0001 C CNN
+	1    4350 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4550 2450
+NoConn ~ 4550 2550
+NoConn ~ 4550 2650
+NoConn ~ 4550 2750
+NoConn ~ 4550 2850
+NoConn ~ 4550 2950
+NoConn ~ 4550 3050
+NoConn ~ 4550 3150
+NoConn ~ 4550 3250
+NoConn ~ 4550 3350
+NoConn ~ 4550 3450
+NoConn ~ 4550 3550
+NoConn ~ 4550 3650
+NoConn ~ 4550 3750
+NoConn ~ 4550 3850
+NoConn ~ 4550 3950
+NoConn ~ 4550 4050
+NoConn ~ 4550 4150
+NoConn ~ 4550 4250
+NoConn ~ 4550 4450
+NoConn ~ 4550 4350
+NoConn ~ 4550 4550
+NoConn ~ 4550 4650
+NoConn ~ 4550 4750
+NoConn ~ 4550 4850
+NoConn ~ 4550 4950
+NoConn ~ 4550 5050
+NoConn ~ 4550 5150
+NoConn ~ 4550 5250
+NoConn ~ 4550 5350
+$Comp
+L Device:R R1
+U 1 1 612000C5
+P 10550 4750
+F 0 "R1" V 10450 4650 50  0000 L CNN
+F 1 "LED" V 10550 4650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10480 4750 50  0001 C CNN
+F 3 "~" H 10550 4750 50  0001 C CNN
+	1    10550 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10700 4950 10700 4850
+Wire Wire Line
+	10700 4750 10700 4850
+Connection ~ 10700 4850
+Wire Wire Line
+	10250 4750 10400 4750
+Wire Wire Line
+	10250 4950 10400 4950
+$Comp
+L Connector:Conn_01x03_Male J10
+U 1 1 612271BA
+P 8250 4200
+F 0 "J10" V 8300 4400 50  0000 R CNN
+F 1 "Conn A" V 8200 4300 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8250 4200 50  0001 C CNN
+F 3 "~" H 8250 4200 50  0001 C CNN
+	1    8250 4200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8250 4000 8250 3800
+Wire Wire Line
+	8350 4000 8350 3800
+Wire Wire Line
+	8350 3800 8400 3800
+Wire Wire Line
+	8400 3800 8400 3650
+Wire Wire Line
+	8150 4000 8150 3800
+Wire Wire Line
+	8150 3800 8100 3800
+Wire Wire Line
+	8100 3800 8100 3650
+$Comp
+L Device:R_POT RV2
+U 1 1 61252C0A
+P 8700 3650
+F 0 "RV2" V 8493 3650 50  0000 C CNN
+F 1 "Pot B" V 8584 3650 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 8700 3650 50  0001 C CNN
+F 3 "~" H 8700 3650 50  0001 C CNN
+	1    8700 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J11
+U 1 1 61252C10
+P 8700 4200
+F 0 "J11" V 8750 4400 50  0000 R CNN
+F 1 "Conn B" V 8650 4300 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8700 4200 50  0001 C CNN
+F 3 "~" H 8700 4200 50  0001 C CNN
+	1    8700 4200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8700 4000 8700 3800
+Wire Wire Line
+	8800 4000 8800 3800
+Wire Wire Line
+	8800 3800 8850 3800
+Wire Wire Line
+	8850 3800 8850 3650
+Wire Wire Line
+	8600 4000 8600 3800
+Wire Wire Line
+	8600 3800 8550 3800
+Wire Wire Line
+	8550 3800 8550 3650
+$Comp
+L Device:R_POT RV3
+U 1 1 6125BB5F
+P 9150 3650
+F 0 "RV3" V 8943 3650 50  0000 C CNN
+F 1 "Pot C" V 9034 3650 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 9150 3650 50  0001 C CNN
+F 3 "~" H 9150 3650 50  0001 C CNN
+	1    9150 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J12
+U 1 1 6125BB65
+P 9150 4200
+F 0 "J12" V 9200 4400 50  0000 R CNN
+F 1 "Conn C" V 9100 4300 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9150 4200 50  0001 C CNN
+F 3 "~" H 9150 4200 50  0001 C CNN
+	1    9150 4200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9150 4000 9150 3800
+Wire Wire Line
+	9250 4000 9250 3800
+Wire Wire Line
+	9250 3800 9300 3800
+Wire Wire Line
+	9300 3800 9300 3650
+Wire Wire Line
+	9050 4000 9050 3800
+Wire Wire Line
+	9050 3800 9000 3800
+Wire Wire Line
+	9000 3800 9000 3650
+$EndSCHEMATC

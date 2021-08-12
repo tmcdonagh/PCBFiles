@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Device_Audio_Electrosmith_Daisy_Seed)(type Legacy)(uri ${KIPRJMOD}/libraries/Device_Audio_Electrosmith_Daisy_Seed.lib)(options "")(descr ""))
+  (lib (name DaisySeedPedal-rescue)(type Legacy)(uri ${KIPRJMOD}/DaisySeedPedal-rescue.lib)(options "")(descr ""))
 )

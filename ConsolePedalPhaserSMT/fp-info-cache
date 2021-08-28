@@ -1,4 +1,4 @@
-19248618342075033
+19003914863566188
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83062,13 +83062,6 @@ C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
 2
 2
 libraries
-C_Flat_L7.2_H10
-C, Rect series, Radial, pin pitch=5.00mm, , length*width=7.2*2.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
-C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
-0
-2
-2
-libraries
 DPDTSwitch
 
 
@@ -83089,94 +83082,3 @@ N64-Connector
 0
 50
 50
-libraries
-RK09L1140A65
-RK09L1140A65-4
-Variable Resistor
-0
-5
-5
-libraries
-R_POT
-Through hole straight socket strip, 1x03, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
-Through hole socket strip THT 1x03 2.54mm single row
-0
-3
-3
-libraries
-fish1
-
-
-0
-0
-0
-libraries
-fish2
-
-
-0
-0
-0
-libraries
-fish3
-
-
-0
-0
-0
-libraries
-fish4
-
-
-0
-0
-0
-libraries
-fish5
-
-
-0
-0
-0
-libraries
-fish6
-
-
-0
-0
-0
-libraries
-koiPond
-
-
-0
-0
-0
-libraries
-koiPondFish1
-
-
-0
-0
-0
-libraries
-koiPondFish2
-
-
-0
-0
-0
-libraries
-mcdonaghcorpQR
-
-
-0
-0
-0
-libraries
-phaserLogo
-
-
-0
-0
-0

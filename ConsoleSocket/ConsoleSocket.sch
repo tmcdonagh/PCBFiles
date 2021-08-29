@@ -47,17 +47,6 @@ Text Label 8250 2050 2    50   ~ 0
 LEDPower
 Text Label 8750 3450 0    50   ~ 0
 LEDPower
-$Comp
-L power:+9V #PWR08
-U 1 1 5FA963AA
-P 8750 3550
-F 0 "#PWR08" H 8750 3400 50  0001 C CNN
-F 1 "+9V" V 8765 3678 50  0000 L CNN
-F 2 "" H 8750 3550 50  0001 C CNN
-F 3 "" H 8750 3550 50  0001 C CNN
-	1    8750 3550
-	0    1    1    0   
-$EndComp
 Text Label 8750 3650 0    50   ~ 0
 Output
 Text Label 8750 3750 0    50   ~ 0
@@ -110,17 +99,6 @@ Text Label 8750 1750 0    50   ~ 0
 Input
 Text Label 8750 1850 0    50   ~ 0
 Output
-$Comp
-L power:+9V #PWR0102
-U 1 1 5FACB96C
-P 8750 1950
-F 0 "#PWR0102" H 8750 1800 50  0001 C CNN
-F 1 "+9V" V 8765 2078 50  0000 L CNN
-F 2 "" H 8750 1950 50  0001 C CNN
-F 3 "" H 8750 1950 50  0001 C CNN
-	1    8750 1950
-	0    1    1    0   
-$EndComp
 Text Label 8750 2050 0    50   ~ 0
 LEDPower
 Text Label 8250 3450 2    50   ~ 0
@@ -183,47 +161,6 @@ NoConn ~ 8250 2350
 NoConn ~ 8250 2250
 NoConn ~ 8250 2150
 $Comp
-L Connector:Conn_01x05_Male J1
-U 1 1 60851789
-P 6150 2300
-F 0 "J1" H 6258 2681 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 6258 2590 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6150 2300 50  0001 C CNN
-F 3 "~" H 6150 2300 50  0001 C CNN
-	1    6150 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 608521E0
-P 6850 2100
-F 0 "#PWR02" H 6850 1850 50  0001 C CNN
-F 1 "GND" H 6855 1927 50  0000 C CNN
-F 2 "" H 6850 2100 50  0001 C CNN
-F 3 "" H 6850 2100 50  0001 C CNN
-	1    6850 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 2100 6350 2100
-Text Label 6350 2200 0    50   ~ 0
-Input
-Text Label 6350 2300 0    50   ~ 0
-Output
-$Comp
-L power:+9V #PWR01
-U 1 1 60852D8F
-P 6350 2400
-F 0 "#PWR01" H 6350 2250 50  0001 C CNN
-F 1 "+9V" V 6350 2550 50  0000 L CNN
-F 2 "" H 6350 2400 50  0001 C CNN
-F 3 "" H 6350 2400 50  0001 C CNN
-	1    6350 2400
-	0    1    1    0   
-$EndComp
-Text Label 6350 2500 0    50   ~ 0
-LEDPower
-$Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 608575C0
 P 6200 2950
@@ -267,4 +204,51 @@ F 3 "" H 6600 3050 50  0001 C CNN
 	1    6600 3050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 612C0ABF
+P 6150 2150
+F 0 "J1" H 6258 2531 50  0000 C CNN
+F 1 "Conn" H 6258 2440 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6150 2150 50  0001 C CNN
+F 3 "~" H 6150 2150 50  0001 C CNN
+	1    6150 2150
+	1    0    0    -1  
+$EndComp
+Text Label 6350 2050 0    50   ~ 0
+Input
+Text Label 6350 2150 0    50   ~ 0
+Output
+Text Label 6350 2250 0    50   ~ 0
+LEDPower
+$Comp
+L power:+9V #PWR01
+U 1 1 612C2CE7
+P 6350 2350
+F 0 "#PWR01" H 6350 2200 50  0001 C CNN
+F 1 "+9V" V 6350 2500 50  0000 L CNN
+F 2 "" H 6350 2350 50  0001 C CNN
+F 3 "" H 6350 2350 50  0001 C CNN
+	1    6350 2350
+	0    1    1    0   
+$EndComp
+Text Label 6350 2450 0    50   ~ 0
+SW
+Text Label 8750 1950 0    50   ~ 0
+SW
+Text Label 8750 3550 0    50   ~ 0
+SW
+$Comp
+L power:GND #PWR02
+U 1 1 612C487C
+P 6900 1950
+F 0 "#PWR02" H 6900 1700 50  0001 C CNN
+F 1 "GND" H 6905 1777 50  0000 C CNN
+F 2 "" H 6900 1950 50  0001 C CNN
+F 3 "" H 6900 1950 50  0001 C CNN
+	1    6900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1950 6350 1950
 $EndSCHEMATC

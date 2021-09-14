@@ -137,17 +137,6 @@ Text Label 9050 4150 2    50   ~ 0
 LEDPower
 Text Label 9550 4150 0    50   ~ 0
 LEDPower
-$Comp
-L Connector_Generic:Conn_02x25_Counter_Clockwise J1
-U 1 1 5FAA85D7
-P 9250 3450
-F 0 "J1" H 9300 4867 50  0000 C CNN
-F 1 "Conn_02x25_Counter_Clockwise" H 9300 4776 50  0000 C CNN
-F 2 "libraries:N64-Connector" H 9250 3450 50  0001 C CNN
-F 3 "~" H 9250 3450 50  0001 C CNN
-	1    9250 3450
-	1    0    0    -1  
-$EndComp
 Connection ~ 9050 2250
 Connection ~ 9050 4650
 Connection ~ 9550 4650
@@ -393,11 +382,7 @@ Wire Wire Line
 Wire Wire Line
 	6700 1950 6700 1900
 Wire Wire Line
-	6700 1900 7000 1900
-Wire Wire Line
 	6700 2250 6700 2300
-Wire Wire Line
-	6700 2300 7300 2300
 Wire Wire Line
 	7900 2250 7900 2300
 Wire Wire Line
@@ -767,4 +752,19 @@ NoConn ~ 6200 1250
 Wire Wire Line
 	5000 4700 6400 4700
 NoConn ~ 4200 3350
+Wire Wire Line
+	6700 1900 7000 1900
+Wire Wire Line
+	6700 2300 7300 2300
+$Comp
+L Connector_Generic:Conn_02x25_Counter_Clockwise J1
+U 1 1 5FAA85D7
+P 9250 3450
+F 0 "J1" H 9300 4867 50  0000 C CNN
+F 1 "Conn_02x25_Counter_Clockwise" H 9300 4776 50  0000 C CNN
+F 2 "libraries:N64-Connector" H 9250 3450 50  0001 C CNN
+F 3 "~" H 9250 3450 50  0001 C CNN
+	1    9250 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

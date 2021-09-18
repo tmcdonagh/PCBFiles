@@ -30,7 +30,7 @@ U 1 1 5FA79099
 P 2650 1600
 F 0 "S1" H 2600 1976 45  0000 C CNN
 F 1 "SWITCH-3PDT-PTH-STOMP" H 2600 1892 45  0000 C CNN
-F 2 "MuffPi:STOMP_SWITCH_3PDT" H 2650 1850 20  0001 C CNN
+F 2 "libraries:STOMP_SWITCH_3PDT" H 2650 1850 20  0001 C CNN
 F 3 "" H 2650 1600 50  0001 C CNN
 F 4 "SWCH-13197" H 2600 1797 60  0000 C CNN "Field4"
 	1    2650 1600
@@ -42,7 +42,7 @@ U 2 1 5FA793CD
 P 2650 2150
 F 0 "S1" H 2600 2526 45  0000 C CNN
 F 1 "SWITCH-3PDT-PTH-STOMP" H 2600 2442 45  0000 C CNN
-F 2 "MuffPi:STOMP_SWITCH_3PDT" H 2650 2400 20  0001 C CNN
+F 2 "libraries:STOMP_SWITCH_3PDT" H 2650 2400 20  0001 C CNN
 F 3 "" H 2650 2150 50  0001 C CNN
 F 4 "SWCH-13197" H 2600 2347 60  0000 C CNN "Field4"
 	2    2650 2150
@@ -54,7 +54,7 @@ U 3 1 5FA7A167
 P 2650 2700
 F 0 "S1" H 2600 3076 45  0000 C CNN
 F 1 "SWITCH-3PDT-PTH-STOMP" H 2600 2992 45  0000 C CNN
-F 2 "MuffPi:STOMP_SWITCH_3PDT" H 2650 2950 20  0001 C CNN
+F 2 "libraries:STOMP_SWITCH_3PDT" H 2650 2950 20  0001 C CNN
 F 3 "" H 2650 2700 50  0001 C CNN
 F 4 "SWCH-13197" H 2600 2897 60  0000 C CNN "Field4"
 	3    2650 2700
@@ -339,137 +339,6 @@ Wire Wire Line
 	1550 1100 1550 1000
 Wire Wire Line
 	2000 1000 1850 1000
-Wire Wire Line
-	8950 1250 8950 1350
-$Comp
-L power:GND #PWR010
-U 1 1 60B0323C
-P 8350 1250
-F 0 "#PWR010" H 8350 1000 50  0001 C CNN
-F 1 "GND" H 8355 1077 50  0000 C CNN
-F 2 "" H 8350 1250 50  0001 C CNN
-F 3 "" H 8350 1250 50  0001 C CNN
-	1    8350 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8350 1250 8950 1250
-$Comp
-L power:+9V #PWR012
-U 1 1 60B03245
-P 8950 1650
-F 0 "#PWR012" H 8950 1500 50  0001 C CNN
-F 1 "+9V" V 8965 1778 50  0000 L CNN
-F 2 "" H 8950 1650 50  0001 C CNN
-F 3 "" H 8950 1650 50  0001 C CNN
-	1    8950 1650
-	0    -1   -1   0   
-$EndComp
-Text Label 8950 1750 2    50   ~ 0
-LEDPower
-Text Label 9450 3150 0    50   ~ 0
-LEDPower
-Wire Wire Line
-	9450 3550 9450 3650
-Wire Wire Line
-	9450 3650 9600 3650
-$Comp
-L power:GND #PWR016
-U 1 1 60B03257
-P 9600 3650
-F 0 "#PWR016" H 9600 3400 50  0001 C CNN
-F 1 "GND" H 9605 3477 50  0000 C CNN
-F 2 "" H 9600 3650 50  0001 C CNN
-F 3 "" H 9600 3650 50  0001 C CNN
-	1    9600 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x25_Odd_Even J4
-U 1 1 60B0325D
-P 9150 2450
-F 0 "J4" H 9200 3867 50  0000 C CNN
-F 1 "Slot B" H 9200 3776 50  0000 C CNN
-F 2 "libraries:n64Socket" H 9150 2450 50  0001 C CNN
-F 3 "~" H 9150 2450 50  0001 C CNN
-	1    9150 2450
-	1    0    0    -1  
-$EndComp
-Connection ~ 8950 1250
-Connection ~ 9450 3650
-Wire Wire Line
-	9450 1350 9450 1250
-$Comp
-L power:GND #PWR017
-U 1 1 60B03266
-P 9900 1250
-F 0 "#PWR017" H 9900 1000 50  0001 C CNN
-F 1 "GND" H 9905 1077 50  0000 C CNN
-F 2 "" H 9900 1250 50  0001 C CNN
-F 3 "" H 9900 1250 50  0001 C CNN
-	1    9900 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 1250 9900 1250
-Connection ~ 9450 1250
-Text Label 9450 1750 0    50   ~ 0
-LEDPower
-Text Label 8950 3150 2    50   ~ 0
-LEDPower
-$Comp
-L power:+9V #PWR013
-U 1 1 60B03278
-P 8950 3250
-F 0 "#PWR013" H 8950 3100 50  0001 C CNN
-F 1 "+9V" V 8965 3378 50  0000 L CNN
-F 2 "" H 8950 3250 50  0001 C CNN
-F 3 "" H 8950 3250 50  0001 C CNN
-	1    8950 3250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8950 3550 8950 3650
-$Comp
-L power:GND #PWR011
-U 1 1 60B03281
-P 8800 3650
-F 0 "#PWR011" H 8800 3400 50  0001 C CNN
-F 1 "GND" H 8805 3477 50  0000 C CNN
-F 2 "" H 8800 3650 50  0001 C CNN
-F 3 "" H 8800 3650 50  0001 C CNN
-	1    8800 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8800 3650 8950 3650
-Connection ~ 8950 3650
-NoConn ~ 9450 1850
-NoConn ~ 9450 1950
-NoConn ~ 9450 2050
-NoConn ~ 9450 2150
-NoConn ~ 9450 2250
-NoConn ~ 9450 2350
-NoConn ~ 9450 2450
-NoConn ~ 9450 2550
-NoConn ~ 9450 2650
-NoConn ~ 9450 2750
-NoConn ~ 9450 2850
-NoConn ~ 9450 2950
-NoConn ~ 9450 3050
-NoConn ~ 8950 3050
-NoConn ~ 8950 2950
-NoConn ~ 8950 2850
-NoConn ~ 8950 2750
-NoConn ~ 8950 2650
-NoConn ~ 8950 2550
-NoConn ~ 8950 2450
-NoConn ~ 8950 2350
-NoConn ~ 8950 2250
-NoConn ~ 8950 2150
-NoConn ~ 8950 2050
-NoConn ~ 8950 1950
-NoConn ~ 8950 1850
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 60B19785
@@ -608,12 +477,8 @@ Text Label 2650 5450 2    50   ~ 0
 SlotB
 Text Label 7600 1650 0    50   ~ 0
 SlotA
-Text Label 9450 1650 0    50   ~ 0
-SlotB
 Text Label 7600 3250 0    50   ~ 0
 SlotA
-Text Label 9450 3250 0    50   ~ 0
-SlotB
 Text Label 7600 1450 0    50   ~ 0
 SlotAInput
 Text Label 7600 1550 0    50   ~ 0
@@ -626,26 +491,10 @@ Text Label 7100 3350 2    50   ~ 0
 SlotAOutput
 Text Label 7600 3350 0    50   ~ 0
 SlotAOutput
-Text Label 8950 1450 2    50   ~ 0
-SlotBInput
-Text Label 9450 1450 0    50   ~ 0
-SlotBInput
-Text Label 8950 3450 2    50   ~ 0
-SlotBInput
-Text Label 9450 3450 0    50   ~ 0
-SlotBInput
 Text Label 4450 6200 0    50   ~ 0
 Output
 Text Label 4450 5400 0    50   ~ 0
 SlotAInput
-Text Label 9450 3350 0    50   ~ 0
-Output
-Text Label 8950 3350 2    50   ~ 0
-Output
-Text Label 9450 1550 0    50   ~ 0
-Output
-Text Label 8950 1550 2    50   ~ 0
-Output
 NoConn ~ 2650 6250
 $Comp
 L power:GND #PWR022
@@ -961,4 +810,91 @@ Wire Wire Line
 Wire Wire Line
 	3750 5200 4100 5200
 Connection ~ 4100 5200
+Text Label 2050 4800 2    50   ~ 0
+SlotA
+Text Label 2050 4950 2    50   ~ 0
+SlotB
+$Comp
+L Device:R R10
+U 1 1 61456261
+P 2200 4800
+F 0 "R10" V 2100 4750 50  0000 L CNN
+F 1 "3M" V 2200 4750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2130 4800 50  0001 C CNN
+F 3 "~" H 2200 4800 50  0001 C CNN
+	1    2200 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 61457C6D
+P 2450 4950
+F 0 "#PWR025" H 2450 4700 50  0001 C CNN
+F 1 "GND" H 2450 4800 50  0000 C CNN
+F 2 "" H 2450 4950 50  0001 C CNN
+F 3 "" H 2450 4950 50  0001 C CNN
+	1    2450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4800 2350 4800
+Wire Wire Line
+	2350 4950 2450 4950
+Wire Wire Line
+	2450 4800 2450 4950
+Connection ~ 2450 4950
+$Comp
+L Device:R R11
+U 1 1 61456971
+P 2200 4950
+F 0 "R11" V 2100 4900 50  0000 L CNN
+F 1 "3M" V 2200 4900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2130 4950 50  0001 C CNN
+F 3 "~" H 2200 4950 50  0001 C CNN
+	1    2200 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J4
+U 1 1 61463F82
+P 8900 1650
+F 0 "J4" H 9008 2031 50  0000 C CNN
+F 1 "Slot B" H 9008 1940 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 8900 1650 50  0001 C CNN
+F 3 "~" H 8900 1650 50  0001 C CNN
+	1    8900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 6146637B
+P 9600 1450
+F 0 "#PWR011" H 9600 1200 50  0001 C CNN
+F 1 "GND" H 9605 1277 50  0000 C CNN
+F 2 "" H 9600 1450 50  0001 C CNN
+F 3 "" H 9600 1450 50  0001 C CNN
+	1    9600 1450
+	1    0    0    -1  
+$EndComp
+Text Label 9100 1550 0    50   ~ 0
+SlotBInput
+Wire Wire Line
+	9100 1450 9600 1450
+Text Label 9100 1650 0    50   ~ 0
+Output
+Text Label 9100 1950 0    50   ~ 0
+SlotB
+$Comp
+L power:+9V #PWR010
+U 1 1 6146F26B
+P 9100 1850
+F 0 "#PWR010" H 9100 1700 50  0001 C CNN
+F 1 "+9V" V 9100 1950 50  0000 L CNN
+F 2 "" H 9100 1850 50  0001 C CNN
+F 3 "" H 9100 1850 50  0001 C CNN
+	1    9100 1850
+	0    1    1    0   
+$EndComp
+Text Label 9100 1750 0    50   ~ 0
+LEDPower
 $EndSCHEMATC

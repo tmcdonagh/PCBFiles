@@ -1,4 +1,4 @@
-19013639330575923
+19016880183740531
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83090,6 +83090,13 @@ N64-Connector
 50
 50
 libraries
+STOMP_SWITCH_3PDT
+3-POLE, DOUBLE-THROW (3PDT) STOMP SWITCH
+3-POLE, DOUBLE-THROW (3PDT) STOMP SWITCH
+0
+9
+9
+libraries
 bat1
 
 
@@ -83117,6 +83124,13 @@ Through hole socket strip THT 2x25 2.54mm double row
 0
 50
 50
+libraries
+piLogo
+
+
+0
+0
+0
 libraries
 sadDrum
 

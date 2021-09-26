@@ -209,7 +209,7 @@ U 1 1 5FAA85D7
 P 9250 3450
 F 0 "J1" H 9300 4867 50  0000 C CNN
 F 1 "Conn_02x25_Counter_Clockwise" H 9300 4776 50  0000 C CNN
-F 2 "libraries:N64-Connector" H 9250 3450 50  0001 C CNN
+F 2 "libraries:N64-Connector-Wide" H 9250 3450 50  0001 C CNN
 F 3 "~" H 9250 3450 50  0001 C CNN
 	1    9250 3450
 	1    0    0    -1  
@@ -359,7 +359,7 @@ U 1 1 5FDC4FFF
 P 7200 2000
 F 0 "C2" V 6948 2000 50  0000 C CNN
 F 1 "0.01uF" V 7039 2000 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D10.5mm_W5.0mm_P7.50mm" H 7238 1850 50  0001 C CNN
+F 2 "libraries:C_Flat_L7.2_H6.5" H 7238 1850 50  0001 C CNN
 F 3 "~" H 7200 2000 50  0001 C CNN
 	1    7200 2000
 	0    1    1    0   

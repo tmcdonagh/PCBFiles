@@ -1,4 +1,4 @@
-18998992343978229
+19007163990975467
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83027,6 +83027,34 @@ varistor SIOV
 2
 2
 libraries
+CP_Radial_D5.0mm_P2.00mm
+CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
+0
+2
+2
+libraries
+CP_Radial_D6.3mm_P2.00mm
+CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
+0
+2
+2
+libraries
+CP_Radial_D6.3mm_P2.50mm
+CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
+0
+2
+2
+libraries
+C_Flat_L7.2_H6.5
+C, Rect series, Radial, pin pitch=5.00mm, , length*width=7.2*2.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
+C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
+0
+2
+2
+libraries
 DPDTSwitch
 
 
@@ -83035,6 +83063,13 @@ DPDTSwitch
 6
 libraries
 N64-Connector
+
+
+0
+50
+50
+libraries
+N64-Connector-Wide
 
 
 0

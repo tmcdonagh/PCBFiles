@@ -1,4 +1,4 @@
-19017019238853461
+19008781118266742
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83027,7 +83027,21 @@ varistor SIOV
 2
 2
 libraries
+CP_Radial_D5.0mm_P2.00mm
+CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
+0
+2
+2
+libraries
 CP_Radial_D5.0mm_P2.00mm_L11.0mm
+CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
+0
+2
+2
+libraries
+CP_Radial_D6.3mm_P2.00mm
 CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
 CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
 0
@@ -83037,6 +83051,13 @@ libraries
 CP_Radial_D6.3mm_P2.00mm_L11.0mm
 CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
 CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
+0
+2
+2
+libraries
+CP_Radial_D6.3mm_P2.50mm
+CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
 0
 2
 2
@@ -83056,13 +83077,6 @@ CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
 2
 libraries
 C_Flat_L7.2_H6.5
-C, Rect series, Radial, pin pitch=5.00mm, , length*width=7.2*2.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
-C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
-0
-2
-2
-libraries
-C_Flat_L7.2_H10
 C, Rect series, Radial, pin pitch=5.00mm, , length*width=7.2*2.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
 C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
 0
@@ -83089,52 +83103,3 @@ N64-Connector
 0
 50
 50
-libraries
-STOMP_SWITCH_3PDT
-3-POLE, DOUBLE-THROW (3PDT) STOMP SWITCH
-3-POLE, DOUBLE-THROW (3PDT) STOMP SWITCH
-0
-9
-9
-libraries
-bat1
-
-
-0
-0
-0
-libraries
-consolePedalsLogo
-
-
-0
-0
-0
-libraries
-deerImage
-
-
-0
-0
-0
-libraries
-n64Logo
-
-
-0
-0
-0
-libraries
-n64Socket
-Through hole straight socket strip, 2x25, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
-Through hole socket strip THT 2x25 2.54mm double row
-0
-50
-50
-libraries
-sadDrum
-
-
-0
-0
-0

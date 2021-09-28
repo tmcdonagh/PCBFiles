@@ -4,12 +4,17 @@
 
 //defining hardware resources.
 #define LED 13
+#define TL_LED 3
+#define TR_LED 5
+#define BL_LED 6
+#define BR_LED 11
 #define FOOTSWITCH 12
 //#define TOGGLE 2
 //#define TOGGLE A3
-#define PUSHBUTTON_1 A5
-#define PUSHBUTTON_2 A4
-#define PUSHBUTTON_3 A3
+#define PUSHBUTTON_1 A2
+#define PUSHBUTTON_2 A3
+#define PUSHBUTTON_3 A4
+#define PUSHBUTTON_4 A5
 
 //defining the output PWM parameters
 #define PWM_FREQ 0x00FF // pwm frequency - 31.3KHz
@@ -37,7 +42,18 @@ void setup() {
   pinMode(PUSHBUTTON_1, INPUT_PULLUP);
   pinMode(PUSHBUTTON_2, INPUT_PULLUP);
   pinMode(PUSHBUTTON_3, INPUT_PULLUP);
+  pinMode(PUSHBUTTON_4, INPUT_PULLUP);
   pinMode(LED, OUTPUT);
+
+  pinMode(TR_LED, OUTPUT);
+  pinMode(TL_LED, OUTPUT);
+  pinMode(BL_LED, OUTPUT);
+  pinMode(BR_LED, OUTPUT);
+
+  digitalWrite(TR_LED, LOW);
+  digitalWrite(TL_LED, LOW);
+  digitalWrite(BL_LED, LOW);
+  digitalWrite(BR_LED, LOW);
 
   // setup ADC
   ADMUX = 0x60; // left adjust, adc0, internal vcc
@@ -63,6 +79,9 @@ void loop()
   //Turn on the LED if the effect is ON.
   if (digitalRead(FOOTSWITCH)) digitalWrite(LED, HIGH);
   else  digitalWrite(LED, LOW);
+
+  digitalWrite(BL_LED, HIGH);
+  digitalWrite(BR_LED, HIGH);
 
   /*
     //Depending on the Toggle switch position, the effect is changed (up to 4 effects)
@@ -98,25 +117,22 @@ ISR(TIMER1_CAPT_vect)
   if (counter == 100)
   {
     counter = 0;
-    if (!digitalRead(PUSHBUTTON_2))
-    {
-      if (vol_variable < 32768)vol_variable = vol_variable + 100; //increase the volume
-      if (distortion_threshold < 32768)distortion_threshold = distortion_threshold + 250; //increase the distortion
-      if (fuzz_threshold < 32768)fuzz_threshold = fuzz_threshold + 250; //increase the fuzz
-      if (bit_crush_variable < 16)bit_crush_variable = bit_crush_variable + 1; //increase the bit crushing
-      digitalWrite(LED, LOW); //blinks the led
-    }
 
     if (!digitalRead(PUSHBUTTON_1))
     {
-      if (vol_variable > 0)vol_variable = vol_variable - 10; //decrease volume
-      if (distortion_threshold > 0)distortion_threshold = distortion_threshold - 25; //decrease the distortion
-      if (fuzz_threshold > 0)fuzz_threshold = fuzz_threshold - 25; //decrease the fuzz
-      if (bit_crush_variable > 0)bit_crush_variable = bit_crush_variable - 1; //decrease the bit crushing
-      digitalWrite(LED, LOW); //blinks the led
+      effect--;
+      //if (effect>4) effect=0;
+      if (effect < 2) effect = 4;
+
+      //set the default variables for all effects:
+      vol_variable = 10000;
+      distortion_threshold = 6000;
+      fuzz_threshold = 6000;
+      bit_crush_variable = 0;
+
     }
 
-    if (!digitalRead(PUSHBUTTON_3))
+    if (!digitalRead(PUSHBUTTON_2))
     {
       effect++;
       //if (effect>4) effect=0;
@@ -128,6 +144,24 @@ ISR(TIMER1_CAPT_vect)
       fuzz_threshold = 6000;
       bit_crush_variable = 0;
 
+    }
+
+    if (!digitalRead(PUSHBUTTON_3))
+    {
+      if (vol_variable > 0)vol_variable = vol_variable - 10; //decrease volume
+      if (distortion_threshold > 0)distortion_threshold = distortion_threshold - 25; //decrease the distortion
+      if (fuzz_threshold > 0)fuzz_threshold = fuzz_threshold - 25; //decrease the fuzz
+      if (bit_crush_variable > 0)bit_crush_variable = bit_crush_variable - 1; //decrease the bit crushing
+      digitalWrite(BL_LED, LOW); //blinks the led
+    }
+
+    if (!digitalRead(PUSHBUTTON_4))
+    {
+      if (vol_variable < 32768)vol_variable = vol_variable + 100; //increase the volume
+      if (distortion_threshold < 32768)distortion_threshold = distortion_threshold + 250; //increase the distortion
+      if (fuzz_threshold < 32768)fuzz_threshold = fuzz_threshold + 250; //increase the fuzz
+      if (bit_crush_variable < 16)bit_crush_variable = bit_crush_variable + 1; //increase the bit crushing
+      digitalWrite(BR_LED, LOW); //blinks the led
     }
 
   }
@@ -146,15 +180,21 @@ ISR(TIMER1_CAPT_vect)
   else if (effect == 2) //DISTORTION EFFECT
   {
     if (input > distortion_threshold) input = distortion_threshold;
+    digitalWrite(TL_LED, HIGH);
+    digitalWrite(TR_LED, LOW);
   }
   else if (effect == 3) //FUZZ EFFECT
   {
     if (input > fuzz_threshold) input = 32768;
     else if (input < -fuzz_threshold) input = -32768;
+    digitalWrite(TL_LED, HIGH);
+    digitalWrite(TR_LED, HIGH);
   }
   else if (effect == 4) //BIT CRUSHER EFFECT
   {
     input = input << bit_crush_variable;
+    digitalWrite(TL_LED, LOW);
+    digitalWrite(TR_LED, HIGH);
   }
 
   //write the PWM signal

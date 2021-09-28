@@ -24,7 +24,7 @@
 //other variables
 int input;
 int counter = 0;
-int effect = 0;
+int effect = 2;
 int toggle_position = 0;
 byte ADC_low, ADC_high;
 
@@ -34,6 +34,11 @@ int distortion_threshold = 6000;
 int fuzz_threshold = 6000;
 int bit_crush_variable = 0;
 
+bool pushed1 = false;
+bool pushed2 = false;
+
+int ledL;
+int ledR;
 
 void setup() {
   //setup IO
@@ -50,10 +55,15 @@ void setup() {
   pinMode(BL_LED, OUTPUT);
   pinMode(BR_LED, OUTPUT);
 
+  digitalWrite(TL_LED, HIGH);
   digitalWrite(TR_LED, LOW);
-  digitalWrite(TL_LED, LOW);
-  digitalWrite(BL_LED, LOW);
-  digitalWrite(BR_LED, LOW);
+  //digitalWrite(BL_LED, LOW);
+  //digitalWrite(BR_LED, LOW);
+  analogWrite(BL_LED, ledL);
+  analogWrite(BR_LED, ledR);
+
+  Serial.begin(9600);
+
 
   // setup ADC
   ADMUX = 0x60; // left adjust, adc0, internal vcc
@@ -80,26 +90,8 @@ void loop()
   if (digitalRead(FOOTSWITCH)) digitalWrite(LED, HIGH);
   else  digitalWrite(LED, LOW);
 
-  digitalWrite(BL_LED, HIGH);
-  digitalWrite(BR_LED, HIGH);
-
-  /*
-    //Depending on the Toggle switch position, the effect is changed (up to 4 effects)
-    if (digitalRead(TOGGLE) != toggle_position)
-    {
-      //toggle_position = digitalRead(TOGGLE); //update the new value
-      effect++;
-      //if (effect>4) effect=0;
-      if (effect > 4) effect = 2;
-
-      //set the default variables for all effects:
-      vol_variable = 10000;
-      distortion_threshold = 6000;
-      fuzz_threshold = 6000;
-      bit_crush_variable = 0;
-    }
-  */
-
+  analogWrite(BL_LED, ledL);
+  analogWrite(BR_LED, ledR);
 }
 
 ISR(TIMER1_CAPT_vect)
@@ -116,23 +108,43 @@ ISR(TIMER1_CAPT_vect)
   counter++; //to save resources, the pushbuttons are checked every 100 times.
   if (counter == 100)
   {
+
+    //digitalWrite(BL_LED, LOW);
+    //digitalWrite(BR_LED, LOW);
+
+
     counter = 0;
 
-    if (!digitalRead(PUSHBUTTON_1))
+    double temp = ((distortion_threshold * 100) / 32700) * 2.55;
+    ledR = (int) temp;
+    temp = 255.0 - temp;
+    ledL = (int) temp;
+
+    if (!digitalRead(PUSHBUTTON_1) && !pushed1)
     {
       effect--;
       //if (effect>4) effect=0;
       if (effect < 2) effect = 4;
 
+      /*
       //set the default variables for all effects:
       vol_variable = 10000;
       distortion_threshold = 6000;
       fuzz_threshold = 6000;
       bit_crush_variable = 0;
+      */
+      vol_variable = 10000;
+      distortion_threshold = 16350;
+      fuzz_threshold = 16350;
+      bit_crush_variable = 8;
 
+      pushed1 = true;
+    }
+    else if (digitalRead(PUSHBUTTON_1)) {
+      pushed1 = false;
     }
 
-    if (!digitalRead(PUSHBUTTON_2))
+    if (!digitalRead(PUSHBUTTON_2) && !pushed2)
     {
       effect++;
       //if (effect>4) effect=0;
@@ -140,29 +152,48 @@ ISR(TIMER1_CAPT_vect)
 
       //set the default variables for all effects:
       vol_variable = 10000;
-      distortion_threshold = 6000;
-      fuzz_threshold = 6000;
-      bit_crush_variable = 0;
+      distortion_threshold = 16350;
+      fuzz_threshold = 16350;
+      bit_crush_variable = 8;
+
+      pushed2 = true;
 
     }
+    else if (digitalRead(PUSHBUTTON_2)) {
+      pushed2 = false;
+    }
+
 
     if (!digitalRead(PUSHBUTTON_3))
     {
-      if (vol_variable > 0)vol_variable = vol_variable - 10; //decrease volume
-      if (distortion_threshold > 0)distortion_threshold = distortion_threshold - 25; //decrease the distortion
-      if (fuzz_threshold > 0)fuzz_threshold = fuzz_threshold - 25; //decrease the fuzz
+      if (vol_variable > 0)vol_variable = vol_variable - 20; //decrease volume
+      if (distortion_threshold > 0)distortion_threshold = distortion_threshold - 50; //decrease the distortion
+      if (fuzz_threshold > 0)fuzz_threshold = fuzz_threshold - 50; //decrease the fuzz
       if (bit_crush_variable > 0)bit_crush_variable = bit_crush_variable - 1; //decrease the bit crushing
-      digitalWrite(BL_LED, LOW); //blinks the led
+      //digitalWrite(BL_LED, HIGH); //blinks the led
+      /*
+        double temp = ((distortion_threshold * 100) / 32700) * 2.55;
+        //Serial.println(distortion_threshold);
+        ledL = (int) temp;
+      */
+      Serial.println(bit_crush_variable);
     }
 
     if (!digitalRead(PUSHBUTTON_4))
     {
-      if (vol_variable < 32768)vol_variable = vol_variable + 100; //increase the volume
-      if (distortion_threshold < 32768)distortion_threshold = distortion_threshold + 250; //increase the distortion
-      if (fuzz_threshold < 32768)fuzz_threshold = fuzz_threshold + 250; //increase the fuzz
+      if (vol_variable < 32768)vol_variable = vol_variable + 20; //increase the volume
+      if (distortion_threshold < 32700)distortion_threshold = distortion_threshold + 50; //increase the distortion
+      if (fuzz_threshold < 32700)fuzz_threshold = fuzz_threshold + 50; //increase the fuzz
       if (bit_crush_variable < 16)bit_crush_variable = bit_crush_variable + 1; //increase the bit crushing
-      digitalWrite(BR_LED, LOW); //blinks the led
+      //digitalWrite(BR_LED, HIGH); //blinks the led
+      /*
+        double temp = ((distortion_threshold * 100) / 32700) * 2.55;
+        Serial.println(temp);
+        ledR = (int) temp;
+      */
+      Serial.println(bit_crush_variable);
     }
+
 
   }
 
@@ -196,6 +227,7 @@ ISR(TIMER1_CAPT_vect)
     digitalWrite(TL_LED, LOW);
     digitalWrite(TR_LED, HIGH);
   }
+
 
   //write the PWM signal
   OCR1AL = ((input + 0x8000) >> 8); // convert to unsigned, send out high byte

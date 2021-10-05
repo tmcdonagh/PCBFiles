@@ -1,4 +1,4 @@
-19003930657737793
+19007163990975467
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83062,13 +83062,6 @@ DPDTSwitch
 6
 6
 libraries
-MSS10255914AD
-MSS-102559-14A-D-2
-Switch
-0
-3
-3
-libraries
 N64-Connector
 
 
@@ -83076,7 +83069,28 @@ N64-Connector
 50
 50
 libraries
-shakeLogo
+N64-Connector-Wide
+
+
+0
+50
+50
+libraries
+drum1
+
+
+0
+0
+0
+libraries
+drum2
+
+
+0
+0
+0
+libraries
+n64Logo
 
 
 0

@@ -1759,7 +1759,7 @@
   )
 
   (module Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal (layer F.Cu) (tedit 5AE50CD5) (tstamp 615D0B86)
-    (at 127.67 84.709)
+    (at 127.635 84.709)
     (descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/DO-41%20(Plastic).pdf")
     (tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
     (path /616C7F53)

@@ -380,4 +380,26 @@ F 3 "" H 7300 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 1600 7200 1600
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61807ED1
+P 7600 2900
+F 0 "H2" H 7700 2946 50  0000 L CNN
+F 1 "MountingHole" H 7700 2855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 7600 2900 50  0001 C CNN
+F 3 "~" H 7600 2900 50  0001 C CNN
+	1    7600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 618086B4
+P 7600 2650
+F 0 "H1" H 7700 2696 50  0000 L CNN
+F 1 "MountingHole" H 7700 2605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 7600 2650 50  0001 C CNN
+F 3 "~" H 7600 2650 50  0001 C CNN
+	1    7600 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

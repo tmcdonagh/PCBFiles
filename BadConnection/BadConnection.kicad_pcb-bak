@@ -1792,7 +1792,7 @@
   )
 
   (module Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical (layer F.Cu) (tedit 5AA07388) (tstamp 61820675)
-    (at 130.683 80.899 270)
+    (at 137.16 40.386 270)
     (descr "Potentiometer, vertical, Bourns 3386F, https://www.bourns.com/pdfs/3386.pdf")
     (tags "Potentiometer vertical Bourns 3386F")
     (path /61844A6F)
@@ -1928,7 +1928,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 618206C9)
-    (at 129.54 98.298)
+    (at 151.564001 25.183001)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /61850488)
@@ -1980,7 +1980,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 618206EB)
-    (at 92.075 90.17)
+    (at 95.994001 40.533001)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /6186EDA9)
@@ -2044,7 +2044,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 6182070D)
-    (at 163.703 95.25)
+    (at 95.994001 21.133001)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /61860C4A)
@@ -2107,7 +2107,7 @@
   (gr_text "Sample Rate" (at 115.25 90.678) (layer F.SilkS) (tstamp 617CDF01)
     (effects (font (size 2 2) (thickness 0.25)))
   )
-  (gr_text JLCJLCJLCJLC (at 86.995 75.946 90) (layer F.SilkS)
+  (gr_text JLCJLCJLCJLC (at 100.584 97.028 90) (layer F.SilkS)
     (effects (font (size 0.9 0.9) (thickness 0.15)))
   )
   (gr_line (start 182 70) (end 83.3 70) (layer Edge.Cuts) (width 0.1) (tstamp 5FD3BF22))

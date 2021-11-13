@@ -13,8 +13,8 @@ const int PLAY = 2;    // ISD1820 PLAYE pin
 const int REC_BTN = 10;
 const int PLAY_BTN = 9;
 
-ButtonDebounce recButton(REC_BTN, 250);
-ButtonDebounce playButton(PLAY_BTN, 250);
+ButtonDebounce recButton(REC_BTN, 100);
+ButtonDebounce playButton(PLAY_BTN, 100);
 
 bool recording = false;
 

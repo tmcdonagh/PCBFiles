@@ -26,22 +26,23 @@ void setup() {
   pinMode(RECORD, OUTPUT);
   pinMode(PLAY, OUTPUT);
 
-  //  pinMode(REC_BTN, INPUT_PULLUP);
-  //  pinMode(PLAY_BTN, INPUT_PULLUP);
-
   digitalWrite(REC_LED, LOW);
   digitalWrite(PLAY_LED, LOW);
 }
 
 void loop() {
 
-  // Bugtton library button update
+  // Button debounce library button update
   recButton.update();
   playButton.update();
 
   // Record button pressed
   if (recButton.state() == LOW && recording == false) {
+
+    // Disables playback while recording
     recording = true;
+
+    // On off 3 times before recording start
     for (int i = 0; i < 2; i++) {
       digitalWrite(REC_LED, HIGH);
       delay(500);
@@ -49,11 +50,32 @@ void loop() {
       delay(500);
     }
     digitalWrite(REC_LED, HIGH);
-    delay(500);
+
+    // Recording start
+    digitalWrite(RECORD, HIGH);
+    delay(5000);
+
+    // Off on 3 times before recording stop
+    for (int i = 0; i < 2; i++) {
+      digitalWrite(REC_LED, LOW);
+      delay(500);
+      digitalWrite(REC_LED, HIGH);
+      delay(500);
+    }
     digitalWrite(REC_LED, LOW);
+
+    // Recording stop
+    digitalWrite(RECORD, LOW);
+
+    // Playback reenabled
     recording = false;
   }
 
+  if (playButton.state() == LOW && recording == false) {
+    digitalWrite(PLAY, HIGH);
+    delay(500);
+    digitalWrite(PLAY, LOW);
+  }
 
   //  if (!digitalRead(REC_BTN)) {
   //    digitalWrite(REC_LED, LOW);

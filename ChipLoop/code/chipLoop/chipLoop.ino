@@ -26,8 +26,8 @@ void setup() {
   pinMode(RECORD, OUTPUT);
   pinMode(PLAY, OUTPUT);
 
-  digitalWrite(REC_LED, LOW);
-  digitalWrite(PLAY_LED, LOW);
+  //digitalWrite(REC_LED, LOW);
+  //digitalWrite(PLAY_LED, LOW);
 }
 
 void loop() {
@@ -53,7 +53,7 @@ void loop() {
 
     // Recording start
     digitalWrite(RECORD, HIGH);
-    delay(5000);
+    delay(3000);
 
     // Off on 3 times before recording stop
     for (int i = 0; i < 2; i++) {
@@ -72,32 +72,12 @@ void loop() {
   }
 
   if (playButton.state() == LOW && recording == false) {
+    digitalWrite(PLAY_LED, HIGH);
+    delay(250);
     digitalWrite(PLAY, HIGH);
     delay(500);
     digitalWrite(PLAY, LOW);
-  }
-
-  //  if (!digitalRead(REC_BTN)) {
-  //    digitalWrite(REC_LED, LOW);
-  //  }
-  //  else {
-  //    digitalWrite(REC_LED, HIGH);
-  //  }
-  //  if (!digitalRead(PLAY_BTN)) {
-  //    digitalWrite(PLAY_LED, LOW);
-  //  }
-  //  else {
-  //    digitalWrite(PLAY_LED, HIGH);
-  //  }
-
-
-
-  /*
-    digitalWrite(REC_LED, HIGH);
-    digitalWrite(PLAY_LED, HIGH);
-    delay(1000);
-    digitalWrite(REC_LED, LOW);
+    delay(7000);
     digitalWrite(PLAY_LED, LOW);
-    delay(1000);
-  */
+  }
 }

@@ -19,7 +19,7 @@ ButtonDebounce playButton(PLAY_BTN, 100);
 bool recording = false;
 
 void setup() {
-  
+
   pinMode(REC_LED, OUTPUT);
   pinMode(PLAY_LED, OUTPUT);
 
@@ -40,14 +40,17 @@ void loop() {
   playButton.update();
 
   // Record button pressed
-  if (recButton.state() == LOW && recording == false) { 
+  if (recButton.state() == LOW && recording == false) {
     recording = true;
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 2; i++) {
       digitalWrite(REC_LED, HIGH);
-      delay(1000);
+      delay(500);
       digitalWrite(REC_LED, LOW);
-      delay(1000);
+      delay(500);
     }
+    digitalWrite(REC_LED, HIGH);
+    delay(500);
+    digitalWrite(REC_LED, LOW);
     recording = false;
   }
 

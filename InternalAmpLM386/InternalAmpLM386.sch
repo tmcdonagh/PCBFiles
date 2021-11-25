@@ -191,10 +191,10 @@ F 3 "~" H 3400 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 61364894
 P 3150 850
-F 0 "#PWR?" H 3150 600 50  0001 C CNN
+F 0 "#PWR0101" H 3150 600 50  0001 C CNN
 F 1 "GND" H 3155 677 50  0000 C CNN
 F 2 "" H 3150 850 50  0001 C CNN
 F 3 "" H 3150 850 50  0001 C CNN
@@ -517,4 +517,30 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 5100 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 1600 3400 1600
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 619FFFFE
+P 5250 1600
+F 0 "J3" V 5312 1644 50  0000 L CNN
+F 1 "Power" V 5403 1644 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5250 1600 50  0001 C CNN
+F 3 "~" H 5250 1600 50  0001 C CNN
+	1    5250 1600
+	0    1    1    0   
+$EndComp
+Text GLabel 5150 1800 3    50   Input ~ 0
+9V
+$Comp
+L power:GND #PWR0102
+U 1 1 61A00F06
+P 5250 1900
+F 0 "#PWR0102" H 5250 1650 50  0001 C CNN
+F 1 "GND" H 5255 1727 50  0000 C CNN
+F 2 "" H 5250 1900 50  0001 C CNN
+F 3 "" H 5250 1900 50  0001 C CNN
+	1    5250 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1900 5250 1800
 $EndSCHEMATC

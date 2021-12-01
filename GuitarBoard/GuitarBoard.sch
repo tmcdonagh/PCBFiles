@@ -14,21 +14,21 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L audioJacks:AudioJack2 J1
+L audioJacks:AudioJack2 J4
 U 1 1 605E8D18
 P 8900 6250
-F 0 "J1" H 8932 6575 50  0000 C CNN
+F 0 "J4" H 8932 6575 50  0000 C CNN
 F 1 "Pickups" H 8932 6484 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8900 6250 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8900 6250 50  0001 C CNN
 F 3 "~" H 8900 6250 50  0001 C CNN
 	1    8900 6250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPST SW1
+L Switch:SW_SPST SW5
 U 1 1 605EB036
 P 9550 5050
-F 0 "SW1" H 9450 4850 50  0000 R CNN
+F 0 "SW5" H 9450 4850 50  0000 R CNN
 F 1 "Amp Knob Switch" H 9505 4962 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 9550 5050 50  0001 C CNN
 F 3 "~" H 9550 5050 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "~" H 9550 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV1
+L Device:R_POT RV3
 U 1 1 605ECF3C
 P 9500 6150
-F 0 "RV1" H 9430 6196 50  0000 R CNN
+F 0 "RV3" H 9430 6196 50  0000 R CNN
 F 1 "V 500K" H 9430 6105 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9500 6150 50  0001 C CNN
 F 3 "~" H 9500 6150 50  0001 C CNN
@@ -51,10 +51,10 @@ Wire Wire Line
 Wire Wire Line
 	9500 5900 9500 6000
 $Comp
-L Device:C C1
+L Device:C C5
 U 1 1 605EE756
 P 9900 5900
-F 0 "C1" V 9648 5900 50  0000 C CNN
+F 0 "C5" V 9648 5900 50  0000 C CNN
 F 1 "0.047" V 9739 5900 50  0000 C CNN
 F 2 "libraries:C_Flat_L7.2_H6.5" H 9938 5750 50  0001 C CNN
 F 3 "~" H 9900 5900 50  0001 C CNN
@@ -62,10 +62,10 @@ F 3 "~" H 9900 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT RV2
+L Device:R_POT RV4
 U 1 1 605EEDCF
 P 10300 6150
-F 0 "RV2" H 10230 6104 50  0000 R CNN
+F 0 "RV4" H 10230 6104 50  0000 R CNN
 F 1 "T 500K" H 10230 6195 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 10300 6150 50  0001 C CNN
 F 3 "~" H 10300 6150 50  0001 C CNN
@@ -73,12 +73,12 @@ F 3 "~" H 10300 6150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J3
+L Connector:Conn_01x01_Female J5
 U 1 1 605EFE38
 P 9100 5500
-F 0 "J3" V 9050 5700 50  0000 R CNN
+F 0 "J5" V 9050 5700 50  0000 R CNN
 F 1 "Bridge Ground" V 8950 6100 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 9100 5500 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9100 5500 50  0001 C CNN
 F 3 "~" H 9100 5500 50  0001 C CNN
 	1    9100 5500
 	0    -1   -1   0   
@@ -99,10 +99,10 @@ Wire Wire Line
 	9100 5700 9100 5900
 Connection ~ 9100 5900
 $Comp
-L power:GND #PWR01
+L power:GND #PWR07
 U 1 1 60611AB8
 P 9350 5500
-F 0 "#PWR01" H 9350 5250 50  0001 C CNN
+F 0 "#PWR07" H 9350 5250 50  0001 C CNN
 F 1 "GND" H 9355 5327 50  0000 C CNN
 F 2 "" H 9350 5500 50  0001 C CNN
 F 3 "" H 9350 5500 50  0001 C CNN
@@ -123,10 +123,10 @@ Wire Wire Line
 Wire Wire Line
 	950  5400 950  5150
 $Comp
-L power:GND #PWR02
+L power:GND #PWR01
 U 1 1 60614C23
 P 1250 5150
-F 0 "#PWR02" H 1250 4900 50  0001 C CNN
+F 0 "#PWR01" H 1250 4900 50  0001 C CNN
 F 1 "GND" H 1255 4977 50  0000 C CNN
 F 2 "" H 1250 5150 50  0001 C CNN
 F 3 "" H 1250 5150 50  0001 C CNN
@@ -140,10 +140,10 @@ Wire Wire Line
 Wire Wire Line
 	9500 6300 9500 6400
 $Comp
-L audioJacks:AudioJack3 J2
+L audioJacks:AudioJack3 J1
 U 1 1 605E846F
 P 750 5500
-F 0 "J2" H 732 5825 50  0000 C CNN
+F 0 "J1" H 732 5825 50  0000 C CNN
 F 1 "Input Jack" H 732 5734 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 750 5500 50  0001 C CNN
 F 3 "~" H 750 5500 50  0001 C CNN
@@ -156,16 +156,16 @@ U 1 1 60619513
 P 8550 1650
 F 0 "BT1" H 8658 1696 50  0000 L CNN
 F 1 "Battery" H 8658 1605 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 8550 1710 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 8550 1710 50  0001 C CNN
 F 3 "~" V 8550 1710 50  0001 C CNN
 	1    8550 1650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L power:GND #PWR06
 U 1 1 6061A385
 P 8550 1850
-F 0 "#PWR04" H 8550 1600 50  0001 C CNN
+F 0 "#PWR06" H 8550 1600 50  0001 C CNN
 F 1 "GND" H 8555 1677 50  0000 C CNN
 F 2 "" H 8550 1850 50  0001 C CNN
 F 3 "" H 8550 1850 50  0001 C CNN
@@ -173,10 +173,10 @@ F 3 "" H 8550 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L audioJacks:AudioJack2 J8
+L audioJacks:AudioJack2 J2
 U 1 1 6061B817
 P 5950 5600
-F 0 "J8" H 5982 5925 50  0000 C CNN
+F 0 "J2" H 5982 5925 50  0000 C CNN
 F 1 "Output Jack" H 5982 5834 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5950 5600 50  0001 C CNN
 F 3 "~" H 5950 5600 50  0001 C CNN
@@ -184,10 +184,10 @@ F 3 "~" H 5950 5600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DPDT_x2 SW2
+L Switch:SW_DPDT_x2 SW1
 U 1 1 6061C92F
 P 2000 5600
-F 0 "SW2" H 2000 5885 50  0000 C CNN
+F 0 "SW1" H 2000 5885 50  0000 C CNN
 F 1 "Volume DPDT A" H 2000 5794 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2000 5600 50  0001 C CNN
 F 3 "~" H 2000 5600 50  0001 C CNN
@@ -195,10 +195,10 @@ F 3 "~" H 2000 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DPDT_x2 SW3
+L Switch:SW_DPDT_x2 SW2
 U 1 1 6061D201
 P 3000 5700
-F 0 "SW3" H 3000 5300 50  0000 C CNN
+F 0 "SW2" H 3000 5300 50  0000 C CNN
 F 1 "Volume DPDT B" H 3000 5400 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3000 5700 50  0001 C CNN
 F 3 "~" H 3000 5700 50  0001 C CNN
@@ -208,10 +208,10 @@ $EndComp
 Text GLabel 950  5500 2    50   Input ~ 0
 FXGND
 $Comp
-L Switch:SW_DPDT_x2 SW4
+L Switch:SW_DPDT_x2 SW3
 U 1 1 6068E75D
 P 3650 5600
-F 0 "SW4" H 3650 5885 50  0000 C CNN
+F 0 "SW3" H 3650 5885 50  0000 C CNN
 F 1 "Tone DPDT A" H 3650 5794 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3650 5600 50  0001 C CNN
 F 3 "~" H 3650 5600 50  0001 C CNN
@@ -219,10 +219,10 @@ F 3 "~" H 3650 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DPDT_x2 SW5
+L Switch:SW_DPDT_x2 SW4
 U 1 1 6068F3BF
 P 4650 5700
-F 0 "SW5" H 4650 5985 50  0000 C CNN
+F 0 "SW4" H 4650 5985 50  0000 C CNN
 F 1 "Tone DPDT B" H 4650 5894 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4650 5700 50  0001 C CNN
 F 3 "~" H 4650 5700 50  0001 C CNN
@@ -240,10 +240,10 @@ FXInB
 Text GLabel 4450 5700 0    50   Input ~ 0
 FXOutB
 $Comp
-L power:GND #PWR05
+L power:GND #PWR03
 U 1 1 606A8519
 P 5500 5300
-F 0 "#PWR05" H 5500 5050 50  0001 C CNN
+F 0 "#PWR03" H 5500 5050 50  0001 C CNN
 F 1 "GND" H 5505 5127 50  0000 C CNN
 F 2 "" H 5500 5300 50  0001 C CNN
 F 3 "" H 5500 5300 50  0001 C CNN
@@ -259,10 +259,10 @@ Text GLabel 8550 1150 1    50   Input ~ 0
 Text GLabel 9350 5050 0    50   Input ~ 0
 FXGND
 $Comp
-L power:GND #PWR03
+L power:GND #PWR09
 U 1 1 606B5D6C
 P 9900 5050
-F 0 "#PWR03" H 9900 4800 50  0001 C CNN
+F 0 "#PWR09" H 9900 4800 50  0001 C CNN
 F 1 "GND" H 9905 4877 50  0000 C CNN
 F 2 "" H 9900 5050 50  0001 C CNN
 F 3 "" H 9900 5050 50  0001 C CNN
@@ -276,12 +276,12 @@ Wire Wire Line
 Wire Wire Line
 	5650 5300 5650 5500
 $Comp
-L Connector:Conn_01x04_Female J9
+L Connector:Conn_01x04_Female J6
 U 1 1 60685D34
 P 9400 1800
-F 0 "J9" V 9246 1948 50  0000 L CNN
+F 0 "J6" V 9246 1948 50  0000 L CNN
 F 1 "Amp" V 9337 1948 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9400 1800 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9400 1800 50  0001 C CNN
 F 3 "~" H 9400 1800 50  0001 C CNN
 	1    9400 1800
 	0    1    1    0   
@@ -307,10 +307,10 @@ Wire Wire Line
 Wire Wire Line
 	9200 1350 9200 1600
 $Comp
-L Device:D D1
+L Device:D D7
 U 1 1 6063E1F4
 P 8550 1300
-F 0 "D1" V 8504 1380 50  0000 L CNN
+F 0 "D7" V 8504 1380 50  0000 L CNN
 F 1 "D" V 8595 1380 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8550 1300 50  0001 C CNN
 F 3 "~" H 8550 1300 50  0001 C CNN
@@ -318,10 +318,10 @@ F 3 "~" H 8550 1300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT RV3
+L Device:R_POT RV1
 U 1 1 60710402
 P 2450 1550
-F 0 "RV3" H 2380 1504 50  0000 R CNN
+F 0 "RV1" H 2380 1504 50  0000 R CNN
 F 1 "250K Distortion" H 2380 1595 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 2450 1550 50  0001 C CNN
 F 3 "~" H 2450 1550 50  0001 C CNN
@@ -329,10 +329,10 @@ F 3 "~" H 2450 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C3
+L Device:C C2
 U 1 1 60711DEA
 P 2650 1750
-F 0 "C3" V 2398 1750 50  0000 C CNN
+F 0 "C2" V 2398 1750 50  0000 C CNN
 F 1 "0.1uF" V 2489 1750 50  0000 C CNN
 F 2 "libraries:C_Flat_L7.2_H6.5" H 2688 1600 50  0001 C CNN
 F 3 "~" H 2650 1750 50  0001 C CNN
@@ -355,10 +355,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3450 1750 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L Device:R R2
 U 1 1 607197CF
 P 3400 1350
-F 0 "R3" V 3500 1250 50  0000 C CNN
+F 0 "R2" V 3500 1250 50  0000 C CNN
 F 1 "2M" V 3500 1400 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3330 1350 50  0001 C CNN
 F 3 "~" H 3400 1350 50  0001 C CNN
@@ -386,10 +386,10 @@ Wire Wire Line
 Wire Wire Line
 	3550 1550 3550 1350
 $Comp
-L Device:R R4
+L Device:R R3
 U 1 1 607238F7
 P 3550 1200
-F 0 "R4" H 3480 1154 50  0000 R CNN
+F 0 "R3" H 3480 1154 50  0000 R CNN
 F 1 "4.7K" H 3480 1245 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3480 1200 50  0001 C CNN
 F 3 "~" H 3550 1200 50  0001 C CNN
@@ -400,10 +400,10 @@ Connection ~ 3550 1350
 Text GLabel 3550 1050 1    50   Input ~ 0
 9V
 $Comp
-L Device:C C7
+L Device:C C3
 U 1 1 6072A8C4
 P 4100 1350
-F 0 "C7" V 3848 1350 50  0000 C CNN
+F 0 "C3" V 3848 1350 50  0000 C CNN
 F 1 "0.1uF" V 3939 1350 50  0000 C CNN
 F 2 "libraries:C_Flat_L7.2_H6.5" H 4138 1200 50  0001 C CNN
 F 3 "~" H 4100 1350 50  0001 C CNN
@@ -413,10 +413,10 @@ $EndComp
 Text GLabel 3550 1950 3    50   Input ~ 0
 FXGND
 $Comp
-L Diode:1N4148 D3
+L Diode:1N4148 D4
 U 1 1 6072D973
 P 4800 1750
-F 0 "D3" V 4754 1830 50  0000 L CNN
+F 0 "D4" V 4754 1830 50  0000 L CNN
 F 1 "1N4148" V 4845 1830 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4800 1575 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4800 1750 50  0001 C CNN
@@ -424,10 +424,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4800 
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:1N4148 D2
+L Diode:1N4148 D3
 U 1 1 6072E8CF
 P 4600 1750
-F 0 "D2" V 4650 1900 50  0000 R CNN
+F 0 "D3" V 4650 1900 50  0000 R CNN
 F 1 "1N4148" V 4550 2100 50  0000 R CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4600 1575 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4600 1750 50  0001 C CNN
@@ -458,10 +458,10 @@ Wire Wire Line
 Wire Wire Line
 	4250 1350 4700 1350
 $Comp
-L Device:R_POT RV4
+L Device:R_POT RV2
 U 1 1 6073B784
 P 5300 1750
-F 0 "RV4" H 5500 1650 50  0000 R CNN
+F 0 "RV2" H 5500 1650 50  0000 R CNN
 F 1 "250K Volume" H 5850 1550 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 5300 1750 50  0001 C CNN
 F 3 "~" H 5300 1750 50  0001 C CNN
@@ -484,10 +484,10 @@ FXInA
 Text GLabel 5550 1750 2    50   Input ~ 0
 FXOutA
 $Comp
-L power:GND #PWR06
+L power:GND #PWR08
 U 1 1 6089EA5A
 P 9550 1300
-F 0 "#PWR06" H 9550 1050 50  0001 C CNN
+F 0 "#PWR08" H 9550 1050 50  0001 C CNN
 F 1 "GND" H 9555 1127 50  0000 C CNN
 F 2 "" H 9550 1300 50  0001 C CNN
 F 3 "" H 9550 1300 50  0001 C CNN
@@ -507,10 +507,10 @@ Connection ~ 3350 5600
 Wire Wire Line
 	3350 5600 3450 5600
 $Comp
-L Transistor_BJT:2N3904 Q3
+L Transistor_BJT:2N3904 Q2
 U 1 1 60DB9D53
 P 3500 6950
-F 0 "Q3" H 3690 6996 50  0000 L CNN
+F 0 "Q2" H 3690 6996 50  0000 L CNN
 F 1 "2N3904" H 3690 6905 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3700 6875 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3500 6950 50  0001 L CNN
@@ -519,10 +519,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 3500 6950 50  0001 L 
 $EndComp
 NoConn ~ 3600 7150
 $Comp
-L Diode:1N4148 D5
+L Diode:1N4148 D1
 U 1 1 60DC0F7B
 P 3600 6500
-F 0 "D5" V 3554 6580 50  0000 L CNN
+F 0 "D1" V 3554 6580 50  0000 L CNN
 F 1 "1N4148" V 3645 6580 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3600 6325 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3600 6500 50  0001 C CNN
@@ -530,10 +530,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3600 
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R13
+L Device:R R4
 U 1 1 60DC2613
 P 3900 6200
-F 0 "R13" V 3800 6200 50  0000 C CNN
+F 0 "R4" V 3800 6200 50  0000 C CNN
 F 1 "LED" V 3900 6200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3830 6200 50  0001 C CNN
 F 3 "~" H 3900 6200 50  0001 C CNN
@@ -541,10 +541,10 @@ F 3 "~" H 3900 6200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D6
+L Device:LED D2
 U 1 1 60DC5384
 P 4350 6500
-F 0 "D6" V 4389 6382 50  0000 R CNN
+F 0 "D2" V 4389 6382 50  0000 R CNN
 F 1 "LED" V 4298 6382 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4350 6500 50  0001 C CNN
 F 3 "~" H 4350 6500 50  0001 C CNN
@@ -552,10 +552,10 @@ F 3 "~" H 4350 6500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Transistor_FET:BS170 Q4
+L Transistor_FET:BS170 Q3
 U 1 1 60DC6598
 P 4250 7050
-F 0 "Q4" H 4454 7096 50  0000 L CNN
+F 0 "Q3" H 4454 7096 50  0000 L CNN
 F 1 "BS170" H 4454 7005 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4450 6975 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 4250 7050 50  0001 L CNN
@@ -563,10 +563,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 4250 7050 50  0001 L C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R12
+L Device:R R1
 U 1 1 60DC77F2
 P 3250 6450
-F 0 "R12" H 3350 6400 50  0000 C CNN
+F 0 "R1" H 3350 6400 50  0000 C CNN
 F 1 "1k-10k" H 3450 6500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3180 6450 50  0001 C CNN
 F 3 "~" H 3250 6450 50  0001 C CNN
@@ -598,17 +598,6 @@ Wire Wire Line
 	3300 7350 3850 7350
 Wire Wire Line
 	4350 7350 4350 7250
-$Comp
-L power:GND #PWR0101
-U 1 1 60DF3A17
-P 3850 7400
-F 0 "#PWR0101" H 3850 7150 50  0001 C CNN
-F 1 "GND" H 3855 7227 50  0000 C CNN
-F 2 "" H 3850 7400 50  0001 C CNN
-F 3 "" H 3850 7400 50  0001 C CNN
-	1    3850 7400
-	1    0    0    -1  
-$EndComp
 Connection ~ 3850 7350
 Wire Wire Line
 	3850 7350 4350 7350
@@ -628,10 +617,10 @@ Wire Wire Line
 Wire Wire Line
 	3250 5800 3200 5800
 $Comp
-L Transistor_BJT:2N3904 Q5
+L Transistor_BJT:2N3904 Q4
 U 1 1 60E38623
 P 5300 6950
-F 0 "Q5" H 5490 6996 50  0000 L CNN
+F 0 "Q4" H 5490 6996 50  0000 L CNN
 F 1 "2N3904" H 5490 6905 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5500 6875 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5300 6950 50  0001 L CNN
@@ -640,10 +629,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5300 6950 50  0001 L 
 $EndComp
 NoConn ~ 5400 7150
 $Comp
-L Diode:1N4148 D7
+L Diode:1N4148 D5
 U 1 1 60E3862A
 P 5400 6500
-F 0 "D7" V 5354 6580 50  0000 L CNN
+F 0 "D5" V 5354 6580 50  0000 L CNN
 F 1 "1N4148" V 5445 6580 50  0000 L CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5400 6325 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5400 6500 50  0001 C CNN
@@ -651,10 +640,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5400 
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R15
+L Device:R R6
 U 1 1 60E38630
 P 5700 6200
-F 0 "R15" V 5600 6200 50  0000 C CNN
+F 0 "R6" V 5600 6200 50  0000 C CNN
 F 1 "LED" V 5700 6200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 6200 50  0001 C CNN
 F 3 "~" H 5700 6200 50  0001 C CNN
@@ -662,10 +651,10 @@ F 3 "~" H 5700 6200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D8
+L Device:LED D6
 U 1 1 60E38636
 P 6150 6500
-F 0 "D8" V 6189 6382 50  0000 R CNN
+F 0 "D6" V 6189 6382 50  0000 R CNN
 F 1 "LED" V 6098 6382 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6150 6500 50  0001 C CNN
 F 3 "~" H 6150 6500 50  0001 C CNN
@@ -673,10 +662,10 @@ F 3 "~" H 6150 6500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Transistor_FET:BS170 Q6
+L Transistor_FET:BS170 Q5
 U 1 1 60E3863C
 P 6050 7050
-F 0 "Q6" H 6254 7096 50  0000 L CNN
+F 0 "Q5" H 6254 7096 50  0000 L CNN
 F 1 "BS170" H 6254 7005 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6250 6975 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 6050 7050 50  0001 L CNN
@@ -684,10 +673,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 6050 7050 50  0001 L C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R14
+L Device:R R5
 U 1 1 60E38642
 P 5050 6450
-F 0 "R14" H 5150 6400 50  0000 C CNN
+F 0 "R5" H 5150 6400 50  0000 C CNN
 F 1 "1k-10k" H 5250 6500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4980 6450 50  0001 C CNN
 F 3 "~" H 5050 6450 50  0001 C CNN
@@ -719,23 +708,11 @@ Wire Wire Line
 	5100 7350 5650 7350
 Wire Wire Line
 	6150 7350 6150 7250
-$Comp
-L power:GND #PWR0102
-U 1 1 60E38655
-P 5650 7400
-F 0 "#PWR0102" H 5650 7150 50  0001 C CNN
-F 1 "GND" H 5655 7227 50  0000 C CNN
-F 2 "" H 5650 7400 50  0001 C CNN
-F 3 "" H 5650 7400 50  0001 C CNN
-	1    5650 7400
-	1    0    0    -1  
-$EndComp
 Connection ~ 5650 7350
 Wire Wire Line
 	5650 7350 6150 7350
 Wire Wire Line
 	5650 7400 5650 7350
-Connection ~ 5400 6200
 Wire Wire Line
 	5050 6600 5050 6700
 Wire Wire Line
@@ -752,10 +729,10 @@ Wire Wire Line
 	3850 5500 4850 5500
 Connection ~ 4850 5600
 $Comp
-L Device:C C12
+L Device:C C1
 U 1 1 60EA9AA5
 P 1450 5600
-F 0 "C12" V 1198 5600 50  0000 C CNN
+F 0 "C1" V 1198 5600 50  0000 C CNN
 F 1 "TEMP" V 1289 5600 50  0000 C CNN
 F 2 "libraries:C_Flat_L7.2_H10" H 1488 5450 50  0001 C CNN
 F 3 "~" H 1450 5600 50  0001 C CNN
@@ -765,8 +742,8 @@ $EndComp
 $Sheet
 S 3200 3050 1400 650 
 U 60E22E00
-F0 "Tremolo" 50
-F1 "Tremolo.sch" 50
+F0 "Bitcrusher" 50
+F1 "Bitcrusher.sch" 50
 $EndSheet
 Wire Wire Line
 	950  5600 1300 5600
@@ -780,10 +757,10 @@ Connection ~ 1700 5600
 Wire Wire Line
 	1700 5600 1800 5600
 $Comp
-L Device:C C14
+L Device:C C4
 U 1 1 60E50324
 P 5300 5600
-F 0 "C14" V 5048 5600 50  0000 C CNN
+F 0 "C4" V 5048 5600 50  0000 C CNN
 F 1 "TEMP" V 5139 5600 50  0000 C CNN
 F 2 "libraries:C_Flat_L7.2_H10" H 5338 5450 50  0001 C CNN
 F 3 "~" H 5300 5600 50  0001 C CNN
@@ -795,27 +772,44 @@ Wire Wire Line
 Connection ~ 4950 5600
 Wire Wire Line
 	5450 5600 5750 5600
-Text GLabel 6500 5850 2    50   Input ~ 0
-Freq
-Text GLabel 6500 6050 2    50   Input ~ 0
+Text GLabel 5400 6100 1    50   Input ~ 0
 9V
+Wire Wire Line
+	5400 6200 5400 6100
+Connection ~ 5400 6200
 $Comp
-L Switch:SW_SPDT SW6
-U 1 1 60E7229F
-P 6250 5950
-F 0 "SW6" H 6250 6235 50  0000 C CNN
-F 1 "TremLED" H 6250 6144 50  0000 C CNN
-F 2 "libraries:MSS10255914AD" H 6250 5950 50  0001 C CNN
-F 3 "~" H 6250 5950 50  0001 C CNN
-	1    6250 5950
+L Connector:Conn_01x02_Male J3
+U 1 1 61A90A50
+P 8100 5300
+F 0 "J3" V 8162 5344 50  0000 L CNN
+F 1 "Micro" V 8253 5344 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8100 5300 50  0001 C CNN
+F 3 "~" H 8100 5300 50  0001 C CNN
+	1    8100 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61A9174D
+P 7900 5550
+F 0 "#PWR05" H 7900 5300 50  0001 C CNN
+F 1 "GND" H 7905 5377 50  0000 C CNN
+F 2 "" H 7900 5550 50  0001 C CNN
+F 3 "" H 7900 5550 50  0001 C CNN
+	1    7900 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 5850 6450 5850
+	7900 5550 7900 5500
 Wire Wire Line
-	6500 6050 6450 6050
+	7900 5500 8000 5500
 Wire Wire Line
-	6050 5950 5400 5950
+	9100 6400 8100 6400
 Wire Wire Line
-	5400 5950 5400 6200
+	8100 6400 8100 5500
+Connection ~ 9100 6400
+Text GLabel 3850 7400 3    50   Input ~ 0
+FXGND
+Text GLabel 5650 7400 3    50   Input ~ 0
+FXGND
 $EndSCHEMATC

@@ -206,28 +206,6 @@ Wire Wire Line
 Wire Wire Line
 	3400 850  3400 1000
 $Comp
-L power:GND #PWR014
-U 1 1 607849E7
-P 8100 1900
-F 0 "#PWR014" H 8100 1650 50  0001 C CNN
-F 1 "GND" H 8105 1727 50  0000 C CNN
-F 2 "" H 8100 1900 50  0001 C CNN
-F 3 "" H 8100 1900 50  0001 C CNN
-	1    8100 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 6078474D
-P 7700 1900
-F 0 "#PWR013" H 7700 1650 50  0001 C CNN
-F 1 "GND" H 7705 1727 50  0000 C CNN
-F 2 "" H 7700 1900 50  0001 C CNN
-F 3 "" H 7700 1900 50  0001 C CNN
-	1    7700 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR012
 U 1 1 6078449D
 P 7300 1900
@@ -247,28 +225,6 @@ F 1 "GND" H 6905 1727 50  0000 C CNN
 F 2 "" H 6900 1900 50  0001 C CNN
 F 3 "" H 6900 1900 50  0001 C CNN
 	1    6900 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 60783827
-P 8100 1800
-F 0 "H4" H 8200 1849 50  0000 L CNN
-F 1 "Mount" H 8200 1758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_Pad" H 8100 1800 50  0001 C CNN
-F 3 "~" H 8100 1800 50  0001 C CNN
-	1    8100 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 60783065
-P 7700 1800
-F 0 "H3" H 7800 1849 50  0000 L CNN
-F 1 "Mount" H 7800 1758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_Pad" H 7700 1800 50  0001 C CNN
-F 3 "~" H 7700 1800 50  0001 C CNN
-	1    7700 1800
 	1    0    0    -1  
 $EndComp
 $Comp

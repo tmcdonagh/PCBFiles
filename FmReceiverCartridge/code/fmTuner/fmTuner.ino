@@ -48,13 +48,14 @@
 #include <AceButton.h> // Button handling
 using namespace ace_button;
 
-const int button1Pin = 9;
-const int button2Pin = 10;
+const int buttonPin = 9;
+const int switch1 = 10;
 
-AceButton button1(button1Pin);
-AceButton button2(button2Pin);
+AceButton button(buttonPin);
 
 void handleEvent(AceButton*, uint8_t, uint8_t);
+
+bool ledStatus = true;
 
 int STATUS_LED = 13;
 int resetPin = 2;
@@ -118,15 +119,16 @@ void setup() {
   pinMode(13, OUTPUT);
   pinMode(A0, INPUT); //Optional trimpot for analog station control
 
-  pinMode(button1Pin, INPUT_PULLUP);
-  pinMode(button2Pin, INPUT_PULLUP);
+  pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(switch1, INPUT_PULLUP);
+  button.setEventHandler(handleEvent);
 
-  ButtonConfig* buttonConfig = ButtonConfig::getSystemButtonConfig();
+  ButtonConfig* buttonConfig = button.getButtonConfig();
   buttonConfig->setEventHandler(handleEvent);
-  buttonConfig->setFeature(ButtonConfig::kFeatureClick);
   buttonConfig->setFeature(ButtonConfig::kFeatureDoubleClick);
-  buttonConfig->setFeature(ButtonConfig::kFeatureLongPress);
-  buttonConfig->setFeature(ButtonConfig::kFeatureRepeatPress);
+  buttonConfig->setFeature(ButtonConfig::kFeatureSuppressClickBeforeDoubleClick);
+  buttonConfig->setFeature(ButtonConfig::kFeatureSuppressAfterClick);
+  buttonConfig->setFeature(ButtonConfig::kFeatureSuppressAfterDoubleClick);
 
   Serial.begin(57600);
   Serial.println();
@@ -134,11 +136,11 @@ void setup() {
   si4703_init(); //Init the Si4703 - we need to toggle SDIO before Wire.begin takes over.
 
 }
+bool switch1Status = false;
 
 void loop() {
-  button1.check();
-  button2.check();
-  digitalWrite(STATUS_LED, HIGH);
+  //button.check();
+  //digitalWrite(STATUS_LED, ledStatus);
   char option;
   char vol = 15;
   int currentChannel = 1011; //Default the unit to a known good local radio station
@@ -146,6 +148,32 @@ void loop() {
   gotoChannel(currentChannel);
 
   while (1) {
+    //button.check();
+    //digitalWrite(STATUS_LED, ledStatus);
+    
+    if(!digitalRead(switch1) && switch1Status){
+      currentChannel = 1011;
+      gotoChannel(currentChannel);
+      digitalWrite(STATUS_LED, HIGH);
+      switch1Status = false;
+      //ledStatus = false;
+    }
+    else if(digitalRead(switch1) && !switch1Status){
+      currentChannel = 889;
+      gotoChannel(currentChannel);
+      digitalWrite(STATUS_LED, LOW);
+      switch1Status = true;
+      //ledStatus = true;
+    }
+    
+    /*
+    if(digitalRead(buttonPin)){
+      digitalWrite(STATUS_LED, HIGH);
+    }
+    else{
+      digitalWrite(STATUS_LED, LOW);
+    }
+    */
     Serial.println();
     Serial.println("Si4703 Configuration");
 
@@ -173,7 +201,7 @@ void loop() {
     Serial.println("s) Tune down");
     Serial.print(": ");
 
-    while (!Serial.available());
+    //while (!Serial.available());
     option = Serial.read();
 
     if (option == '1')  {
@@ -440,37 +468,20 @@ void loop() {
 
     }
   }
+
 }
 
-// The event handler for both buttons.
-void handleEvent(AceButton* button, uint8_t eventType, uint8_t buttonState) {
-
-  // Print out a message for all events, for both buttons.
-  Serial.print(F("handleEvent(): pin: "));
-  Serial.print(button->getPin());
-  Serial.print(F("; eventType: "));
-  Serial.print(eventType);
-  Serial.print(F("; buttonState: "));
-  Serial.println(buttonState);
-
-  // Control the LED only for the Pressed and Released events of Button 1.
-  // Notice that if the MCU is rebooted while the button is pressed down, no
-  // event is triggered and the LED remains off.
+// The event handler for the button.
+void handleEvent(AceButton* /* button */, uint8_t eventType, uint8_t /* buttonState */) {
   switch (eventType) {
-    case AceButton::kEventPressed:
-      if (button->getPin() == button1Pin) {
-        digitalWrite(LED_PIN, LED_ON);
-      }
-      break;
-    case AceButton::kEventReleased:
-      if (button->getPin() == button1Pin) {
-        digitalWrite(LED_PIN, LED_OFF);
-      }
-      break;
     case AceButton::kEventClicked:
-      if (button->getPin() == button2Pin) {
-        Serial.println(F("Button 2 clicked!"));
-      }
+    case AceButton::kEventReleased:
+      seek(SEEK_UP);
+      ledStatus = !ledStatus;
+      break;
+    case AceButton::kEventDoubleClicked: // Double click for frequency in Hz
+      seek(SEEK_DOWN);
+      ledStatus = !ledStatus;
       break;
   }
 }

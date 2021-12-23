@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name libraries)(type KiCad)(uri ${KIPRJMOD}/libraries)(options "")(descr ""))
+  (lib (name TL2230EEF140-LatchSwitch)(type KiCad)(uri ${KIPRJMOD}/libraries/TL2230EEF140-LatchSwitch)(options "")(descr ""))
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TL2230EEF140
+D Tactile Switches 100mA 30VDC Latching
+K
+F https://componentsearchengine.com/Datasheets/1/TL2230EEF140.pdf
+$ENDCMP
+#
+#End Doc Library

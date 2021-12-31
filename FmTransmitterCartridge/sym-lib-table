@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Si4713Breakout)(type Legacy)(uri ${KIPRJMOD}/libraries/Si4713Breakout.lib)(options "")(descr ""))
+)

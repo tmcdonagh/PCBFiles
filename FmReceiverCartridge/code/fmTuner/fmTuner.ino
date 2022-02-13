@@ -1,9 +1,8 @@
 /*
-  1-6-2011
-  Spark Fun Electronics 2011
-  Nathan Seidle
+  2-13-2022
+  Built on Sparkfun's Nathan Seidle's example code
+  Thomas McDonagh
 
-  This code is public domain but you buy me a beer if you use this and we meet someday (Beerware license).
 
   To use this code, connect the following 5 wires:
   Arduino : Si470x board
@@ -45,19 +44,25 @@
 // 88.9 Transmitter
 #include <Wire.h>
 
-#include <AceButton.h> // Button handling
-using namespace ace_button;
+//#include <AceButton.h> // Button handling
+//using namespace ace_button;
 
-const int buttonPin = 9;
-const int switch1 = 10;
+const int switchA = 9;
+const int switchB = 10;
 
-AceButton button(buttonPin);
+//AceButton button(buttonPin);
 
-void handleEvent(AceButton*, uint8_t, uint8_t);
+//void handleEvent(AceButton*, uint8_t, uint8_t);
 
-bool ledStatus = true;
+//bool ledStatus = true;
 
-int STATUS_LED = 13;
+// Have to do these so same station doesn't keep getting set over and over
+int switchStatus = 0;
+
+//int STATUS_LED = 13;
+int ledA = 6;
+int ledB = 11;
+
 int resetPin = 2;
 int SDIO = A4; //SDA/A4 on Arduino
 int SCLK = A5; //SCL/A5 on Arduino
@@ -116,19 +121,31 @@ uint16_t si4703_registers[16]; //There are 16 registers, each 16 bits large
 #define STEREO  8
 
 void setup() {
-  pinMode(13, OUTPUT);
+  //pinMode(13, OUTPUT);
+  pinMode(ledA, OUTPUT);
+  pinMode(ledB, OUTPUT);
+
+  digitalWrite(ledA, LOW);
+  digitalWrite(ledB, LOW);
+
   pinMode(A0, INPUT); //Optional trimpot for analog station control
 
-  pinMode(buttonPin, INPUT_PULLUP);
-  pinMode(switch1, INPUT_PULLUP);
-  button.setEventHandler(handleEvent);
+  //pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(switchA, INPUT_PULLUP);
+  pinMode(switchB, INPUT_PULLUP);
 
-  ButtonConfig* buttonConfig = button.getButtonConfig();
-  buttonConfig->setEventHandler(handleEvent);
-  buttonConfig->setFeature(ButtonConfig::kFeatureDoubleClick);
-  buttonConfig->setFeature(ButtonConfig::kFeatureSuppressClickBeforeDoubleClick);
-  buttonConfig->setFeature(ButtonConfig::kFeatureSuppressAfterClick);
-  buttonConfig->setFeature(ButtonConfig::kFeatureSuppressAfterDoubleClick);
+
+
+  /*
+    button.setEventHandler(handleEvent);
+
+    ButtonConfig* buttonConfig = button.getButtonConfig();
+    buttonConfig->setEventHandler(handleEvent);
+    buttonConfig->setFeature(ButtonConfig::kFeatureDoubleClick);
+    buttonConfig->setFeature(ButtonConfig::kFeatureSuppressClickBeforeDoubleClick);
+    buttonConfig->setFeature(ButtonConfig::kFeatureSuppressAfterClick);
+    buttonConfig->setFeature(ButtonConfig::kFeatureSuppressAfterDoubleClick);
+  */
 
   Serial.begin(57600);
   Serial.println();
@@ -136,11 +153,14 @@ void setup() {
   si4703_init(); //Init the Si4703 - we need to toggle SDIO before Wire.begin takes over.
 
 }
-bool switch1Status = false;
+//bool switch1Status = false;
+
 
 void loop() {
   //button.check();
   //digitalWrite(STATUS_LED, ledStatus);
+
+
   char option;
   char vol = 15;
   int currentChannel = 1011; //Default the unit to a known good local radio station
@@ -150,29 +170,47 @@ void loop() {
   while (1) {
     //button.check();
     //digitalWrite(STATUS_LED, ledStatus);
-    
-    if(!digitalRead(switch1) && switch1Status){
-      currentChannel = 1011;
-      gotoChannel(currentChannel);
-      digitalWrite(STATUS_LED, HIGH);
-      switch1Status = false;
-      //ledStatus = false;
-    }
-    else if(digitalRead(switch1) && !switch1Status){
+    if (switchStatus != 1 && !digitalRead(switchA) && !digitalRead(switchB)) { // Both switches up
+      switchStatus = 1;
       currentChannel = 889;
       gotoChannel(currentChannel);
-      digitalWrite(STATUS_LED, LOW);
-      switch1Status = true;
-      //ledStatus = true;
+      digitalWrite(ledA, LOW);
+      digitalWrite(ledB, LOW);
     }
-    
+
+    else if (switchStatus != 2 && digitalRead(switchA) && !digitalRead(switchB)) { // Left Switch down and right switch up
+      switchStatus = 2;
+      currentChannel = 901;
+      gotoChannel(currentChannel);
+      digitalWrite(ledA, HIGH);
+      digitalWrite(ledB, LOW);
+    }
+
+    else if (switchStatus != 3 && !digitalRead(switchA) && digitalRead(switchB)) { // Left switch up and right switch down
+      switchStatus = 3;
+      currentChannel = 903;
+      gotoChannel(currentChannel);
+      digitalWrite(ledA, LOW);
+      digitalWrite(ledB, HIGH);
+    }
+
+
+    else if (switchStatus != 4 && digitalRead(switchA) && digitalRead(switchB)) { // Both switches down
+      switchStatus = 4;
+      currentChannel = 1011;
+      gotoChannel(currentChannel);
+      digitalWrite(ledA, HIGH);
+      digitalWrite(ledB, HIGH);
+    }
+
+
     /*
-    if(digitalRead(buttonPin)){
+      if(digitalRead(buttonPin)){
       digitalWrite(STATUS_LED, HIGH);
-    }
-    else{
+      }
+      else{
       digitalWrite(STATUS_LED, LOW);
-    }
+      }
     */
     Serial.println();
     Serial.println("Si4703 Configuration");
@@ -471,20 +509,7 @@ void loop() {
 
 }
 
-// The event handler for the button.
-void handleEvent(AceButton* /* button */, uint8_t eventType, uint8_t /* buttonState */) {
-  switch (eventType) {
-    case AceButton::kEventClicked:
-    case AceButton::kEventReleased:
-      seek(SEEK_UP);
-      ledStatus = !ledStatus;
-      break;
-    case AceButton::kEventDoubleClicked: // Double click for frequency in Hz
-      seek(SEEK_DOWN);
-      ledStatus = !ledStatus;
-      break;
-  }
-}
+
 
 //Given a channel, tune to it
 //Channel is in MHz, so 973 will tune to 97.3MHz

@@ -1,4 +1,4 @@
-19013637068361465
+19003905970359919
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76292,20 +76292,6 @@ rotary encoder
 0
 5
 4
-SamacSys_Parts
-DIP794W53P254L1930H508Q14N
-N (R-PDIP-T14)
-Integrated Circuit
-0
-14
-14
-SamacSys_Parts
-NE555DR
-D (R-PDSO-G8)
-Integrated Circuit
-0
-8
-8
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -83041,35 +83027,7 @@ varistor SIOV
 2
 2
 libraries
-CP_Radial_D5.0mm_P2.00mm
-CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
-CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
-0
-2
-2
-libraries
-CP_Radial_D6.3mm_P2.00mm
-CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor
-CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor
-0
-2
-2
-libraries
-CP_Radial_D6.3mm_P2.50mm
-CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
-CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
-0
-2
-2
-libraries
 C_Flat_L7.2_H6.5
-C, Rect series, Radial, pin pitch=5.00mm, , length*width=7.2*2.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
-C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
-0
-2
-2
-libraries
-C_Flat_L7.2_H10
 C, Rect series, Radial, pin pitch=5.00mm, , length*width=7.2*2.5mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_2.pdf
 C Rect series Radial pin pitch 5.00mm  length 7.2mm width 2.5mm Capacitor
 0
@@ -83082,13 +83040,6 @@ DPDTSwitch
 0
 6
 6
-libraries
-MSS10255914AD
-MSS-102559-14A-D-2
-Switch
-0
-3
-3
 libraries
 N64-Connector
 
@@ -83119,6 +83070,13 @@ drum2
 0
 libraries
 n64Logo
+
+
+0
+0
+0
+libraries
+speakerIcon
 
 
 0

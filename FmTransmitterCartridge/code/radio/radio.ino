@@ -31,7 +31,7 @@
 //#define FMSTATION 10230      // 10230 == 102.30 MHz
 //#define FMSTATION 8830      // 10230 == 102.30 MHz
 //#define FMSTATION 10750      // 10230 == 102.30 MHz
-int fmStation = 10750;
+int fmStation = 9030;
 
 const int switchA = 9;
 const int switchB = 10;
@@ -65,32 +65,32 @@ void setup() {
 
   // Uncomment to scan power of entire range from 87.5 to 108.0 MHz
   /*
-    for (uint16_t f  = 8750; f<10800; f+=10) {
-    radio.readTuneMeasure(f);
-    Serial.print("Measuring "); Serial.print(f); Serial.print("...");
-    radio.readTuneStatus();
-    Serial.println(radio.currNoiseLevel);
+    for (uint16_t f  = 8750; f < 10800; f += 10) {
+      radio.readTuneMeasure(f);
+      Serial.print("Measuring "); Serial.print(f); Serial.print("...");
+      radio.readTuneStatus();
+      Serial.println(radio.currNoiseLevel);
     }
   */
 
-  //Serial.print("\nSet TX power");
+  Serial.print("\nSet TX power");
   radio.setTXpower(115);  // dBuV, 88-115 max
 
-  //  Serial.print("\nTuning into ");
-  //  Serial.print(fmStation/100);
-  //  Serial.print('.');
-  //  Serial.println(FMSTATION % 100);
+  Serial.print("\nTuning into ");
+  Serial.print(fmStation / 100);
+  Serial.print('.');
+  Serial.println(fmStation % 100);
   //  radio.tuneFM(FMSTATION); // 102.3 mhz
   radio.tuneFM(fmStation);
 
   // This will tell you the status in case you want to read it from the chip
-  //  radio.readTuneStatus();
-  //  Serial.print("\tCurr freq: ");
-  //  Serial.println(radio.currFreq);
-  //  Serial.print("\tCurr freqdBuV:");
-  //  Serial.println(radio.currdBuV);
-  //  Serial.print("\tCurr ANTcap:");
-  //  Serial.println(radio.currAntCap);
+  radio.readTuneStatus();
+  Serial.print("\tCurr freq: ");
+  Serial.println(radio.currFreq);
+  Serial.print("\tCurr freqdBuV:");
+  Serial.println(radio.currdBuV);
+  Serial.print("\tCurr ANTcap:");
+  Serial.println(radio.currAntCap);
 
   // begin the RDS/RDBS transmission
   radio.beginRDS();
@@ -106,46 +106,67 @@ void setup() {
 
 void loop() {
 
-  if (switchStatus != 1 && !digitalRead(switchA) && !digitalRead(switchB)) { // Both switches up
+  if (switchStatus != 1 && !digitalRead(switchA) && !digitalRead(switchB)) { // Both switches up 
+    fmStation = 8910;
+    Serial.print("\nTuning into ");
+    Serial.print(fmStation / 100);
+    Serial.print('.');
+    Serial.println(fmStation % 100);
+    radio.setTXpower(115);  // dBuV, 88-115 max
     switchStatus = 1;
-    fmStation = 889;
     radio.tuneFM(fmStation);
     digitalWrite(ledA, LOW);
     digitalWrite(ledB, LOW);
   }
 
-  else if (switchStatus != 2 && digitalRead(switchA) && !digitalRead(switchB)) { // Left switch down and right switch up
+  else if (switchStatus != 2 && digitalRead(switchA) && !digitalRead(switchB)) { // Left switch down and right switch up 
+    fmStation = 8970;
+    Serial.print("\nTuning into ");
+    Serial.print(fmStation / 100);
+    Serial.print('.');
+    Serial.println(fmStation % 100);
+    radio.setTXpower(115);  // dBuV, 88-115 max
     switchStatus = 2;
-    fmStation = 901;
     radio.tuneFM(fmStation);
     digitalWrite(ledA, HIGH);
     digitalWrite(ledB, LOW);
   }
 
   else if (switchStatus != 3 && !digitalRead(switchA) && digitalRead(switchB)) { // Left switch up and right switch down
+    fmStation = 9030;
+    Serial.print("\nTuning into ");
+    Serial.print(fmStation / 100);
+    Serial.print('.');
+    Serial.println(fmStation % 100);
+    radio.setTXpower(115);  // dBuV, 88-115 max
     switchStatus = 3;
-    fmStation = 903;
     radio.tuneFM(fmStation);
     digitalWrite(ledA, LOW);
     digitalWrite(ledB, HIGH);
   }
 
   else if (switchStatus != 4 && digitalRead(switchA) && digitalRead(switchB)) { // Both switches down
+    fmStation = 10110;
+    Serial.print("\nTuning into ");
+    Serial.print(fmStation / 100);
+    Serial.print('.');
+    Serial.println(fmStation % 100);
+    radio.setTXpower(115);  // dBuV, 88-115 max
     switchStatus = 4;
-    fmStation = 1011;
     radio.tuneFM(fmStation);
     digitalWrite(ledA, HIGH);
     digitalWrite(ledB, HIGH);
   }
 
 
-  /*
-    radio.readASQ();
-    Serial.print("\tCurr ASQ: 0x");
-    Serial.println(radio.currASQ, HEX);
-    Serial.print("\tCurr InLevel:");
-    Serial.println(radio.currInLevel);
-  */
+
+//  radio.readASQ();
+//  Serial.print("\tCurr ASQ: 0x");
+//  Serial.println(radio.currASQ, HEX);
+//  Serial.print("\tCurr InLevel:");
+//  Serial.println(radio.currInLevel);
+//  delay(1000);
+
 
 
   // toggle GPO1 and GPO2

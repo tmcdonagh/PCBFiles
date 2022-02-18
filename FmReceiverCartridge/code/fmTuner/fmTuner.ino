@@ -172,7 +172,7 @@ void loop() {
     //digitalWrite(STATUS_LED, ledStatus);
     if (switchStatus != 1 && !digitalRead(switchA) && !digitalRead(switchB)) { // Both switches up
       switchStatus = 1;
-      currentChannel = 889;
+      currentChannel = 891;
       gotoChannel(currentChannel);
       digitalWrite(ledA, LOW);
       digitalWrite(ledB, LOW);
@@ -180,7 +180,7 @@ void loop() {
 
     else if (switchStatus != 2 && digitalRead(switchA) && !digitalRead(switchB)) { // Left Switch down and right switch up
       switchStatus = 2;
-      currentChannel = 901;
+      currentChannel = 897;
       gotoChannel(currentChannel);
       digitalWrite(ledA, HIGH);
       digitalWrite(ledB, LOW);

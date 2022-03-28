@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\tmcdo\Documents\GitHub\PCBFiles\ConsolePedalBlueSoxSMT\ConsolePedalBlueSoxSMT.sch)
-    (date "3/27/2022 10:52:09 AM")
+    (date "3/27/2022 7:46:40 PM")
     (tool "Eeschema (5.1.7)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -329,7 +329,7 @@
       (tstamp 616F957B))
     (comp (ref C102)
       (value 100uF)
-      (footprint Capacitor_SMD:CP_Elec_4x5.4)
+      (footprint Capacitor_SMD:CP_Elec_6.3x5.3)
       (datasheet ~)
       (fields
         (field (name LCSC) C176674))

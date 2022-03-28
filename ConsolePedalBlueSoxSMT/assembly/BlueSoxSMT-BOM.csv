@@ -1,7 +1,6 @@
 Comment,Designator,Footprint,LCSC
 10nF,"C1,C9",Capacitor_SMD:C_0603_1608Metric,C57112
-100uF,C100,Capacitor_SMD:CP_Elec_6.3x5.3,C176674
-100uF,C102,Capacitor_SMD:CP_Elec_4x5.4,C176674
+100uF,"C100,C102",Capacitor_SMD:CP_Elec_6.3x5.3,C176674
 100nF,C103,Capacitor_SMD:C_0603_1608Metric,C14663
 1nF,C2,Capacitor_SMD:C_0603_1608Metric,C1588
 150pF,"C3,C10",Capacitor_SMD:C_0603_1608Metric,C1594

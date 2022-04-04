@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\tmcdo\Documents\GitHub\PCBFiles\ConsoleSocket\ConsoleSocket.sch)
-    (date "8/29/2021 4:18:06 PM")
+    (date "4/4/2022 6:33:58 PM")
     (tool "Eeschema (5.1.7)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -38,7 +38,7 @@
       (tstamp 60857BAC))
     (comp (ref J1)
       (value Conn)
-      (footprint Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical)
+      (footprint libraries:Pins_1x06_Wide)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x06_Male) (description "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

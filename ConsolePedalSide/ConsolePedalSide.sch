@@ -107,7 +107,7 @@ U 1 1 6120D15A
 P 1300 1850
 F 0 "J1" H 1282 2175 50  0000 C CNN
 F 1 "AudioJack3" H 1282 2084 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1300 1850 50  0001 C CNN
+F 2 "libraries:Pins_1x03_Wide" H 1300 1850 50  0001 C CNN
 F 3 "" H 1300 1850 50  0001 C CNN
 	1    1300 1850
 	1    0    0    -1  
@@ -190,7 +190,7 @@ U 1 1 6120D18D
 P 6000 1950
 F 0 "J2" H 6032 2275 50  0000 C CNN
 F 1 "AudioJack2" H 6032 2184 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6000 1950 50  0001 C CNN
+F 2 "libraries:Pins_1x02_Wide" H 6000 1950 50  0001 C CNN
 F 3 "" H 6000 1950 50  0001 C CNN
 	1    6000 1950
 	-1   0    0    -1  

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\tmcdo\Documents\GitHub\PCBFiles\ConsolePedalSide\ConsolePedalSide.sch)
-    (date "9/17/2021 8:50:17 PM")
+    (date "4/4/2022 6:50:32 PM")
     (tool "Eeschema (5.1.7)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -45,7 +45,7 @@
       (tstamp 60B1AC4E))
     (comp (ref J1)
       (value AudioJack3)
-      (footprint Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical)
+      (footprint libraries:Pins_1x03_Wide)
       (libsource (lib audioJacks) (part AudioJack3) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 6120D15A))
@@ -73,7 +73,7 @@
       (tstamp 6120D17E))
     (comp (ref J2)
       (value AudioJack2)
-      (footprint Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical)
+      (footprint libraries:Pins_1x02_Wide)
       (libsource (lib audioJacks) (part AudioJack2) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 6120D18D))

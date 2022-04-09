@@ -1,0 +1,9 @@
+Comment,Designator,Footprint,LCSC
+2.2uF,C1,Capacitor_SMD:CP_Elec_6.3x5.4,C335981
+0.01uF,C2,Capacitor_SMD:C_0603_1608Metric,C57112
+22uF,C3,Capacitor_SMD:CP_Elec_6.3x5.4,C72505
+MMBT3904,"Q1,Q2",Package_TO_SOT_SMD:SOT-23,C20526
+33K,R1,Resistor_SMD:R_0603_1608Metric,C4216
+330,"R2,R8",Resistor_SMD:R_0603_1608Metric,C23138
+100K,R4,Resistor_SMD:R_0603_1608Metric,C25803
+120K,"R6,R7",Resistor_SMD:R_0603_1608Metric,C25808

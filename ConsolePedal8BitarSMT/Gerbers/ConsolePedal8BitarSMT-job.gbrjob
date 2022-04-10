@@ -7,14 +7,14 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.7)-1"
     },
-    "CreationDate":  "2022-04-10T16:21:18-05:00"
+    "CreationDate":  "2022-04-10T16:59:05-05:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "ConsolePedalFuzzSMT",
-      "GUID": "436f6e73-6f6c-4655-9065-64616c46757a",
+      "Name": "ConsolePedal8BitarSMT",
+      "GUID": "436f6e73-6f6c-4655-9065-64616c384269",
       "Revision": "rev?"
     },
     "Size":
@@ -40,47 +40,47 @@
   "FilesAttributes":
   [
     {
-      "Path":  "ConsolePedalFuzzSMT-F_Cu.gbr",
+      "Path":  "ConsolePedal8BitarSMT-F_Cu.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-B_Cu.gbr",
+      "Path":  "ConsolePedal8BitarSMT-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-F_Paste.gbr",
+      "Path":  "ConsolePedal8BitarSMT-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-B_Paste.gbr",
+      "Path":  "ConsolePedal8BitarSMT-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-F_SilkS.gbr",
+      "Path":  "ConsolePedal8BitarSMT-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-B_SilkS.gbr",
+      "Path":  "ConsolePedal8BitarSMT-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-F_Mask.gbr",
+      "Path":  "ConsolePedal8BitarSMT-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-B_Mask.gbr",
+      "Path":  "ConsolePedal8BitarSMT-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "ConsolePedalFuzzSMT-Edge_Cuts.gbr",
+      "Path":  "ConsolePedal8BitarSMT-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }

@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name audioJacks)(type Legacy)(uri ${KIPRJMOD}/libraries/audioJacks.lib)(options "")(descr ""))
-  (lib (name SparkFun-Switches)(type Legacy)(uri ${KIPRJMOD}/libraries/SparkFun-Switches.lib)(options "")(descr ""))
-)

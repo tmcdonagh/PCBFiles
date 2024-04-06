@@ -1,4 +1,4 @@
-19016891684150188
+19018590796099414
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83089,6 +83089,13 @@ N64-Connector
 0
 50
 50
+libraries
+SPST_Foot_Switch
+Cherry MX keyswitch, 1.00u, plate mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
+Cherry MX keyswitch 1.00u plate
+0
+2
+2
 libraries
 STOMP_SWITCH_3PDT
 3-POLE, DOUBLE-THROW (3PDT) STOMP SWITCH
